@@ -1,0 +1,93 @@
+{
+  "brand": "AI 情报站",
+  "niche": "AI 行业动态、模型与产品、AI 工具与变现机会",
+  "audience": "AI 从业者、AI 工具重度用户、想用 AI 提效或变现的人",
+  "language": "zh-CN",
+  "sections": [
+    "头条要闻",
+    "模型与产品",
+    "工具与玩法",
+    "变现机会"
+  ],
+  "items_per_section": 3,
+  "fetch_web": true,
+  "source_urls": [
+    "https://www.qbitai.com/feed",
+    "https://www.geekpark.net/rss",
+    "https://www.ifanr.com/feed",
+    "https://www.leiphone.com/feed",
+    "https://www.solidot.org/index.rss",
+    "https://news.ycombinator.com/rss",
+    "https://techcrunch.com/category/artificial-intelligence/feed/",
+    "https://openai.com/news/rss.xml"
+  ],
+  "output_dir": ".",
+  "site": {
+    "enabled": true,
+    "title": "AI 情报站 · 每日 AI 情报",
+    "tagline": "3 分钟，看完 AI 圈今天真正重要的变化",
+    "intro": "每天早上 8:30 自动送达：模型发布、产品更新、工具玩法、变现机会，每条都附来源链接。",
+    "public_items_per_section": 1,
+    "subscribe_url": "https://example.com/subscribe",
+    "price_note": "加入知识星球，看完整版日报",
+    "delivery_note": "每天 8:30 更新推送 + 全部历史归档随时回查。不满意可随时退出，没有自动续费陷阱。",
+    "contact": "",
+    "base_url": "https://<your-name>.github.io/ai-brief/",
+    "benefits": [
+      [
+        "省时间",
+        "8 个信息源（量子位、极客公园、爱范儿、TechCrunch、OpenAI 官方等）替你筛完，3 分钟看完。"
+      ],
+      [
+        "可核实",
+        "每条都附原文来源链接，点开就能自己核对，不是二手转述。"
+      ],
+      [
+        "能落地",
+        "每条都写清「对你的价值」：能怎么用、什么时候别用、有什么坑。"
+      ],
+      [
+        "可回查",
+        "全部历史归档随时翻阅，错过一期也能补上。"
+      ]
+    ],
+    "faq": [
+      [
+        "这些资讯网上不都是免费的吗？",
+        "免费的是「信息」，我们卖的是「筛完的 3 分钟」。省下的是你自己刷 8 个源、分辨真假、再想清楚跟自己有什么关系的时间。"
+      ],
+      [
+        "内容可靠吗？",
+        "每条都附来源链接，可以点开核对。当天没抓到素材时，会明确标注「模型知识，建议核实」，不会假装是新闻。"
+      ],
+      [
+        "每天要花多久看？",
+        "3 分钟。时间紧的话只看「对你的价值」那一行也够，那是我们觉得最值钱的部分。"
+      ],
+      [
+        "怎么收到？会漏看吗？",
+        "加入知识星球后每天 8:30 更新推送，历史内容在星球里随时可查，不会刷过去就没了。"
+      ],
+      [
+        "更新会断吗？",
+        "内容生产全流程自动化，目前每天稳定更新。万一中断会提前说明，不会悄悄消失。"
+      ],
+      [
+        "不满意怎么办？",
+        "如果内容对你没用，可以随时退出，没有自动续费的坑。我们更希望你是因为真的省了时间而留下。"
+      ]
+    ]
+  },
+  "llm": {
+    "base_url": "http://127.0.0.1:11434/v1",
+    "model": "qwen2.5:14b",
+    "api_key_env": "CCR_API_KEY",
+    "temperature": 0.3,
+    "max_tokens": 16000,
+    "timeout_sec": 300
+  },
+  "deliver": {
+    "webhook_url": "",
+    "webhook_kind": "wecom"
+  }
+}
