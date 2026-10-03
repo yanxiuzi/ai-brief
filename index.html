@@ -4,57 +4,83 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>AI 情报站 · 每日 AI 情报</title>
-<meta name="description" content="每天早上 8:30，3 分钟看完 AI 圈真正重要的变化">
+<meta name="description" content="3 分钟，看完 AI 圈今天真正重要的变化">
+<meta property="og:title" content="AI 情报站 · 每日 AI 情报">
+<meta property="og:description" content="3 分钟，看完 AI 圈今天真正重要的变化">
+<meta property="og:image" content="https://yanxiuzi.github.io/ai-brief/assets/cover.png">
+<meta property="og:type" content="website">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Periodical","name":"AI 情报站 · 每日 AI 情报","description":"3 分钟，看完 AI 圈今天真正重要的变化","inLanguage":"zh-CN"}</script>
 <style>
-  :root { --ink:#1b1f24; --sub:#5b6472; --line:#e6e8ec; --brand:#0f62fe; --bg:#f5f6f8; }
+  :root { --ink:#1b1f24; --sub:#5b6472; --line:#e6e8ec; --brand:#0f62fe; --bg:#f5f6f8; --ok:#0b7a3b; }
   * { box-sizing: border-box; }
   body { margin:0; background:var(--bg); color:var(--ink);
     font:16px/1.75 -apple-system,"Segoe UI","Microsoft YaHei","PingFang SC",sans-serif; }
-  .wrap { max-width:780px; margin:0 auto; padding:28px 14px 64px; }
+  .wrap { max-width:800px; margin:0 auto; padding:22px 14px 60px; }
   .card { background:#fff; border:1px solid var(--line); border-radius:16px; overflow:hidden; }
-  .hero { padding:30px 30px 22px; border-bottom:1px solid var(--line); background:linear-gradient(180deg,#fbfcff,#fff); }
+  .nav { display:flex; justify-content:space-between; align-items:center; padding:13px 28px;
+         border-bottom:1px solid var(--line); font-size:13px; color:var(--sub); }
+  .nav a { color:var(--brand); text-decoration:none; margin-left:14px; }
+  .hero { padding:32px 28px 26px; background:linear-gradient(180deg,#f7faff,#fff); border-bottom:1px solid var(--line); }
   .brand { color:var(--brand); font-weight:700; letter-spacing:.06em; font-size:13px; }
-  h1 { font-size:26px; line-height:1.35; margin:10px 0 6px; }
-  .date { color:var(--sub); font-size:13px; }
-  .one-liner { margin:16px 0 0; padding:12px 14px; background:#f2f6ff; border-left:3px solid var(--brand);
-    border-radius:0 8px 8px 0; color:#26303d; font-size:15px; }
-  .body { padding:8px 30px 26px; }
-  h2 { font-size:18px; margin:28px 0 12px; padding-left:10px; border-left:4px solid var(--brand); }
+  .hero h1 { font-size:29px; line-height:1.42; margin:10px 0 12px; }
+  .hero .sub { color:#4a5462; font-size:15.5px; margin:0 0 20px; }
+  .btn { display:inline-block; padding:13px 30px; background:#0f62fe; color:#fff !important;
+         text-decoration:none; border-radius:999px; font-weight:600; font-size:16px;
+         box-shadow:0 4px 14px rgba(15,98,254,.22); }
+  .stats { display:flex; gap:20px; flex-wrap:wrap; margin:20px 0 0; font-size:13px; color:var(--sub); }
+  .stats b { color:var(--ok); font-size:15px; }
+  .body { padding:6px 28px 26px; }
+  h2 { font-size:18px; margin:30px 0 12px; padding-left:10px; border-left:4px solid var(--brand); }
+  .benefits { display:grid; grid-template-columns:repeat(auto-fit,minmax(215px,1fr)); gap:12px; }
+  .benefit { border:1px solid var(--line); border-radius:12px; padding:15px 16px; background:#fcfdff; }
+  .benefit .t { font-weight:700; font-size:15px; margin-bottom:5px; }
+  .benefit .d { font-size:13.5px; color:#4a5462; line-height:1.7; }
+  .compare { width:100%; border-collapse:collapse; font-size:14px; }
+  .compare th, .compare td { border:1px solid var(--line); padding:9px 12px; text-align:left; }
+  .compare th { background:#f5f8ff; font-weight:600; }
+  .compare td.y { color:var(--ok); font-weight:600; }
+  .compare td.n { color:#9aa2ae; }
   .item { border:1px solid var(--line); border-radius:12px; padding:16px 18px; margin:12px 0; }
   .item h3 { font-size:16px; margin:0 0 8px; }
   .item p { margin:0 0 10px; color:#2c343d; }
   .meta { font-size:13px; color:var(--sub); }
-  .meta b { color:#0b7a3b; font-weight:600; }
+  .meta b { color:var(--ok); font-weight:600; }
   .src { font-size:12px; color:#8b93a1; margin-top:6px; word-break:break-all; }
-  .actions { margin:26px 0 0; padding:18px 20px; background:#f0fbf5; border:1px solid #cdeadb; border-radius:12px; }
-  .actions h2 { border:0; padding:0; margin:0 0 10px; font-size:16px; color:#0b7a3b; }
-  .actions li { margin:6px 0; }
-  .foot { padding:18px 30px 26px; color:#8b93a1; font-size:12px; border-top:1px solid var(--line); }
-  .mock { display:inline-block; margin-left:8px; padding:2px 8px; border-radius:99px;
-    background:#fff4e5; color:#b25e00; font-size:12px; }
-
-  .cta { margin:26px 0 6px; padding:22px 24px; border:1px solid #cdeadb; background:#f0fbf5; border-radius:14px; }
-  .cta-t { font-size:18px; font-weight:700; color:#0b7a3b; }
-  .cta-p { font-size:15px; margin:6px 0 14px; color:#2c343d; }
-  .btn { display:inline-block; padding:11px 26px; background:#0f62fe; color:#fff !important;
-         text-decoration:none; border-radius:999px; font-weight:600; font-size:15px; }
-  .cta-n { margin-top:12px; font-size:13px; color:#5b6472; }
-  .archive { padding:22px 30px 30px; }
+  .pay { display:flex; gap:26px; align-items:center; flex-wrap:wrap; justify-content:center;
+         padding:24px; border:1px solid #cdeadb; background:#f0fbf5; border-radius:14px; }
+  .pay img { width:156px; height:156px; border:1px solid #d7e3d9; border-radius:10px; background:#fff; padding:4px; }
+  .pay .info { max-width:330px; }
+  .pay .p-title { font-size:19px; font-weight:700; color:var(--ok); margin-bottom:8px; line-height:1.5; }
+  .pay .p-note { font-size:14px; color:#2c343d; margin-bottom:14px; }
+  .hint { font-size:13px; color:#8a6414; background:#fffbeb; border:1px solid #f2e2b8;
+          padding:11px 14px; border-radius:10px; margin-top:12px; }
+  .faq-item { border-bottom:1px solid var(--line); padding:14px 0; }
+  .faq-item .q { font-weight:600; margin-bottom:5px; }
+  .faq-item .a { color:#4a5462; font-size:14px; }
+  .archive { padding:22px 28px 28px; border-top:1px solid var(--line); }
   .archive h2 { border:0; padding:0; font-size:16px; margin:0 0 12px; }
   .archive ul { margin:0; padding-left:18px; }
   .archive li { margin:7px 0; }
-  .archive a { color:#0f62fe; text-decoration:none; font-size:14px; }
-  .top-note { padding:14px 30px; background:#fffbeb; border-bottom:1px solid #f2e2b8;
-              font-size:13px; color:#8a6414; }
+  .archive a { color:var(--brand); text-decoration:none; font-size:14px; }
+  .foot { padding:18px 28px 26px; color:#8b93a1; font-size:12px; border-top:1px solid var(--line); }
+  .foot a { color:var(--brand); text-decoration:none; }
+  .mock { display:inline-block; margin-left:8px; padding:2px 8px; border-radius:99px;
+    background:#fff4e5; color:#b25e00; font-size:12px; }
+  @media (max-width:560px) {
+    .hero { padding:24px 18px 20px; } .hero h1 { font-size:23px; }
+    .body, .archive, .nav, .foot { padding-left:18px; padding-right:18px; }
+    .pay img { width:132px; height:132px; }
+  }
 </style>
 </head>
 <body>
 <div class="wrap">
 <div class="card">
-<div class="hero"><div class="brand">AI 情报站</div><h1>每天早上 8:30，3 分钟看完 AI 圈真正重要的变化</h1><div class="date">2026-10-03　·　公开试读版</div><div class="one-liner">今天三件大事：Gemini 4 以 Astra 一半的价格突然发布；OpenAI 安全团队负责人离职、三名员工因泄密被开；DeepSeek 把整套算子工具链铺到昇腾，国产算力第一次在核心算子层面与英伟达生态对标。</div></div>
-<div class="body"><h2>头条要闻</h2><div class="item"><h3>谷歌 Gemini 4 突然发布：RSI 加持，价格只有 Astra 的一半</h3><p>量子位消息，谷歌 Gemini 4 突然发布，主打 RSI 加持，价格只有 Astra 的一半；极客公园同期提到 Gemini 4 Argon 曝光。爱范儿的评价是「我们终于有了一个写作强于代码的前沿模型」，同时提醒「跑分不可思议，能力谨慎怀疑」。</p><div class="meta"><b>对你的价值</b>：如果你的工作里写作、长文、方案类占比高，这是近几个月最值得优先试的前沿模型；但别只看跑分——拿你自己 3-5 个真实任务做小规模对比再决定要不要迁生产流程。价格只有 Astra 一半，意味着同样预算能跑更大批量。</div><div class="src">来源：量子位 https://www.qbitai.com/2026/10/499663.html；极客公园 http://www.geekpark.net/news/372064；爱范儿 https://www.ifanr.com/1682765</div></div><h2>模型与产品</h2><div class="item"><h3>GPT-6.1 Sol 上线：接近 Astra 的智能，价格只有五分之一</h3><p>OpenAI 官方发布 GPT-6.1 Sol，定位「接近 Astra 的智能」，面向编码、电脑操作和专业工作，标准 API 输入输出价格是 Astra 的五分之一。OpenAI 同步发布 GPT-6 家族模型指南，讲创业公司怎么选型号、调推理强度、改 prompt 与技能、编排工具、把工作流推到生产环境。</p><div class="meta"><b>对你的价值</b>：这是「贵模型做难题、便宜模型做量产」的分工信号。建议按任务分层：高频、可校验的活（代码补全、结构化抽取、批处理）切到 Sol，真正难的长链推理留给更贵档位；官方那篇模型指南可以直接当选型 checklist 用。</div><div class="src">来源：OpenAI https://openai.com/index/introducing-gpt-6-1-sol；OpenAI https://openai.com/index/practical-guide-building-gpt-6；爱范儿 https://www.ifanr.com/1682554</div></div><h2>工具与玩法</h2><div class="item"><h3>OpenAI 推出 always-on 智能体 dots，短信里也能跑 Agent</h3><p>OpenAI 发布个人 AI 智能体 dots，定位「可以长期在线的主动型助手」，能在复杂项目和日常任务上持续推进、同时让你保持控制权。TechCrunch 整理了一份「能住在你短信里的 AI 智能体」清单，覆盖通用助手以及面向家庭、旅行、工作的专用 Agent。雷峰网指出，Muse 爆火、dots 入场，Personal Agent 正在和互联网平台抢入口。</p><div class="meta"><b>对你的价值</b>：Personal Agent 的入口之争刚开始，现在试错成本最低——挑 1-2 个真实高频场景（会后待办、报销、行程）跑两周，重点看它「主动」的部分到底省事还是添乱。入口级产品往往半年内定型，早用早判断要不要把个人工作流迁过去。</div><div class="src">来源：OpenAI https://openai.com/index/introducing-dots；TechCrunch https://techcrunch.com/2026/10/03/all-the-ai-agents-that-can-live-in-your-text-messages/；雷峰网 https://www.leiphone.com/category/yanxishe/Zqcw9XvSO2Ht6FIQ.html</div></div><h2>变现机会</h2><div class="item"><h3>AIGC 网络故事片分账破 1000 万，上线首周就收回成本</h3><p>雷峰网报道，爱奇艺、长信传媒出品的《灵魂摆渡》「浮生梦」系列 AIGC 网络故事片累计分账票房突破 1000 万元。前两部 8 月 22 日独家上线，上线首周即收回两部影片制作成本，首月累计分账破 800 万；第三部 10 月 1 日上线后带动系列继续增长。</p><div class="meta"><b>对你的价值</b>：这是目前最硬的 AIGC 变现样本：不是「AI 能拍片」，而是经典 IP + AIGC 制作 + 平台分账，首周回本。想复制的话，关键变量不是模型能力，而是你有没有可延续的 IP 和平台分账渠道。做内容的团队可以把「单位制作成本 / 首周回收周期」当成核心指标倒推项目能不能立项。</div><div class="src">来源：雷峰网 https://www.leiphone.com/category/industrynews/yHRIGngfk28TJvIw.html</div></div><div class="cta"><div class="cta-t">订阅完整版</div><div class="cta-p">加入知识星球，每天收到完整版 + 全部历史归档</div><a class="btn" href="https://t.zsxq.com/r1IzU">立即订阅</a><div class="cta-n">公开版每个栏目只放 1 条；完整版含全部条目、「今天就能做」行动清单，每天早上 8:30 自动送达。</div></div></div>
-<div class="archive"><h2>往期</h2><ul><li><a href="issues/2026-10-03.html">2026-10-03　AI 情报站 | Gemini 4 突袭发布、OpenAI 安全团队震荡、DeepSeek 算子链对标 CUDA</a></li></ul></div>
-<div class="foot">RSS 订阅：<a href="feed.xml">feed.xml</a> · 由「AI 情报站」自动生成</div>
+<div class="nav"><span>每日更新 · 自动生成</span><span><a href="https://yanxiuzi.github.io/ai-brief/feed.xml">RSS 订阅</a><a href="#subscribe">立即订阅</a></span></div>
+<div class="hero"><div class="brand">AI 情报站</div><h1>3 分钟，看完 AI 圈今天真正重要的变化</h1><p class="sub">每天早上 8:30 自动送达：模型发布、产品更新、工具玩法、变现机会，每条都附来源链接。</p><a class="btn" href="https://t.zsxq.com/r1IzU">加入知识星球 · 看完整版</a><div class="stats"><span><b>1</b> 期已更新</span><span><b>8</b> 个信息源</span><span>每天 <b>08:30</b> 自动送达</span></div></div>
+<div class="body"><h2>你会得到什么</h2><div class="benefits"><div class="benefit"><div class="t">省时间</div><div class="d">8 个信息源（量子位、极客公园、爱范儿、TechCrunch、OpenAI 官方等）替你筛完，3 分钟看完。</div></div><div class="benefit"><div class="t">可核实</div><div class="d">每条都附原文来源链接，点开就能自己核对，不是二手转述。</div></div><div class="benefit"><div class="t">能落地</div><div class="d">每条都写清「对你的价值」：能怎么用、什么时候别用、有什么坑。</div></div><div class="benefit"><div class="t">可回查</div><div class="d">全部历史归档随时翻阅，错过一期也能补上。</div></div></div><h2>公开版 vs 完整版</h2><table class="compare"><tr><th>内容</th><th>公开试读版</th><th>完整版（知识星球）</th></tr><tr><td>每日条目</td><td class="n">每栏 1 条（共 4 条）</td><td class="y">每栏 3 条（共 12 条）</td></tr><tr><td>来源链接</td><td class="y">✅</td><td class="y">✅</td></tr><tr><td>「对你的价值」分析</td><td class="n">部分</td><td class="y">全部</td></tr><tr><td>「今天就能做」行动清单</td><td class="n">❌</td><td class="y">✅</td></tr><tr><td>历史归档</td><td class="n">部分</td><td class="y">全部</td></tr><tr><td>每天 8:30 自动推送</td><td class="n">❌</td><td class="y">✅</td></tr></table><h2>今日试读（2026-10-03）</h2><h2>头条要闻</h2><div class="item"><h3>谷歌 Gemini 4 突然发布：RSI 加持，价格只有 Astra 的一半</h3><p>量子位消息，谷歌 Gemini 4 突然发布，主打 RSI 加持，价格只有 Astra 的一半；极客公园同期提到 Gemini 4 Argon 曝光。爱范儿的评价是「我们终于有了一个写作强于代码的前沿模型」，同时提醒「跑分不可思议，能力谨慎怀疑」。</p><div class="meta"><b>对你的价值</b>：如果你的工作里写作、长文、方案类占比高，这是近几个月最值得优先试的前沿模型；但别只看跑分——拿你自己 3-5 个真实任务做小规模对比再决定要不要迁生产流程。价格只有 Astra 一半，意味着同样预算能跑更大批量。</div><div class="src">来源：量子位 https://www.qbitai.com/2026/10/499663.html；极客公园 http://www.geekpark.net/news/372064；爱范儿 https://www.ifanr.com/1682765</div></div><h2>模型与产品</h2><div class="item"><h3>GPT-6.1 Sol 上线：接近 Astra 的智能，价格只有五分之一</h3><p>OpenAI 官方发布 GPT-6.1 Sol，定位「接近 Astra 的智能」，面向编码、电脑操作和专业工作，标准 API 输入输出价格是 Astra 的五分之一。OpenAI 同步发布 GPT-6 家族模型指南，讲创业公司怎么选型号、调推理强度、改 prompt 与技能、编排工具、把工作流推到生产环境。</p><div class="meta"><b>对你的价值</b>：这是「贵模型做难题、便宜模型做量产」的分工信号。建议按任务分层：高频、可校验的活（代码补全、结构化抽取、批处理）切到 Sol，真正难的长链推理留给更贵档位；官方那篇模型指南可以直接当选型 checklist 用。</div><div class="src">来源：OpenAI https://openai.com/index/introducing-gpt-6-1-sol；OpenAI https://openai.com/index/practical-guide-building-gpt-6；爱范儿 https://www.ifanr.com/1682554</div></div><h2>工具与玩法</h2><div class="item"><h3>OpenAI 推出 always-on 智能体 dots，短信里也能跑 Agent</h3><p>OpenAI 发布个人 AI 智能体 dots，定位「可以长期在线的主动型助手」，能在复杂项目和日常任务上持续推进、同时让你保持控制权。TechCrunch 整理了一份「能住在你短信里的 AI 智能体」清单，覆盖通用助手以及面向家庭、旅行、工作的专用 Agent。雷峰网指出，Muse 爆火、dots 入场，Personal Agent 正在和互联网平台抢入口。</p><div class="meta"><b>对你的价值</b>：Personal Agent 的入口之争刚开始，现在试错成本最低——挑 1-2 个真实高频场景（会后待办、报销、行程）跑两周，重点看它「主动」的部分到底省事还是添乱。入口级产品往往半年内定型，早用早判断要不要把个人工作流迁过去。</div><div class="src">来源：OpenAI https://openai.com/index/introducing-dots；TechCrunch https://techcrunch.com/2026/10/03/all-the-ai-agents-that-can-live-in-your-text-messages/；雷峰网 https://www.leiphone.com/category/yanxishe/Zqcw9XvSO2Ht6FIQ.html</div></div><h2>变现机会</h2><div class="item"><h3>AIGC 网络故事片分账破 1000 万，上线首周就收回成本</h3><p>雷峰网报道，爱奇艺、长信传媒出品的《灵魂摆渡》「浮生梦」系列 AIGC 网络故事片累计分账票房突破 1000 万元。前两部 8 月 22 日独家上线，上线首周即收回两部影片制作成本，首月累计分账破 800 万；第三部 10 月 1 日上线后带动系列继续增长。</p><div class="meta"><b>对你的价值</b>：这是目前最硬的 AIGC 变现样本：不是「AI 能拍片」，而是经典 IP + AIGC 制作 + 平台分账，首周回本。想复制的话，关键变量不是模型能力，而是你有没有可延续的 IP 和平台分账渠道。做内容的团队可以把「单位制作成本 / 首周回收周期」当成核心指标倒推项目能不能立项。</div><div class="src">来源：雷峰网 https://www.leiphone.com/category/industrynews/yHRIGngfk28TJvIw.html</div></div><h2 id="subscribe">订阅完整版</h2><div class="pay"><img src="assets/qr.png" alt="扫码加入知识星球"><div class="info"><div class="p-title">加入知识星球，看完整版日报</div><div class="p-note">每天 8:30 更新推送 + 全部历史归档随时回查。不满意可随时退出，没有自动续费陷阱。</div><a class="btn" href="https://t.zsxq.com/r1IzU">立即加入</a></div></div><div class="hint">公开版每个栏目只放 1 条；完整版含全部条目、「今天就能做」行动清单，以及可随时回查的历史归档。</div><h2>常见问题</h2><div class="faq"><div class="faq-item"><div class="q">这些资讯网上不都是免费的吗？</div><div class="a">免费的是「信息」，我们卖的是「筛完的 3 分钟」。省下的是你自己刷 8 个源、分辨真假、再想清楚跟自己有什么关系的时间。</div></div><div class="faq-item"><div class="q">内容可靠吗？</div><div class="a">每条都附来源链接，可以点开核对。当天没抓到素材时，会明确标注「模型知识，建议核实」，不会假装是新闻。</div></div><div class="faq-item"><div class="q">每天要花多久看？</div><div class="a">3 分钟。时间紧的话只看「对你的价值」那一行也够，那是我们觉得最值钱的部分。</div></div><div class="faq-item"><div class="q">怎么收到？会漏看吗？</div><div class="a">加入知识星球后每天 8:30 更新推送，历史内容在星球里随时可查，不会刷过去就没了。</div></div><div class="faq-item"><div class="q">更新会断吗？</div><div class="a">内容生产全流程自动化，目前每天稳定更新。万一中断会提前说明，不会悄悄消失。</div></div><div class="faq-item"><div class="q">不满意怎么办？</div><div class="a">如果内容对你没用，可以随时退出，没有自动续费的坑。我们更希望你是因为真的省了时间而留下。</div></div></div></div>
+<div class="archive"><h2>往期归档</h2><ul><li><a href="issues/2026-10-03.html">2026-10-03　AI 情报站 | Gemini 4 突袭发布、OpenAI 安全团队震荡、DeepSeek 算子链对标 CUDA</a></li></ul></div>
+<div class="foot">RSS 订阅：<a href="https://yanxiuzi.github.io/ai-brief/feed.xml">feed.xml</a>　·　由「AI 情报站」自动生成<br>内容仅供参考，不构成投资、法律或医疗建议。</div>
 </div>
 </div>
 </body>
