@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>独立开发者情报站 · 2026-10-04：SaaS 的护城河，正在变成「模型外面那层 harness」</title>
+<style>
+  :root { --ink:#1b1f24; --sub:#5b6472; --line:#e6e8ec; --brand:#0f62fe; --bg:#f5f6f8; }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--bg); color:var(--ink);
+    font:16px/1.75 -apple-system,"Segoe UI","Microsoft YaHei","PingFang SC",sans-serif; }
+  .wrap { max-width:780px; margin:0 auto; padding:28px 14px 64px; }
+  .card { background:#fff; border:1px solid var(--line); border-radius:16px; overflow:hidden; }
+  .hero { padding:30px 30px 22px; border-bottom:1px solid var(--line); background:linear-gradient(180deg,#fbfcff,#fff); }
+  .brand { color:var(--brand); font-weight:700; letter-spacing:.06em; font-size:13px; }
+  h1 { font-size:26px; line-height:1.35; margin:10px 0 6px; }
+  .date { color:var(--sub); font-size:13px; }
+  .one-liner { margin:16px 0 0; padding:12px 14px; background:#f2f6ff; border-left:3px solid var(--brand);
+    border-radius:0 8px 8px 0; color:#26303d; font-size:15px; }
+  .body { padding:8px 30px 26px; }
+  h2 { font-size:18px; margin:28px 0 12px; padding-left:10px; border-left:4px solid var(--brand); }
+  .item { border:1px solid var(--line); border-radius:12px; padding:16px 18px; margin:12px 0; }
+  .item h3 { font-size:16px; margin:0 0 8px; }
+  .item p { margin:0 0 10px; color:#2c343d; }
+  .meta { font-size:13px; color:var(--sub); }
+  .meta b { color:#0b7a3b; font-weight:600; }
+  .src { font-size:12px; color:#8b93a1; margin-top:6px; word-break:break-all; }
+  .actions { margin:26px 0 0; padding:18px 20px; background:#f0fbf5; border:1px solid #cdeadb; border-radius:12px; }
+  .actions h2 { border:0; padding:0; margin:0 0 10px; font-size:16px; color:#0b7a3b; }
+  .actions li { margin:6px 0; }
+  .foot { padding:18px 30px 26px; color:#8b93a1; font-size:12px; border-top:1px solid var(--line); }
+  .mock { display:inline-block; margin-left:8px; padding:2px 8px; border-radius:99px;
+    background:#fff4e5; color:#b25e00; font-size:12px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+<div class="card">
+<div class="hero"><div class="brand">独立开发者情报站</div><h1>独立开发者情报站 · 2026-10-04：SaaS 的护城河，正在变成「模型外面那层 harness」</h1><div class="date">2026-10-04 周日</div><div class="one-liner">今天 HN 160 分的热帖说每家公司都会变成包在模型外面的 harness，Product Hunt 当天上榜的又全是系统层小工具——对一人公司来说，机会和风险都集中在「模型换掉之后你还剩什么」。</div></div>
+<div class="body"><h2>产品与收入</h2><div class="item"><h3>HN 160 分热帖：每家公司都会变成包在模型外面的 harness</h3><p>HN 上《The Harness Is the Company》拿到 160 分、104 条评论，核心论点是 SaaS 生意最终都会变成围绕模型的一层编排外壳，价值不在模型本身，而在把用户意图翻译成动作的那一层。同一天 HN 还有两个呼应案例：Yedric 帮现有 SaaS 加一个自然语言界面，EmbedWorkflow 让客户在别人的 SaaS 内部自己搭自动化。</p><div class="meta"><b>对你的价值</b>：如果你做的只是调 API 套个 UI，这篇既是风险清单也是定位指南：护城河要建在数据、流程、权限、集成这些模型换不掉的地方。定价也要跟着改——锚定「替掉了谁的哪份工作」，而不是锚定 token 成本。</div><div class="src">来源：Hacker News（2026-10-03）https://blog.sshh.io/p/the-harness-is-the-company ；同素材中 Yedric https://www.yedric.ai 、EmbedWorkflow https://embedworkflow.com/</div></div><h2>工具与栈</h2><div class="item"><h3>Cloudflare 公开号召：来它上面建「下一个 Git 平台」</h3><p>Cloudflare 官方博客发文《We want you to build the next Git platform on Cloudflare》，HN 上 93 分、83 条评论，讨论相当激烈。文章的直接意图是让开发者把代码托管、评审、流水线这类能力做在它的平台上。</p><div class="meta"><b>对你的价值</b>：代码托管和 CI 是独立开发者每月的固定成本项。如果 Git 托管真的能变成搭在 Workers/D1/R2 上的标准积木，一人公司自建评审和发布流水线的门槛会明显下降。现在值得花半小时读原文，判断自己哪些内部小工具可以迁过去，以及迁移的锁定风险有多大。</div><div class="src">来源：Hacker News 首页（2026-10-03）https://blog.cloudflare.com/next-git-platform-on-cloudflare/</div></div><h2>增长与渠道</h2><div class="item"><h3>有人整理了一份 2026 年免费 SaaS 目录清单，专门用来换曝光</h3><p>goodsaas.xyz 发布《top-free-saas-directories-2026》，把一批可以免费提交产品的目录站列在一起，用于获取曝光；该站点本身也在 HN 上以「免费上架、获得可见度」的方式自我推广。</p><div class="meta"><b>对你的价值</b>：目录提交是几乎零成本的冷启动动作，但目录质量参差，很多是无人维护的链接垃圾场。做法要讲究：一次写好 50/100/200 字三个版本的产品描述和两张图，批量投稿；每条链接都打上 UTM，两周后只看实际注册数，不带量的目录直接放弃，别再花时间维护。</div><div class="src">来源：Hacker News Newest「SaaS」（2026-10-02）https://goodsaas.xyz/blog/top-free-saas-directories-2026</div></div><h2>踩坑与风险</h2><div class="item"><h3>有人被精准钓鱼：借 git post-checkout hook 偷开发者凭证</h3><p>Lobsters 上《I got targeted: Trying to get your credentials via a git post-checkout hook》记录了一次针对开发者的定向攻击，手法是通过仓库里的 git post-checkout 钩子在 checkout 时执行脚本、窃取凭证。</p><div class="meta"><b>对你的价值</b>：你在 clone 或 checkout 一个陌生仓库、审一个 PR 的代码时，就可能被动执行对方写的脚本，本机的长期凭证、SSH key、云 token 会被打包带走。今天就能做的：检查最近 clone 的仓库里 .git/hooks 和仓库配置有没有可疑内容；把本机长期有效的云凭证换成短时效凭证；让 CI 密钥和本机开发环境彻底隔离。</div><div class="src">来源：Lobsters（2026-10-02）https://frankwiles.com/posts/i-got-targeted/</div></div><div class="actions"><h2>今天就能做</h2><ul><li>把「harness」论点当成产品自检清单：列出模型换掉之后你还剩下什么（数据、流程、权限、集成）。如果一条都剩不下，本周优先补这层，而不是继续调 prompt。</li><li>花 30 分钟检查你最近 clone 的仓库：翻一遍 .git/hooks 和仓库配置有没有可疑脚本，顺手把本机长期有效的云凭证换成短期凭证。</li><li>挑一个免费目录渠道做小规模 AB：用带 UTM 的描述投 5 个目录，两周后只看实际注册数，不带量的直接砍掉，别再花时间维护。</li></ul></div></div>
+<div class="foot">由「独立开发者情报站」自动生成 · 内容仅供参考，不构成投资、法律或医疗建议。</div>
+</div>
+</div>
+</body>
+</html>
