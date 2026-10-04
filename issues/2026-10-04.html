@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI情报站·2026-10-04｜Gemini 4 突袭、OpenAI 安全团队再地震、AIGC电影分账破千万</title>
+<style>
+  :root { --ink:#1b1f24; --sub:#5b6472; --line:#e6e8ec; --brand:#0f62fe; --bg:#f5f6f8; }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--bg); color:var(--ink);
+    font:16px/1.75 -apple-system,"Segoe UI","Microsoft YaHei","PingFang SC",sans-serif; }
+  .wrap { max-width:780px; margin:0 auto; padding:28px 14px 64px; }
+  .card { background:#fff; border:1px solid var(--line); border-radius:16px; overflow:hidden; }
+  .hero { padding:30px 30px 22px; border-bottom:1px solid var(--line); background:linear-gradient(180deg,#fbfcff,#fff); }
+  .brand { color:var(--brand); font-weight:700; letter-spacing:.06em; font-size:13px; }
+  h1 { font-size:26px; line-height:1.35; margin:10px 0 6px; }
+  .date { color:var(--sub); font-size:13px; }
+  .one-liner { margin:16px 0 0; padding:12px 14px; background:#f2f6ff; border-left:3px solid var(--brand);
+    border-radius:0 8px 8px 0; color:#26303d; font-size:15px; }
+  .body { padding:8px 30px 26px; }
+  h2 { font-size:18px; margin:28px 0 12px; padding-left:10px; border-left:4px solid var(--brand); }
+  .item { border:1px solid var(--line); border-radius:12px; padding:16px 18px; margin:12px 0; }
+  .item h3 { font-size:16px; margin:0 0 8px; }
+  .item p { margin:0 0 10px; color:#2c343d; }
+  .meta { font-size:13px; color:var(--sub); }
+  .meta b { color:#0b7a3b; font-weight:600; }
+  .src { font-size:12px; color:#8b93a1; margin-top:6px; word-break:break-all; }
+  .actions { margin:26px 0 0; padding:18px 20px; background:#f0fbf5; border:1px solid #cdeadb; border-radius:12px; }
+  .actions h2 { border:0; padding:0; margin:0 0 10px; font-size:16px; color:#0b7a3b; }
+  .actions li { margin:6px 0; }
+  .foot { padding:18px 30px 26px; color:#8b93a1; font-size:12px; border-top:1px solid var(--line); }
+  .mock { display:inline-block; margin-left:8px; padding:2px 8px; border-radius:99px;
+    background:#fff4e5; color:#b25e00; font-size:12px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+<div class="card">
+<div class="hero"><div class="brand">AI 情报站</div><h1>AI情报站·2026-10-04｜Gemini 4 突袭、OpenAI 安全团队再地震、AIGC电影分账破千万</h1><div class="date">2026-10-04 周日</div><div class="one-liner">谷歌 Gemini 4 突然发布且价格只有 Astra 一半，OpenAI 安全团队负责人离职、三名员工因泄密被开除，爱奇艺 AIGC 网络故事片分账票房首次突破 1000 万元——三条线索分别指向模型价格战、供应商治理风险与内容变现跑通。</div></div>
+<div class="body"><h2>头条要闻</h2><div class="item"><h3>OpenAI 安全团队持续地震：负责人离职，三名员工因泄密被开除</h3><p>量子位消息称，OpenAI 安全团队负责人离职，另有三名员工因泄密被开除。TechCrunch 与 The Verge 报道，负责撰写每次重大模型发布安全报告的 David Robinson 本周辞职，并在 The Atlantic 撰文称公司文化「broken」；The Verge 称他此前的工作就是给每个重大模型发布配安全报告。</p><div class="meta"><b>对你的价值</b>：如果你把核心业务押在单一模型供应商上，这是评估「供应商稳定性」的硬信号——治理动荡会直接影响你的合规材料、模型下线节奏和 API 政策。动作：把关键流水线的模型调用做成可切换抽象层，别让业务逻辑绑死单一 SDK。</div><div class="src">来源：量子位 https://www.qbitai.com/2026/10/501368.html ；TechCrunch https://techcrunch.com/2026/10/03/openai-safety-employee-resigns-claiming-the-companys-culture-is-broken/ ；The Verge https://www.theverge.com/ai-artificial-intelligence/1004408/openai-safety-quits-sounding-the-alarm</div></div><h2>模型与产品</h2><div class="item"><h3>OpenAI 发 GPT-6 家族选型指南，GPT-6.1 Sol 价格仅 Astra 五分之一</h3><p>OpenAI 官方发布《A model guide for the GPT-6 family》，面向创业公司讲如何选择 GPT-6 模型、调节推理强度、优化 prompt 与 skills、编排工具并为生产环境做准备。此前发布的 GPT-6.1 Sol 定位「接近 Astra 的智能」，面向编码、computer use 与专业工作，标准 API 输入输出 token 价格仅为 Astra 的五分之一；Simon Willison 也在 Hacker News 上做了点评。</p><div class="meta"><b>对你的价值</b>：五分之一的单价意味着你可以给 Agent 放开步数、增加自我验证轮次，而不是处处省 token。做法：挑最贵的 2–3 条流水线做回归对比（通过率 + 单次成本），跑通再切，别全量迁移。</div><div class="src">来源：OpenAI https://openai.com/index/practical-guide-building-gpt-6 、 https://openai.com/index/introducing-gpt-6-1-sol ；Simon Willison https://simonwillison.net/2026/Sep/29/hn-49898129/</div></div><h2>工具与玩法</h2><div class="item"><h3>苹果收紧 macOS「完全磁盘访问」权限，明确冲着 AI Agent 来</h3><p>苹果宣布将对 macOS 的 Full Disk Access 权限增加新的控制，理由是能力越来越强的 AI Agent 让对用户文件、信息、邮件和浏览历史的宽泛访问变得更危险。Ars Technica 提到，Meta 认为 FDA 机制不足以支撑 Muse 读取消息，苹果对此不认同。</p><div class="meta"><b>对你的价值</b>：在 Mac 上跑本地 Agent、自动化脚本、同步工具的人会直接受影响：升级后可能弹新授权，旧脚本可能静默失败。动作：先记录当前授权清单和依赖的目录，把 Agent 的访问范围收窄到专用工作目录，别一次性全盘授权。</div><div class="src">来源：TechCrunch https://techcrunch.com/2026/10/02/apple-says-its-tightening-macos-full-disk-access-controls-due-to-new-risks-from-ai-agents/ ；Ars Technica https://arstechnica.com/security/2026/10/apple-changes-full-disk-access-permissions-to-curb-abuse-from-ai-agents/</div></div><h2>变现机会</h2><div class="item"><h3>AIGC 网络故事片跑通闭环：爱奇艺《灵魂摆渡》「浮生梦」系列分账票房破 1000 万</h3><p>雷峰网报道，爱奇艺、长信传媒出品的《灵魂摆渡》「浮生梦」系列 AIGC 网络故事片，10 月 3 日累计分账票房正式突破 1000 万元。前两部《蝴蝶梦》《天女之梦》8 月 22 日独家上线爱奇艺，上线首周即收回两部影片制作成本，首月累计分账票房突破 800 万元；第三部《公主之梦》10 月 1 日上线后带动系列热度与分账继续增长。</p><div class="meta"><b>对你的价值</b>：这是少见的、有明确数字的 AIGC 内容变现样本：成熟 IP + 系列化开发 + AIGC 降本，首周回本说明成本结构可行。想切入优先绑定已有粉丝基础的 IP 做系列短内容，而不是原创冷启动；先算清平台分成规则再压制作成本，别只看总票房。</div><div class="src">来源：雷峰网 https://www.leiphone.com/category/industrynews/yHRIGngfk28TJvIw.html</div></div><div class="actions"><h2>今天就能做</h2><ul><li>今天花 30 分钟对账：列出你所有 AI 订阅与 API 的档位和用量（OpenAI 新 Pro 档已改为额度减半 + 新增 500 美元/月档），给每个付费服务加上硬性预算上限，防止 Agent 跑飞烧钱。</li><li>挑 1 条最贵的 AI 流水线做回归测试：用 GPT-6.1 Sol（价格为 Astra 的 1/5）或 MiniMax M3.1 跑同一批真实任务，对比通过率、延迟与单次成本，用数据决定是否切换，别凭榜单换模型。</li><li>如果你在 Mac 上跑 Agent 或自动化脚本，升级系统前先备份当前「完全磁盘访问」授权清单，并把 Agent 的文件读写范围收窄到专用目录，避免升级后脚本静默失效或过度授权。</li></ul></div></div>
+<div class="foot">由「AI 情报站」自动生成 · 内容仅供参考，不构成投资、法律或医疗建议。</div>
+</div>
+</div>
+</body>
+</html>
