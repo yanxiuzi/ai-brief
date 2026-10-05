@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>独立开发者情报站｜2026-10-05：Mac 小工具扎堆上架，AI 提交把赏金项目逼停</title>
+<style>
+  :root { --ink:#1b1f24; --sub:#5b6472; --line:#e6e8ec; --brand:#0f62fe; --bg:#f5f6f8; }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--bg); color:var(--ink);
+    font:16px/1.75 -apple-system,"Segoe UI","Microsoft YaHei","PingFang SC",sans-serif; }
+  .wrap { max-width:780px; margin:0 auto; padding:28px 14px 64px; }
+  .card { background:#fff; border:1px solid var(--line); border-radius:16px; overflow:hidden; }
+  .hero { padding:30px 30px 22px; border-bottom:1px solid var(--line); background:linear-gradient(180deg,#fbfcff,#fff); }
+  .brand { color:var(--brand); font-weight:700; letter-spacing:.06em; font-size:13px; }
+  h1 { font-size:26px; line-height:1.35; margin:10px 0 6px; }
+  .date { color:var(--sub); font-size:13px; }
+  .one-liner { margin:16px 0 0; padding:12px 14px; background:#f2f6ff; border-left:3px solid var(--brand);
+    border-radius:0 8px 8px 0; color:#26303d; font-size:15px; }
+  .body { padding:8px 30px 26px; }
+  h2 { font-size:18px; margin:28px 0 12px; padding-left:10px; border-left:4px solid var(--brand); }
+  .item { border:1px solid var(--line); border-radius:12px; padding:16px 18px; margin:12px 0; }
+  .item h3 { font-size:16px; margin:0 0 8px; }
+  .item p { margin:0 0 10px; color:#2c343d; }
+  .meta { font-size:13px; color:var(--sub); }
+  .meta b { color:#0b7a3b; font-weight:600; }
+  .src { font-size:12px; color:#8b93a1; margin-top:6px; word-break:break-all; }
+  .actions { margin:26px 0 0; padding:18px 20px; background:#f0fbf5; border:1px solid #cdeadb; border-radius:12px; }
+  .actions h2 { border:0; padding:0; margin:0 0 10px; font-size:16px; color:#0b7a3b; }
+  .actions li { margin:6px 0; }
+  .foot { padding:18px 30px 26px; color:#8b93a1; font-size:12px; border-top:1px solid var(--line); }
+  .mock { display:inline-block; margin-left:8px; padding:2px 8px; border-radius:99px;
+    background:#fff4e5; color:#b25e00; font-size:12px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+<div class="card">
+<div class="hero"><div class="brand">独立开发者情报站</div><h1>独立开发者情报站｜2026-10-05：Mac 小工具扎堆上架，AI 提交把赏金项目逼停</h1><div class="date">2026-10-05 周一</div><div class="one-liner">同一天 Product Hunt 上挤进一批 macOS 27 原生小工具；HN 上一支「关掉 Apple Intelligence 拿回磁盘」的脚本拿到 293 分。另一边，Google 因 AI 提交量激增冻结开源漏洞赏金，Simon Willison 喊话给一切设硬性预算上限。</div></div>
+<div class="body"><h2>产品与收入</h2><div class="item"><h3>关掉 Apple Intelligence、拿回磁盘空间的脚本，在 HN 拿到 293 分 176 评论</h3><p>GitHub 项目 omlahore/RemoveMacAI 登上 Hacker News 首页，标题是「在 macOS 27 上关掉 Apple Intelligence，把磁盘空间拿回来」，293 points、176 条评论，是同批首页条目里讨论量最高的之一。</p><div class="meta"><b>对你的价值</b>：176 条评论说明这不是个别需求，而是一批 Mac 用户对系统预装 AI 功能的抵触。这类「帮我把系统里的东西减掉」的需求，天然适合一人公司做买断制小工具或付费脚本。先去评论区看大家在抱怨什么，再决定是清理、卸载还是备份方向，别自己拍脑袋想场景。</div><div class="src">来源：Hacker News 首页 / GitHub: omlahore/RemoveMacAI，2026-10-04</div></div><h2>工具与栈</h2><div class="item"><h3>GitHub 官方点名三个技能：指挥 agent、审查输出、保留技术判断</h3><p>GitHub Blog 文章《AI is changing developer work. Here are three skills to strengthen.》把要点归纳为三件事：学会指挥 AI agent、批判性地审查它们的输出、让技术判断始终留在工作流中心。</p><div class="meta"><b>对你的价值</b>：一人公司的瓶颈不是写得更快，而是你能不能判断 agent 交回来的东西对不对。落地做法：每个 agent 任务先写好验收标准，产出必须跑通一个具体测试才算完成，否则你只是在给自己堆技术债。</div><div class="src">来源：GitHub Blog，2026-10-02</div></div><h2>增长与渠道</h2><div class="item"><h3>Product Hunt 仍是 Mac 小众工具的首发默认渠道，但同一天就撞车</h3><p>2026-10-04 一天内，Product Hunt 上出现了 Blenny、Snapset、TinyFolder、Pixel Soup、Art4 等多个 macOS 小工具，覆盖菜单栏、工作区恢复、Dock、壁纸等相近场景。</p><div class="meta"><b>对你的价值</b>：这条路依然有人走通，但同日竞争已经很密。要发就别只写「美化你的菜单栏」，把场景切到具体的人身上（比如「外接显示器加十几个常驻图标的人」），并且发布当天准备好承接讨论的落地页，否则流量会流到隔壁产品。</div><div class="src">来源：Product Hunt Feed，2026-10-04</div></div><h2>踩坑与风险</h2><div class="item"><h3>Google 冻结开源漏洞赏金项目，原因是 AI 提交量「显著上升」</h3><p>TechCrunch 报道，Google 因 AI 生成提交「显著上升」而冻结其开源漏洞赏金项目，报道形容这是「AI slop 淹没了赏金项目」。</p><div class="meta"><b>对你的价值</b>：这是给所有用 AI 批量产出的人的信号：平台会先收紧入口，再重新设计审核。用 AI 生成的内容去报漏洞、提 PR、投产品目录，短期拿量，长期会把整条通道关掉、连带堵死后来者。如果 AI 是你的生产方式，先加一道人工筛选和可验证证据，别把路走绝。</div><div class="src">来源：TechCrunch，2026-10-04</div></div><div class="actions"><h2>今天就能做</h2><ul><li>花 20 分钟翻一遍 Product Hunt 上 2026-10-04 那批 Mac 小工具的讨论和评论，把被反复提到的场景抱怨记成选题池，下周从中挑一个做原型。</li><li>给你现在所有在跑的 AI 任务加一道硬上限：按 API key 或按任务设额度，超了自动停，改完再去看这个月的账单。</li><li>从你每天重复的运营动作里挑一个（对账、内容排期、反馈归类），用 canvases 或类似方式描述成一个能用的界面，这周内跑通一次。</li></ul></div></div>
+<div class="foot">由「独立开发者情报站」自动生成 · 内容仅供参考，不构成投资、法律或医疗建议。</div>
+</div>
+</div>
+</body>
+</html>
