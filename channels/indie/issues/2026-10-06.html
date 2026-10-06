@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>独立开发者情报站｜2026-10-06：一台 Mac Mini 跑五个微SaaS，AI 推荐正在变成新货架</title>
+<style>
+  :root { --ink:#1b1f24; --sub:#5b6472; --line:#e6e8ec; --brand:#0f62fe; --bg:#f5f6f8; }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--bg); color:var(--ink);
+    font:16px/1.75 -apple-system,"Segoe UI","Microsoft YaHei","PingFang SC",sans-serif; }
+  .wrap { max-width:780px; margin:0 auto; padding:28px 14px 64px; }
+  .card { background:#fff; border:1px solid var(--line); border-radius:16px; overflow:hidden; }
+  .hero { padding:30px 30px 22px; border-bottom:1px solid var(--line); background:linear-gradient(180deg,#fbfcff,#fff); }
+  .brand { color:var(--brand); font-weight:700; letter-spacing:.06em; font-size:13px; }
+  h1 { font-size:26px; line-height:1.35; margin:10px 0 6px; }
+  .date { color:var(--sub); font-size:13px; }
+  .one-liner { margin:16px 0 0; padding:12px 14px; background:#f2f6ff; border-left:3px solid var(--brand);
+    border-radius:0 8px 8px 0; color:#26303d; font-size:15px; }
+  .body { padding:8px 30px 26px; }
+  h2 { font-size:18px; margin:28px 0 12px; padding-left:10px; border-left:4px solid var(--brand); }
+  .item { border:1px solid var(--line); border-radius:12px; padding:16px 18px; margin:12px 0; }
+  .item h3 { font-size:16px; margin:0 0 8px; }
+  .item p { margin:0 0 10px; color:#2c343d; }
+  .meta { font-size:13px; color:var(--sub); }
+  .meta b { color:#0b7a3b; font-weight:600; }
+  .src { font-size:12px; color:#8b93a1; margin-top:6px; word-break:break-all; }
+  .actions { margin:26px 0 0; padding:18px 20px; background:#f0fbf5; border:1px solid #cdeadb; border-radius:12px; }
+  .actions h2 { border:0; padding:0; margin:0 0 10px; font-size:16px; color:#0b7a3b; }
+  .actions li { margin:6px 0; }
+  .foot { padding:18px 30px 26px; color:#8b93a1; font-size:12px; border-top:1px solid var(--line); }
+  .mock { display:inline-block; margin-left:8px; padding:2px 8px; border-radius:99px;
+    background:#fff4e5; color:#b25e00; font-size:12px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+<div class="card">
+<div class="hero"><div class="brand">独立开发者情报站</div><h1>独立开发者情报站｜2026-10-06：一台 Mac Mini 跑五个微SaaS，AI 推荐正在变成新货架</h1><div class="date">2026-10-06 周二</div><div class="one-liner">有人用一台 Mac Mini 跑五个微SaaS 并以 USDC 收款；GitHub 发布 AI 代码评审基准 ReviewBench；OpenAI 将在欧盟给 ChatGPT 文本加水印；三个垃圾邮件投诉就能让你的邮件进垃圾箱。</div></div>
+<div class="body"><h2>产品与收入</h2><div class="item"><h3>一台 Mac Mini 跑五个微SaaS，用 USDC 收款</h3><p>HN Show HN 帖：作者称自己在一台 Mac Mini 上运行五个微SaaS 产品，并以 USDC 计费收款，展示地址是 store.watchtbot.site。该帖发布后只有 1 个点、0 条评论。</p><div class="meta"><b>对你的价值</b>：这是一人公司把成本压到极致的样本：算力集中在一台机器、绕开传统支付通道的费率和开户门槛。但别忽略另一面——同样的形态在 HN 上几乎没人看见，说明「产品能跑起来」和「目标用户能找到你」完全是两件事。想照抄单机多产品架构，先把分发路径想清楚。</div><div class="src">来源：Hacker News - Newest: SaaS，Show HN：https://store.watchtbot.site ，讨论页 https://news.ycombinator.com/item?id=49968305</div></div><h2>工具与栈</h2><div class="item"><h3>GitHub 发布 ReviewBench：AI 代码评审的公开基准</h3><p>GitHub 上线 ReviewBench，一个针对代码评审 agent 的离线基准，基于真实 GitHub PR 构建，并参照 GitHub 上超过 1 亿个真实 PR 的语言、仓库规模和规模分布；采用多来源 golden set 与统一评分标准，并由资深工程师独立验证。GitHub 称 Copilot code review 用它做离线评估后，更能预测生产实验的方向。</p><div class="meta"><b>对你的价值</b>：如果你在给产品加 AI 评审，或把「AI 帮你看 PR」当卖点，先弄清不同评审器的取舍：有的报得多但噪音大，有的只抓关键问题。这个基准提供按严重程度、类别、precision-recall 拆分的口径，比拿几个玩具仓库自测靠谱。注意它是 GitHub 自家做的，评估口径自己再复核一遍。</div><div class="src">来源：The GitHub Blog（2026-10-05）：https://github.blog/ai-and-ml/github-copilot/reviewbench-an-open-benchmark-for-ai-code-review/</div></div><h2>增长与渠道</h2><div class="item"><h3>免费 SaaS 目录清单与「第一个自动化目录」同日出现</h3><p>goodsaas.xyz 发布 2026 年免费 SaaS 目录清单（Top Free SaaS Directories 2026），并开放免费提交；同日 HN 上还有 onlyfoundrs.com 自称「第一个自动化目录」。</p><div class="meta"><b>对你的价值</b>：目录提交是低成本、可重复的外链与曝光渠道，适合还没有内容引擎的早期产品。但回报衰减很快：这类站点数量多、质量参差，提交前先看它自身有没有搜索流量，否则换来的只是零点击外链。把提交记录做成表格（站点、日期、带来多少注册），三个月后只留真带来转化的那几个。</div><div class="src">来源：Hacker News - Newest: SaaS：https://goodsaas.xyz/blog/top-free-saas-directories-2026 ；https://onlyfoundrs.com/</div></div><h2>踩坑与风险</h2><div class="item"><h3>三个垃圾邮件投诉，你的 SaaS 邮件就进垃圾箱</h3><p>oliviapp.com 的文章《Three spam complaints and your SaaS is in the spam folder》给出一个具体阈值：少量投诉就可能让你的邮件被判为垃圾邮件。同期 Lobsters 上有自托管邮件的人抱怨，iOS 原生邮件客户端收信极慢，已经影响到接收 OTP 邮件。</p><div class="meta"><b>对你的价值</b>：注册验证、找回密码、付款回执都直接决定付费转化，一旦进垃圾箱，用户不会找你要重发，只会走人。检查两件事：发信域名有没有独立子域与认证（SPF/DKIM/DMARC），以及是否有人能轻易点「举报垃圾邮件」（比如给不活跃用户群发营销信）。</div><div class="src">来源：Hacker News - Newest: SaaS：https://oliviapp.com/blog/three-spam-complaints ；Lobsters：https://lobste.rs/s/rwloew/email_self_hosters_what_are_you_using</div></div><div class="actions"><h2>今天就能做</h2><ul><li>做一次「模型自检」：向主流模型提问你的品类（例如「推荐一个做 X 的工具」），记录它给出的产品与理由，检查自己官网与定价页信息是否最新；若模型引用的是停更或过期信息，立刻更新页面。</li><li>检查邮件送达链路：事务邮件走独立子域，SPF／DKIM／DMARC 配置齐全，营销邮件与验证信分开，避免一次性群发把注册验证和付款回执拉进垃圾箱。</li><li>给 AI 功能加一行成本日志：记录每次 agent run 的 token／调用次数并关联订单号，先跑一周看毛利；同时留意 AUDR 这类「agent 运行成本」开放标准的进展，别按用量定价却算不清成本。</li></ul></div></div>
+<div class="foot">由「独立开发者情报站」自动生成 · 内容仅供参考，不构成投资、法律或医疗建议。</div>
+</div>
+</div>
+</body>
+</html>
