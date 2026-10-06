@@ -1,5 +1,10 @@
 [
   {
+    "date": "2026-10-07",
+    "title": "独立开发者情报站 · 2026-10-07｜一台 Mac Mini 跑五个 micro-SaaS，USDC 收款",
+    "one_liner": "今天的信号：SaaS 的形态在被重写成「模型外面的那一层」，分发在往 AI 目录、工作流节点和 agent 准入标准迁移，而邮件送达与 AI 推荐的可靠性是两个没人提醒你的暗坑。"
+  },
+  {
     "date": "2026-10-06",
     "title": "独立开发者情报站｜2026-10-06：一台 Mac Mini 跑五个微SaaS，AI 推荐正在变成新货架",
     "one_liner": "有人用一台 Mac Mini 跑五个微SaaS 并以 USDC 收款；GitHub 发布 AI 代码评审基准 ReviewBench；OpenAI 将在欧盟给 ChatGPT 文本加水印；三个垃圾邮件投诉就能让你的邮件进垃圾箱。"
