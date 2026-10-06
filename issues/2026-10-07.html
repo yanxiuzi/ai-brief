@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI 情报站｜2026-10-07 周三：OpenAI 一次放出 722 篇数学手稿，「决策模型」两周打成群战</title>
+<style>
+  :root { --ink:#1b1f24; --sub:#5b6472; --line:#e6e8ec; --brand:#0f62fe; --bg:#f5f6f8; }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--bg); color:var(--ink);
+    font:16px/1.75 -apple-system,"Segoe UI","Microsoft YaHei","PingFang SC",sans-serif; }
+  .wrap { max-width:780px; margin:0 auto; padding:28px 14px 64px; }
+  .card { background:#fff; border:1px solid var(--line); border-radius:16px; overflow:hidden; }
+  .hero { padding:30px 30px 22px; border-bottom:1px solid var(--line); background:linear-gradient(180deg,#fbfcff,#fff); }
+  .brand { color:var(--brand); font-weight:700; letter-spacing:.06em; font-size:13px; }
+  h1 { font-size:26px; line-height:1.35; margin:10px 0 6px; }
+  .date { color:var(--sub); font-size:13px; }
+  .one-liner { margin:16px 0 0; padding:12px 14px; background:#f2f6ff; border-left:3px solid var(--brand);
+    border-radius:0 8px 8px 0; color:#26303d; font-size:15px; }
+  .body { padding:8px 30px 26px; }
+  h2 { font-size:18px; margin:28px 0 12px; padding-left:10px; border-left:4px solid var(--brand); }
+  .item { border:1px solid var(--line); border-radius:12px; padding:16px 18px; margin:12px 0; }
+  .item h3 { font-size:16px; margin:0 0 8px; }
+  .item p { margin:0 0 10px; color:#2c343d; }
+  .meta { font-size:13px; color:var(--sub); }
+  .meta b { color:#0b7a3b; font-weight:600; }
+  .src { font-size:12px; color:#8b93a1; margin-top:6px; word-break:break-all; }
+  .actions { margin:26px 0 0; padding:18px 20px; background:#f0fbf5; border:1px solid #cdeadb; border-radius:12px; }
+  .actions h2 { border:0; padding:0; margin:0 0 10px; font-size:16px; color:#0b7a3b; }
+  .actions li { margin:6px 0; }
+  .foot { padding:18px 30px 26px; color:#8b93a1; font-size:12px; border-top:1px solid var(--line); }
+  .mock { display:inline-block; margin-left:8px; padding:2px 8px; border-radius:99px;
+    background:#fff4e5; color:#b25e00; font-size:12px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+<div class="card">
+<div class="hero"><div class="brand">AI 情报站</div><h1>AI 情报站｜2026-10-07 周三：OpenAI 一次放出 722 篇数学手稿，「决策模型」两周打成群战</h1><div class="date">2026-10-07 周三</div><div class="one-liner">OpenAI 用未公开的前沿模型刷出一批数学成果并公开 Lean 证明，「28 天计划」同步开跑；Mistral 掏出 1 万亿参数的 Large 4；决策模型这个新品类在两周内被 OpenAI、Cloudflare、亚马逊和两家中国团队挤满，而 AIGC 影视第一次交出了破千万的分账成绩单。</div></div>
+<div class="body"><h2>头条要闻</h2><div class="item"><h3>OpenAI 一次放出 722 篇数学手稿，把前沿模型的证明搬上 GitHub</h3><p>OpenAI 公布了一批长期数学难题的解答，来自一个未公开发布的前沿模型：共计 722 篇手稿，覆盖 372 个结果族（把相关论文归组）。Lean 证明形式化与研究细节同步在 GitHub 公开。该消息在 Hacker News 首页拿到 177 分、123 条讨论。</p><div class="meta"><b>对你的价值</b>：做数学、形式化验证或科研类 AI 产品的人，这批 Lean 形式化代码是现成的训练/评测素材；数学研究者先去核对 372 个结果族里有没有和你方向重叠的，别等别人验证完再跟进。</div><div class="src">来源：OpenAI 官方博客 / The Verge / Hacker News</div></div><h2>模型与产品</h2><div class="item"><h3>Mistral Large 4 发布：1 万亿参数、490 亿激活，跑在 3800 张 Grace Blackwell 上</h3><p>法国 Mistral 发布 Mistral Large 4 预览版（代号 Le chonk），1T 总参数、49B 激活参数，用自家 3800 张 NVIDIA Grace Blackwell 集群训练，先通过官方 API 提供预览。Simon Willison 已同步更新 llm-mistral 0.16，支持这类推理模型。</p><div class="meta"><b>对你的价值</b>：想找 Claude/GPT 之外第二条腿的团队，现在可以拿 API 做 A/B 对照；用 Simon Willison 那套 llm 命令行工具的人升到 llm-mistral 0.16 就能直接试，不用自己写胶水代码。</div><div class="src">来源：Mistral 官方 / Simon Willison 博客 / Hacker News / TechCrunch</div></div><h2>工具与玩法</h2><div class="item"><h3>Claude Code 被玩成「乐高」：输入框上方养宠物，等 AI 思考时做呼吸练习</h3><p>过去两周开发者把终端改造了个遍：有人在输入框上方养像素宠物，Claude 每调用一次工具就吃一口饭、调用失败当场生病、碰上 rm -rf 会抱头惊慌；有人把 Chrome 断网小恐龙搬进来；还有人做了 4-7-8 呼吸引导，专治等 AI 思考时刷手机。Hacker News 上另一篇讨论认为，Claude Code 的「建议消息」功能真正的用户其实是模型本身。</p><div class="meta"><b>对你的价值</b>：这些玩具解决的是真实痛点——等待 AI 时的注意力管理。带团队做 Agent 产品的人可以把这种轻量可视化/陪伴式交互抄进去，比一根进度条更能留住人，也更容易被截图传播。</div><div class="src">来源：极客公园 / Hacker News</div></div><h2>变现机会</h2><div class="item"><h3>Anthropic 给初创公司免费一年 Claude Team，外加 1000 美元额度</h3><p>Anthropic 推出面向初创企业的扶持计划：免费一年企业级服务（Claude Team）加 1000 美元 token 额度。官方说法是「我们相信 AI 的好处会通过基于模型做产品的公司，而不是模型本身，触达大多数人」。</p><div class="meta"><b>对你的价值</b>：早期团队可以直接把这笔额度算进预算：一年 Team 席位加 1000 美元额度，够小团队把原型阶段的模型开销压到接近零。申请时写清楚 Claude 落在哪个业务环节、预计替代多少人力或 API 成本，别只写「提效」。</div><div class="src">来源：TechCrunch / Anthropic</div></div><div class="actions"><h2>今天就能做</h2><ul><li>本周做一次模型对照实验：同一批任务（写测试、改 bug、整理周报）分别在 Codex/Work 和当前主力模型上各跑一遍，记录差异，抓住 OpenAI 28 天计划的窗口期。</li><li>挑一个你在用的通用大模型判断任务（内容审核、工单分类、Agent 路由），换成决策模型跑一轮：OpenAI Decisions API 或开源的 Clef、PolicyLM-1.7B、StartLux-Decision 任选其一，重点比成本和延迟。</li><li>符合条件的初创团队立刻申请 Anthropic 的一年 Claude Team 加 1000 美元额度；同时在内部定一条规矩——不许用 AI 批量往开源项目和安全赏金项目灌低质量报告。</li></ul></div></div>
+<div class="foot">由「AI 情报站」自动生成 · 内容仅供参考，不构成投资、法律或医疗建议。</div>
+</div>
+</div>
+</body>
+</html>
