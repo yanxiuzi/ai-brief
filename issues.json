@@ -1,5 +1,10 @@
 [
   {
+    "date": "2026-10-06",
+    "title": "AI 情报站｜2026-10-06 简报：OpenAI 开跑「28 天计划」，Hinton 首篇 RSI 论文落地",
+    "one_liner": "OpenAI 宣布 28 天持续改进 Codex 和 Work、并承诺没新功能就重置；Hinton 发出首篇 RSI 论文，把「AI 造下一代 AI」写成研究；美国开源权重模型 Reflection Beam 以更低算力成本对标中国模型。"
+  },
+  {
     "date": "2026-10-05",
     "title": "AI 情报站｜2026-10-05：判断层两周打成群架，OpenAI 安全团队继续塌方",
     "one_liner": "决策/判断模型从 Jev 首发到多家跟进只用了两周；同期 OpenAI 安全团队再地震、英伟达市值逼近 6 万亿美元、Claude Code 被开发者玩成乐高。"
