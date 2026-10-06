@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>独立开发者情报站 · 2026-10-07｜一台 Mac Mini 跑五个 micro-SaaS，USDC 收款</title>
+<style>
+  :root { --ink:#1b1f24; --sub:#5b6472; --line:#e6e8ec; --brand:#0f62fe; --bg:#f5f6f8; }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--bg); color:var(--ink);
+    font:16px/1.75 -apple-system,"Segoe UI","Microsoft YaHei","PingFang SC",sans-serif; }
+  .wrap { max-width:780px; margin:0 auto; padding:28px 14px 64px; }
+  .card { background:#fff; border:1px solid var(--line); border-radius:16px; overflow:hidden; }
+  .hero { padding:30px 30px 22px; border-bottom:1px solid var(--line); background:linear-gradient(180deg,#fbfcff,#fff); }
+  .brand { color:var(--brand); font-weight:700; letter-spacing:.06em; font-size:13px; }
+  h1 { font-size:26px; line-height:1.35; margin:10px 0 6px; }
+  .date { color:var(--sub); font-size:13px; }
+  .one-liner { margin:16px 0 0; padding:12px 14px; background:#f2f6ff; border-left:3px solid var(--brand);
+    border-radius:0 8px 8px 0; color:#26303d; font-size:15px; }
+  .body { padding:8px 30px 26px; }
+  h2 { font-size:18px; margin:28px 0 12px; padding-left:10px; border-left:4px solid var(--brand); }
+  .item { border:1px solid var(--line); border-radius:12px; padding:16px 18px; margin:12px 0; }
+  .item h3 { font-size:16px; margin:0 0 8px; }
+  .item p { margin:0 0 10px; color:#2c343d; }
+  .meta { font-size:13px; color:var(--sub); }
+  .meta b { color:#0b7a3b; font-weight:600; }
+  .src { font-size:12px; color:#8b93a1; margin-top:6px; word-break:break-all; }
+  .actions { margin:26px 0 0; padding:18px 20px; background:#f0fbf5; border:1px solid #cdeadb; border-radius:12px; }
+  .actions h2 { border:0; padding:0; margin:0 0 10px; font-size:16px; color:#0b7a3b; }
+  .actions li { margin:6px 0; }
+  .foot { padding:18px 30px 26px; color:#8b93a1; font-size:12px; border-top:1px solid var(--line); }
+  .mock { display:inline-block; margin-left:8px; padding:2px 8px; border-radius:99px;
+    background:#fff4e5; color:#b25e00; font-size:12px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+<div class="card">
+<div class="hero"><div class="brand">独立开发者情报站</div><h1>独立开发者情报站 · 2026-10-07｜一台 Mac Mini 跑五个 micro-SaaS，USDC 收款</h1><div class="date">2026-10-07 周三</div><div class="one-liner">今天的信号：SaaS 的形态在被重写成「模型外面的那一层」，分发在往 AI 目录、工作流节点和 agent 准入标准迁移，而邮件送达与 AI 推荐的可靠性是两个没人提醒你的暗坑。</div></div>
+<div class="body"><h2>产品与收入</h2><div class="item"><h3>一台 Mac Mini 跑五个 micro-SaaS，用 USDC 收款</h3><p>HN 上有人发 Show HN「I run five micro-SaaS products on one Mac Mini, billed in USDC」，落地页是 store.watchtbot.site：把多个微型产品塞进单台 Mac Mini，结算货币用稳定币 USDC。该帖热度很低（1 分、0 评论），说明这套打法目前仍属极少数。</p><div class="meta"><b>对你的价值</b>：一人多产品的边际成本可以被压到很低——一台机器加一条收款通道，这是可以照着抄的运营结构。USDC 收款能绕开部分法币支付渠道和地区限制，但下单前先确认你的目标客户是否习惯用稳定币付款，以及记账、税务、退款怎么处理。这帖只有 1 分 0 评论、没有任何收入数字，别把它当成已验证的商业模式。</div><div class="src">来源：Hacker News - Newest: &quot;SaaS&quot;，https://store.watchtbot.site</div></div><h2>工具与栈</h2><div class="item"><h3>OpenAI Decisions API 进入公测</h3><p>OpenAI 开发者文档上线 Decisions API 公测页（developers.openai.com/api/docs/guides/decisions），在 HN 上拿到 88 分、32 条评论。素材未给出该接口的具体能力细节。</p><div class="meta"><b>对你的价值</b>：平台方新开的 API 往往是新产品形态的起点：早期接入成本低、用的人少、能吃到一波时间差。但公测接口的行为和返回结构随时可能变，接入时务必在你自己这层做封装，别让业务逻辑直接绑死在它的响应格式上。</div><div class="src">来源：Hacker News: Front Page / HN（developers.openai.com），https://developers.openai.com/api/docs/guides/decisions</div></div><h2>增长与渠道</h2><div class="item"><h3>2026 版免费 SaaS 目录清单被重新整理</h3><p>goodsaas.xyz 发布《top free SaaS directories 2026》，整理了一批可免费提交的 SaaS 目录，宣称用于上架并提升曝光。同一时间段 HN 上还出现多篇「免费上架、获得曝光」的帖子。</p><div class="meta"><b>对你的价值</b>：目录提交是零预算冷启动里成本最低的一批初始曝光和外链来源，但目录之间质量差距极大。做法是先挑 3 个和你品类强相关、本身有真实流量的，认真写好文案提交，别把整份清单一次性批量刷完——批量提交留下的低质外链只会拉低站点质量。</div><div class="src">来源：Hacker News - Newest: &quot;SaaS&quot;（goodsaas.xyz），https://goodsaas.xyz/blog/top-free-saas-directories-2026</div></div><h2>踩坑与风险</h2><div class="item"><h3>三封垃圾邮件投诉，你的 SaaS 邮件就进垃圾箱</h3><p>oliviapp.com 的博客文章《Three spam complaints and your SaaS is in the spam folder》给出的判断是：仅仅三封垃圾投诉，就足以让产品邮件被投进垃圾箱。</p><div class="meta"><b>对你的价值</b>：验证邮件、登录 OTP、试用到期提醒、发票通知，这些是 SaaS 的命脉，恰恰也是最容易被误报的一类邮件。把投诉率和送达率当一级指标监控，注册流程里给用户一条不依赖邮箱的备用验证路径，别等到某天用户集体收不到验证码才发现问题。</div><div class="src">来源：Hacker News - Newest: &quot;SaaS&quot;（oliviapp.com），https://oliviapp.com/blog/three-spam-complaints</div></div><div class="actions"><h2>今天就能做</h2><ul><li>今天就去查你产品的邮件送达：把垃圾投诉率和送达率接上监控，并给用户准备一条不依赖邮箱的备用验证/找回路径。</li><li>从 goodsaas.xyz 的免费目录清单里只挑 3 个与你品类强相关、有真实流量的入口，本周认真写好文案提交；其余批量目录直接放弃。</li><li>花 30 分钟照着 OpenAI Decisions API 公测文档做最小 demo，判断它能不能替掉你现在某个自研环节；同时用 EmbeddingGemma 2 跑一版本地检索/打标签基准，对比当前 API 账单。</li></ul></div></div>
+<div class="foot">由「独立开发者情报站」自动生成 · 内容仅供参考，不构成投资、法律或医疗建议。</div>
+</div>
+</div>
+</body>
+</html>
