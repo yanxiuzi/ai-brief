@@ -1,5 +1,10 @@
 [
   {
+    "date": "2026-10-07",
+    "title": "AI 情报站｜2026-10-07 周三：OpenAI 一次放出 722 篇数学手稿，「决策模型」两周打成群战",
+    "one_liner": "OpenAI 用未公开的前沿模型刷出一批数学成果并公开 Lean 证明，「28 天计划」同步开跑；Mistral 掏出 1 万亿参数的 Large 4；决策模型这个新品类在两周内被 OpenAI、Cloudflare、亚马逊和两家中国团队挤满，而 AIGC 影视第一次交出了破千万的分账成绩单。"
+  },
+  {
     "date": "2026-10-06",
     "title": "AI 情报站｜2026-10-06 简报：OpenAI 开跑「28 天计划」，Hinton 首篇 RSI 论文落地",
     "one_liner": "OpenAI 宣布 28 天持续改进 Codex 和 Work、并承诺没新功能就重置；Hinton 发出首篇 RSI 论文，把「AI 造下一代 AI」写成研究；美国开源权重模型 Reflection Beam 以更低算力成本对标中国模型。"
