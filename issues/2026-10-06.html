@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI 情报站｜2026-10-06 简报：OpenAI 开跑「28 天计划」，Hinton 首篇 RSI 论文落地</title>
+<style>
+  :root { --ink:#1b1f24; --sub:#5b6472; --line:#e6e8ec; --brand:#0f62fe; --bg:#f5f6f8; }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--bg); color:var(--ink);
+    font:16px/1.75 -apple-system,"Segoe UI","Microsoft YaHei","PingFang SC",sans-serif; }
+  .wrap { max-width:780px; margin:0 auto; padding:28px 14px 64px; }
+  .card { background:#fff; border:1px solid var(--line); border-radius:16px; overflow:hidden; }
+  .hero { padding:30px 30px 22px; border-bottom:1px solid var(--line); background:linear-gradient(180deg,#fbfcff,#fff); }
+  .brand { color:var(--brand); font-weight:700; letter-spacing:.06em; font-size:13px; }
+  h1 { font-size:26px; line-height:1.35; margin:10px 0 6px; }
+  .date { color:var(--sub); font-size:13px; }
+  .one-liner { margin:16px 0 0; padding:12px 14px; background:#f2f6ff; border-left:3px solid var(--brand);
+    border-radius:0 8px 8px 0; color:#26303d; font-size:15px; }
+  .body { padding:8px 30px 26px; }
+  h2 { font-size:18px; margin:28px 0 12px; padding-left:10px; border-left:4px solid var(--brand); }
+  .item { border:1px solid var(--line); border-radius:12px; padding:16px 18px; margin:12px 0; }
+  .item h3 { font-size:16px; margin:0 0 8px; }
+  .item p { margin:0 0 10px; color:#2c343d; }
+  .meta { font-size:13px; color:var(--sub); }
+  .meta b { color:#0b7a3b; font-weight:600; }
+  .src { font-size:12px; color:#8b93a1; margin-top:6px; word-break:break-all; }
+  .actions { margin:26px 0 0; padding:18px 20px; background:#f0fbf5; border:1px solid #cdeadb; border-radius:12px; }
+  .actions h2 { border:0; padding:0; margin:0 0 10px; font-size:16px; color:#0b7a3b; }
+  .actions li { margin:6px 0; }
+  .foot { padding:18px 30px 26px; color:#8b93a1; font-size:12px; border-top:1px solid var(--line); }
+  .mock { display:inline-block; margin-left:8px; padding:2px 8px; border-radius:99px;
+    background:#fff4e5; color:#b25e00; font-size:12px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+<div class="card">
+<div class="hero"><div class="brand">AI 情报站</div><h1>AI 情报站｜2026-10-06 简报：OpenAI 开跑「28 天计划」，Hinton 首篇 RSI 论文落地</h1><div class="date">2026-10-06 周二</div><div class="one-liner">OpenAI 宣布 28 天持续改进 Codex 和 Work、并承诺没新功能就重置；Hinton 发出首篇 RSI 论文，把「AI 造下一代 AI」写成研究；美国开源权重模型 Reflection Beam 以更低算力成本对标中国模型。</div></div>
+<div class="body"><h2>头条要闻</h2><div class="item"><h3>OpenAI 启动「28 天计划」：连更 Codex 和 Work，承诺没新功能就重置</h3><p>极客公园报道，OpenAI 宣布「28 天计划」，将持续改进 Codex、Work；量子位同期记录首日已经开跑，社区流传的说法是「限时 28 天，有改进就体验，没改进就重置，横竖不亏」，评论区不少网友表示只想要 Opus。</p><div class="meta"><b>对你的价值</b>：这 28 天是你判断「要不要为 OpenAI 工具付费或迁移」的真实观察窗口：按周看 Codex、Work 是否真的发功能，再决定把团队工作流搬过去。别为发布会预告买单，只为这个月能用上的东西买单。</div><div class="src">来源：极客公园 http://www.geekpark.net/news/372086 ；量子位 https://www.qbitai.com/2026/10/501726.html 、https://www.qbitai.com/2026/10/501700.html</div></div><h2>模型与产品</h2><div class="item"><h3>OpenAI 发布 GPT-6 家族选型指南，GPT-6.1 Sol 价格仅为 Astra 五分之一</h3><p>OpenAI 官方发布《A model guide for the GPT-6 family》，讲创业公司如何选择 GPT-6 型号、调整 reasoning effort、改进 prompt 和技能、编排工具、把工作流推进到生产；同时推出 GPT-6.1 Sol，官方定位为面向编码、computer use 和专业工作的「接近 Astra 的智能」，标准 API 输入输出 token 价格是 Astra 的五分之一（爱范儿早报同样以「价格仅 Astra 的五分之一」报道）。</p><div class="meta"><b>对你的价值</b>：价格降到五分之一，意味着很多工作流可以整体换模型、把贵的模型只留关键环节，成本结构会明显变化；官方选型指南可直接当迁移 checklist 用，照着调 reasoning effort 和工具编排，比在群里问「该用哪个模型」靠谱。</div><div class="src">来源：OpenAI https://openai.com/index/practical-guide-building-gpt-6 、https://openai.com/index/introducing-gpt-6-1-sol ；爱范儿 https://www.ifanr.com/1682554</div></div><h2>工具与玩法</h2><div class="item"><h3>Claude Code 被玩成「乐高」：像素宠物、小恐龙和呼吸练习都进场了</h3><p>极客公园记录，最近两周开发者把 Claude Code 的终端彻底带偏：有人在输入框上方养像素宠物，Claude 每调用一次工具宠物就吃一口饭、调用失败当场生病、碰到 rm -rf 会抱头惊慌；有人把 Chrome 断网小恐龙搬进来，AI 写代码时人按空格跳仙人掌；还有人嫌等 AI 思考时忍不住刷手机，做了个 4-7-8 呼吸练习。</p><div class="meta"><b>对你的价值</b>：说明 Claude Code 已可当作可插拔的终端舞台：照这个思路，你可以给团队做长任务的进度可视化、失败预警和状态提示，缓解「它到底跑没跑」的焦虑。做开源小插件也是低成本获客路径，但危险命令的提示逻辑得真的有用，别只做玩具。</div><div class="src">来源：极客公园 http://www.geekpark.net/news/372074</div></div><h2>变现机会</h2><div class="item"><h3>最火 AI 岗位 FDE：月薪 5 万</h3><p>量子位报道称，FDE 是当下最火的 AI 岗位，月薪 5 万，文章同时追问：什么是 FDE？它会一直存在吗？</p><div class="meta"><b>对你的价值</b>：这是薪资明确、缺口明确的岗位方向，适合「懂一点技术 + 懂客户业务」的人切入。想转行的可以按岗位描述补能力；做自由职业的可以把「驻场落地 + 交付」打包成服务来卖，而不是只卖 prompt。</div><div class="src">来源：量子位 https://www.qbitai.com/2026/10/501506.html</div></div><div class="actions"><h2>今天就能做</h2><ul><li>今天挑一条你现有的 prompt，对照 OpenAI 的 GPT-6 家族指南重写一版（重点调 reasoning effort 和工具编排），并在这 28 天里用 Codex、Work 的更新做对照测试，记录效果和成本变化。</li><li>找一个你真实在跑的分类、审核或路由任务，用决策类模型（Jev、Intern-Decision、StartLux-Decision、Clef、Decisions API 里任选两个）跑同一批数据，比准确率和单次成本，再决定是否替换现在多用的大模型。</li><li>做内容变现的，研究《灵魂摆渡》「浮生梦」系列的节奏（首周回本 → 首月 800 万 → 三部落总破千万），用「经典 IP + 系列化 + AIGC 降本」做一个三集最小可验证企划，别一上来就押一部长片。</li></ul></div></div>
+<div class="foot">由「AI 情报站」自动生成 · 内容仅供参考，不构成投资、法律或医疗建议。</div>
+</div>
+</div>
+</body>
+</html>
