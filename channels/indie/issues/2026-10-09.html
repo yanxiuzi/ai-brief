@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>独立开发者情报站 2026-10-09｜一台 Mac Mini 跑五个微 SaaS、按 USDC 收款</title>
+<style>
+  :root { --ink:#1b1f24; --sub:#5b6472; --line:#e6e8ec; --brand:#0f62fe; --bg:#f5f6f8; }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--bg); color:var(--ink);
+    font:16px/1.75 -apple-system,"Segoe UI","Microsoft YaHei","PingFang SC",sans-serif; }
+  .wrap { max-width:780px; margin:0 auto; padding:28px 14px 64px; }
+  .card { background:#fff; border:1px solid var(--line); border-radius:16px; overflow:hidden; }
+  .hero { padding:30px 30px 22px; border-bottom:1px solid var(--line); background:linear-gradient(180deg,#fbfcff,#fff); }
+  .brand { color:var(--brand); font-weight:700; letter-spacing:.06em; font-size:13px; }
+  h1 { font-size:26px; line-height:1.35; margin:10px 0 6px; }
+  .date { color:var(--sub); font-size:13px; }
+  .one-liner { margin:16px 0 0; padding:12px 14px; background:#f2f6ff; border-left:3px solid var(--brand);
+    border-radius:0 8px 8px 0; color:#26303d; font-size:15px; }
+  .body { padding:8px 30px 26px; }
+  h2 { font-size:18px; margin:28px 0 12px; padding-left:10px; border-left:4px solid var(--brand); }
+  .item { border:1px solid var(--line); border-radius:12px; padding:16px 18px; margin:12px 0; }
+  .item h3 { font-size:16px; margin:0 0 8px; }
+  .item p { margin:0 0 10px; color:#2c343d; }
+  .meta { font-size:13px; color:var(--sub); }
+  .meta b { color:#0b7a3b; font-weight:600; }
+  .src { font-size:12px; color:#8b93a1; margin-top:6px; word-break:break-all; }
+  .actions { margin:26px 0 0; padding:18px 20px; background:#f0fbf5; border:1px solid #cdeadb; border-radius:12px; }
+  .actions h2 { border:0; padding:0; margin:0 0 10px; font-size:16px; color:#0b7a3b; }
+  .actions li { margin:6px 0; }
+  .foot { padding:18px 30px 26px; color:#8b93a1; font-size:12px; border-top:1px solid var(--line); }
+  .mock { display:inline-block; margin-left:8px; padding:2px 8px; border-radius:99px;
+    background:#fff4e5; color:#b25e00; font-size:12px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+<div class="card">
+<div class="hero"><div class="brand">独立开发者情报站</div><h1>独立开发者情报站 2026-10-09｜一台 Mac Mini 跑五个微 SaaS、按 USDC 收款</h1><div class="date">2026-10-09 周五</div><div class="one-liner">今天三条线同时冒头：给 AI 电话代理做自动化测试、用手机远程盯本地 agent、开源替代商业 SaaS；风险面则是被 Google 去索引、邮件送达率和模型供应商的收入预期下调。</div></div>
+<div class="body"><h2>产品与收入</h2><div class="item"><h3>前 SDET 单人做的 VoiceGremlin：给 AI 电话代理写自动化测试</h3><p>VoiceGremlin 是面向 AI 电话代理的自动化测试 SaaS，作者自称前 SDET、现在是这个产品的单人开发者。用法是给 API 一个电话号码加一条测试用例（例如「验证 agent 会做 X」），它让机器人之间互相对话完成测试，再用 LLM-as-judge 给出 pass/fail 结果接进你的流水线。目前状态是可完整运行、有免费试用、不需要信用卡。</p><div class="meta"><b>对你的价值</b>：语音/客服 agent 正在批量上线，但「怎么验收」几乎没人做，这是一人公司能切进去的窄缝。免费试用不绑卡降低了使用门槛，代价是你必须在试用期内把价值演示清楚，否则全是白嫖流量。这套「输入号码 + 用例 → 机器人互打 → LLM 判定」的形态，可以直接搬去测你自己的 agent 功能。</div><div class="src">来源：Hacker News（Show HN）— https://voicegremlin.com/</div></div><h2>工具与栈</h2><div class="item"><h3>Whistle：16.9 MB 的语音转文字</h3><p>cactuscompute 发布的 Whistle 把语音转文字做到 16.9 MB，在 HN 首页拿到 573 分，是当天热度最高的条目之一。</p><div class="meta"><b>对你的价值</b>：体积小意味着能塞进端侧（浏览器/手机/桌面），既不必为转写单独付云端 API 费用，也不必把用户音频传出去——这在隐私敏感或按次计费的产品里是很硬的卖点。可以据此重新评估：产品里哪些 AI 能力其实能本地做，把成本结构从「每次调用付费」改成「一次性打包」。上线前一定要跑真实的中文、口音、噪声场景，端侧小模型在长音频上更容易翻车。</div><div class="src">来源：Hacker News — https://cactuscompute.com/blog/whistle</div></div><h2>增长与渠道</h2><div class="item"><h3>OnlyFoundrs：把 SaaS 目录站这件事自动化</h3><p>OnlyFoundrs 自称是「第一个自动化目录」，做的是自动化的 SaaS 目录站。</p><div class="meta"><b>对你的价值</b>：产品目录/榜单一直是免费曝光的常规操作，现在连目录本身都在被批量化生产。这有两面：提交成本会更低、能批量覆盖更多目录；但目录站会迅速同质化、权重被稀释，甚至被搜索引擎判为低质站。别把「提交目录」当成增长主线，当顺手做掉的一步，重点还是落地页本身的转化。</div><div class="src">来源：Hacker News — https://onlyfoundrs.com/</div></div><h2>踩坑与风险</h2><div class="item"><h3>一位开发者被 Google 去索引</h3><p>Lobsters 上有一篇个人记录《I&#x27;ve Been Deindexed by Google》，作者记录了自己被 Google 从索引中移除的经历。</p><div class="meta"><b>对你的价值</b>：对靠搜索拿流量的独立产品来说，被去索引基本等于当天收入归零，而且恢复周期不由你控制。可执行动作：让自然搜索之外至少还有一条自有渠道（邮件列表、社群、工作流平台节点），定期换搜索引擎和匿名窗口检查自己是否还能被搜到，别把全部业务压在单一域名上。素材没有说明该作者被去索引的具体原因，别把它当成自己站点的诊断结论。</div><div class="src">来源：Lobsters — https://kennyqin.com/deindexed-by-google/</div></div><div class="actions"><h2>今天就能做</h2><ul><li>把所有域名的证书续期改成全自动：Let&#x27;s Encrypt 已宣布 64 天证书 2027 年 2 月起生效，继续靠日历提醒手更，迟早会挂站。</li><li>给 AI 功能加成本与路由闸门：参考 Stack Overflow 那组 LLM 运维文章的框架，做观测、设成本上限、支持多模型路由与快速熔断，同时确认没有把某一家模型写进客户承诺。</li><li>做一次渠道体检：确认你在主流搜索引擎里还能被搜到，发信子域与投诉率有监控，并且至少有一条完全不依赖 Google 的获客渠道。</li></ul></div></div>
+<div class="foot">由「独立开发者情报站」自动生成 · 内容仅供参考，不构成投资、法律或医疗建议。</div>
+</div>
+</div>
+</body>
+</html>
