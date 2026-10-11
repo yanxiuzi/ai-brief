@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>独立开发者情报站｜2026-10-12：窄场景产品集体上架、模型降价但上下文更贵、Passkey 之争</title>
+<style>
+  :root { --ink:#1b1f24; --sub:#5b6472; --line:#e6e8ec; --brand:#0f62fe; --bg:#f5f6f8; }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--bg); color:var(--ink);
+    font:16px/1.75 -apple-system,"Segoe UI","Microsoft YaHei","PingFang SC",sans-serif; }
+  .wrap { max-width:780px; margin:0 auto; padding:28px 14px 64px; }
+  .card { background:#fff; border:1px solid var(--line); border-radius:16px; overflow:hidden; }
+  .hero { padding:30px 30px 22px; border-bottom:1px solid var(--line); background:linear-gradient(180deg,#fbfcff,#fff); }
+  .brand { color:var(--brand); font-weight:700; letter-spacing:.06em; font-size:13px; }
+  h1 { font-size:26px; line-height:1.35; margin:10px 0 6px; }
+  .date { color:var(--sub); font-size:13px; }
+  .one-liner { margin:16px 0 0; padding:12px 14px; background:#f2f6ff; border-left:3px solid var(--brand);
+    border-radius:0 8px 8px 0; color:#26303d; font-size:15px; }
+  .body { padding:8px 30px 26px; }
+  h2 { font-size:18px; margin:28px 0 12px; padding-left:10px; border-left:4px solid var(--brand); }
+  .item { border:1px solid var(--line); border-radius:12px; padding:16px 18px; margin:12px 0; }
+  .item h3 { font-size:16px; margin:0 0 8px; }
+  .item p { margin:0 0 10px; color:#2c343d; }
+  .meta { font-size:13px; color:var(--sub); }
+  .meta b { color:#0b7a3b; font-weight:600; }
+  .src { font-size:12px; color:#8b93a1; margin-top:6px; word-break:break-all; }
+  .actions { margin:26px 0 0; padding:18px 20px; background:#f0fbf5; border:1px solid #cdeadb; border-radius:12px; }
+  .actions h2 { border:0; padding:0; margin:0 0 10px; font-size:16px; color:#0b7a3b; }
+  .actions li { margin:6px 0; }
+  .foot { padding:18px 30px 26px; color:#8b93a1; font-size:12px; border-top:1px solid var(--line); }
+  .mock { display:inline-block; margin-left:8px; padding:2px 8px; border-radius:99px;
+    background:#fff4e5; color:#b25e00; font-size:12px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+<div class="card">
+<div class="hero"><div class="brand">独立开发者情报站</div><h1>独立开发者情报站｜2026-10-12：窄场景产品集体上架、模型降价但上下文更贵、Passkey 之争</h1><div class="date">2026-10-12 周一</div><div class="one-liner">同一天 Product Hunt 上几乎全是「替某类人做重复输出」的窄场景产品；模型侧一边降价一边按上下文档位加价，直接决定你的定价空间；订阅取消在纽约已经从建议变成硬规则。</div></div>
+<div class="body"><h2>产品与收入</h2><div class="item"><h3>MePersona：用你的声音回每条粉丝评论，创作者工具上架 PH</h3><p>Product Hunt 10 月 11 日上架，定位一句话：「Answer every fan comment in your voice」——替创作者以其本人语气回复粉丝评论。同批上架的还有 kōdlo（统一上下文的端到端销售工作区）和 HireKey（面向技术求职的 AI copilot）。</p><div class="meta"><b>对你的价值</b>：这三类产品的共同点：用户已经有一个每天都要重复输出、且直接关联收入的动作（粉丝互动、销售跟进、找工作）。选方向时优先挑「用户已经在手工做、而且做不好会掉钱」的重复劳动，比做又一个通用聊天助手更容易收到第一笔钱。</div><div class="src">来源：Product Hunt 2026-10-11，https://www.producthunt.com/products/mepersona ；https://www.producthunt.com/products/kodlo</div></div><h2>工具与栈</h2><div class="item"><h3>Claude 动态多 Agent 工作流公测：主 agent 写计划，跨多个 agent 分阶段跑再合并</h3><p>Claude Managed Agents dynamic workflows 进入公开测试，官方说法是为最庞大的工作负载而生：一个主 agent 写计划，计划跨多个 agent 分阶段运行，最后合并结果。官方拿一条 116k 行的代码库做了对比实验。</p><div class="meta"><b>对你的价值</b>：如果你手上有一个单次上下文塞不下的任务（大仓库重构、批量迁移、长文档流水线），这是不用自己写编排层就能试的方案。先跑小样本，并把子任务之间的输入输出契约写死，否则合并阶段本身就是新的 bug 来源。</div><div class="src">来源：OSCHINA 2026-10-10，https://www.oschina.net/news/502951</div></div><h2>增长与渠道</h2><div class="item"><h3>冷启动的捷径：挑一个已经有线下社群的窄品类</h3><p>Product Hunt 同一天上架的三款产品是：Kooler（用你酒柜里现有材料找能做的鸡尾酒）、Tori（用你自己的句子练日语听力 SRS）、Pickle Sensei（单人训练的 AI 匹克球教练）。三个都不是通用工具，每个都绑定一个已有社群和线下活动的小品类。</p><div class="meta"><b>对你的价值</b>：这类品类的启动成本最低：用户聚在明确的社区里、能自己说清痛点、愿意为「今天就能用上」付费。做增长时优先找这类场景，比在泛 AI 话题里和大厂抢注意力现实得多。</div><div class="src">来源：Product Hunt 2026-10-11，https://www.producthunt.com/products/kooler-2 ；https://www.producthunt.com/products/tori-japanese-listening-srs ；https://www.producthunt.com/products/pickle-sensei-dink-coach</div></div><h2>踩坑与风险</h2><div class="item"><h3>「Passkeys 是陷阱，别用」——当天 HN 争论最激烈的技术话题之一</h3><p>一篇题为 Passkeys are a trap. Do not use them 的文章在 Hacker News 拿到 123 分、50 条评论。</p><div class="meta"><b>对你的价值</b>：登录方式是用户能不能回来的命门。在改注册流程之前先想清楚：用户换设备、换平台、丢失凭据时你的兜底路径是什么，有没有保留邮箱密码或恢复码。别在一个还没吵出共识的方案上，把整条注册转化押上去。</div><div class="src">来源：Hacker News / nonfunctional.substack.com 2026-10-11，https://nonfunctional.substack.com/p/passkeys-are-a-trap-do-not-use-them</div></div><div class="actions"><h2>今天就能做</h2><ul><li>把自己的退订流程完整走一遍（登录→取消→确认停扣），确保取消和订阅一样简单，对标纽约已生效的 Click to Cancel。</li><li>整理一张自己的 AI 成本表：所有订阅与 API 余额、以及每个模型在不同上下文档位下的每轮消耗，再决定免费额度给多少。</li><li>如果你在职做副业：翻一遍劳动合同里的知识产权与竞业条款，把个人项目迁到自己的设备、账号和仓库，并留存开发时间记录。</li></ul></div></div>
+<div class="foot">由「独立开发者情报站」自动生成 · 内容仅供参考，不构成投资、法律或医疗建议。</div>
+</div>
+</div>
+</body>
+</html>
