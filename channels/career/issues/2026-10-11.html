@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>职场信号站 · 2026-10-11：AI agent 开始被「上锁」，会验证的人比会生成的人更值钱</title>
+<style>
+  :root { --ink:#1b1f24; --sub:#5b6472; --line:#e6e8ec; --brand:#0f62fe; --bg:#f5f6f8; }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--bg); color:var(--ink);
+    font:16px/1.75 -apple-system,"Segoe UI","Microsoft YaHei","PingFang SC",sans-serif; }
+  .wrap { max-width:780px; margin:0 auto; padding:28px 14px 64px; }
+  .card { background:#fff; border:1px solid var(--line); border-radius:16px; overflow:hidden; }
+  .hero { padding:30px 30px 22px; border-bottom:1px solid var(--line); background:linear-gradient(180deg,#fbfcff,#fff); }
+  .brand { color:var(--brand); font-weight:700; letter-spacing:.06em; font-size:13px; }
+  h1 { font-size:26px; line-height:1.35; margin:10px 0 6px; }
+  .date { color:var(--sub); font-size:13px; }
+  .one-liner { margin:16px 0 0; padding:12px 14px; background:#f2f6ff; border-left:3px solid var(--brand);
+    border-radius:0 8px 8px 0; color:#26303d; font-size:15px; }
+  .body { padding:8px 30px 26px; }
+  h2 { font-size:18px; margin:28px 0 12px; padding-left:10px; border-left:4px solid var(--brand); }
+  .item { border:1px solid var(--line); border-radius:12px; padding:16px 18px; margin:12px 0; }
+  .item h3 { font-size:16px; margin:0 0 8px; }
+  .item p { margin:0 0 10px; color:#2c343d; }
+  .meta { font-size:13px; color:var(--sub); }
+  .meta b { color:#0b7a3b; font-weight:600; }
+  .src { font-size:12px; color:#8b93a1; margin-top:6px; word-break:break-all; }
+  .actions { margin:26px 0 0; padding:18px 20px; background:#f0fbf5; border:1px solid #cdeadb; border-radius:12px; }
+  .actions h2 { border:0; padding:0; margin:0 0 10px; font-size:16px; color:#0b7a3b; }
+  .actions li { margin:6px 0; }
+  .foot { padding:18px 30px 26px; color:#8b93a1; font-size:12px; border-top:1px solid var(--line); }
+  .mock { display:inline-block; margin-left:8px; padding:2px 8px; border-radius:99px;
+    background:#fff4e5; color:#b25e00; font-size:12px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+<div class="card">
+<div class="hero"><div class="brand">职场信号站</div><h1>职场信号站 · 2026-10-11：AI agent 开始被「上锁」，会验证的人比会生成的人更值钱</h1><div class="date">2026-10-11 周日</div><div class="one-liner">本周最值得注意的信号是，头部公司一边在收紧 agent 的权限（Anthropic 关掉内部评估的联网、微软 CEO 喊话要「紧急刹车」），一边把 evals、可观测性、成本与路由写成了生产级系统的标准层——招聘市场上，「我怎么知道它没出错」正在变成比「我会调用大模型」更硬的技能。</div></div>
+<div class="body"><h2>行业冷暖</h2><div class="item"><h3>Cloudflare 收购 Deno，用来改造 Workers 编程模型</h3><p>TechCrunch 10 月 10 日报道，Cloudflare 收购 Deno，并将用这次收购改进其 Workers 编程模型和平台。素材未披露交易金额与具体整合时间表。</p><div class="meta"><b>对你的价值</b>：如果你在做服务端 JavaScript/TypeScript、边缘运行时或 Serverless，这次整合会影响你的技术选型：押注前先等 Cloudflare 官方说明哪些 API、哪些生态会长期保留。面试中能讲清「边缘运行时与传统 Node 服务的差别、迁移风险在哪」，比只会写业务代码更容易被记住。</div><div class="src">来源：TechCrunch：https://techcrunch.com/2026/10/10/cloudflare-acquires-deno-to-improve-its-workers-programming-model/</div></div><h2>技能与岗位</h2><div class="item"><h3>Stack Overflow 把「生产级 LLM 与 agent」拆成六层，等于一份技能清单</h3><p>Stack Overflow 在 10 月 7—8 日连续发布《Production-grade LLMs and agents: a field guide》及 Part 1—6，内容覆盖：把 agent 变「无聊」的确定性层、把手动评估当作部署门并监测漂移、知道自己不知道的置信层、安全与治理（guardrails、PII、审计、记忆）、运行 LLM 系统的可观测性/成本/路由/底层平台，以及给 coding agent 的「操作系统」（用一小组文件和规则，防止几个月、上千次改动后质量衰减）。</p><div class="meta"><b>对你的价值</b>：这是一份可以直接当学习路线图的清单。简历里只写「用过某大模型 API / 某框架」没什么说服力；从这六层里挑两层做成可讲的项目——比如给 agent 加一道 eval 部署门 + 成本与模型路由——面试时你能回答「我怎么知道它没胡说、超支了怎么办」，这才是当前雇主最缺的能力。</div><div class="src">来源：Stack Overflow Blog：https://stackoverflow.blog/2026/10/08/production-grade-llms-and-agents-a-field-guide/ ；https://stackoverflow.blog/2026/10/08/part-5-operating-an-llm-system-observability-cost-routing-and-the-platform-underneath/ ；https://stackoverflow.blog/2026/10/07/part-6-an-operating-system-for-coding-agents-the-disciplined-build/</div></div><h2>求职方法</h2><div class="item"><h3>GitHub 说黑客松仍是学做东西最好的地方——对没项目经历的应届生尤其如此</h3><p>GitHub 博客 10 月 9 日发文《Hack the World》，观点是构建软件的门槛已经崩塌、今天任何人都能构建，黑客松仍是开始学习和动手做产品的好地方。</p><div class="meta"><b>对你的价值</b>：对简历里没有项目经历的应届生，黑客松是几周内产出可展示作品的最快路径，还能顺带证明你在团队里的分工与协作能力。做法要具体：别只报名，选一个 48 小时内能跑出 demo 的题目，结束后把代码仓库链接和一篇复盘（做了什么、卡在哪、怎么绕过去）放进简历——招聘方看的是你能不能收尾。</div><div class="src">来源：GitHub Blog：https://github.blog/developer-skills/career-growth/hack-the-world-why-hackathons-are-still-the-best-place-to-learn-to-build/</div></div><h2>趋势与政策</h2><div class="item"><h3>四部门就汽车创新设计与研发测试验证征求意见，一汽回应「不成熟不上车」</h3><p>IT 之家报道，10 月 10 日工业和信息化部等四部门公开发布关于进一步加强汽车产品创新设计和研发测试验证有关管理工作的通知（征求意见稿）。当天晚间，中国一汽发文表示坚持「不成熟不上车、未充分验证不上市」，并称该管理要求将指导生产企业加强创新设计安全评估，以及综合可靠性、环境适应性等研发测试验证，对防范有安全隐患的创新设计、未经充分验证的产品进入市场有重要意义。</p><div class="meta"><b>对你的价值</b>：政策方向指向更严格的验证要求（注意仍是征求意见稿，具体条款要看正式版本）。如果你在汽车或硬件行业做测试、验证、可靠性、功能安全，这是能在简历和内部汇报里直接引用的政策依据，也是判断「哪些岗位稳、哪些只是风口」的参照。</div><div class="src">来源：IT 之家：https://www.ithome.com/1/011/568.htm</div></div><div class="actions"><h2>今天就能做</h2><ul><li>本周挑 Stack Overflow 系列的「evals 作为部署门」和「可观测性/成本/路由」两层，给手上的项目加一个最小可用的评估脚本或成本看板，并把过程写成一段能放进简历的说明。</li><li>把简历里的「用过某某大模型/框架」改写成具体回答：我怎么验证输出、出错怎么兜底、超支怎么控制；面试前准备一个「agent 越权或说错话」的处置故事。</li><li>做一份团队风险清单并跟踪政策：谁能联网、哪些操作可以自动执行、出问题几秒内怎么停；汽车/硬件方向同时留意四部门征求意见稿的正式版本，AI 方向留意 Anthropic 与微软在评估隔离、紧急刹车上的后续动作。</li></ul></div></div>
+<div class="foot">由「职场信号站」自动生成 · 内容仅供参考，不构成投资、法律或医疗建议。</div>
+</div>
+</div>
+</body>
+</html>
