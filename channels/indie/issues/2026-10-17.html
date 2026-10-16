@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Replit 甩掉 Anthropic、Cal AI 两年做出 3000 万美元：独立开发者今天的四笔账</title>
+<style>
+  :root { --ink:#1b1f24; --sub:#5b6472; --line:#e6e8ec; --brand:#0f62fe; --bg:#f5f6f8; }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--bg); color:var(--ink);
+    font:16px/1.75 -apple-system,"Segoe UI","Microsoft YaHei","PingFang SC",sans-serif; }
+  .wrap { max-width:780px; margin:0 auto; padding:28px 14px 64px; }
+  .card { background:#fff; border:1px solid var(--line); border-radius:16px; overflow:hidden; }
+  .hero { padding:30px 30px 22px; border-bottom:1px solid var(--line); background:linear-gradient(180deg,#fbfcff,#fff); }
+  .brand { color:var(--brand); font-weight:700; letter-spacing:.06em; font-size:13px; }
+  h1 { font-size:26px; line-height:1.35; margin:10px 0 6px; }
+  .date { color:var(--sub); font-size:13px; }
+  .one-liner { margin:16px 0 0; padding:12px 14px; background:#f2f6ff; border-left:3px solid var(--brand);
+    border-radius:0 8px 8px 0; color:#26303d; font-size:15px; }
+  .body { padding:8px 30px 26px; }
+  h2 { font-size:18px; margin:28px 0 12px; padding-left:10px; border-left:4px solid var(--brand); }
+  .item { border:1px solid var(--line); border-radius:12px; padding:16px 18px; margin:12px 0; }
+  .item h3 { font-size:16px; margin:0 0 8px; }
+  .item p { margin:0 0 10px; color:#2c343d; }
+  .meta { font-size:13px; color:var(--sub); }
+  .meta b { color:#0b7a3b; font-weight:600; }
+  .src { font-size:12px; color:#8b93a1; margin-top:6px; word-break:break-all; }
+  .actions { margin:26px 0 0; padding:18px 20px; background:#f0fbf5; border:1px solid #cdeadb; border-radius:12px; }
+  .actions h2 { border:0; padding:0; margin:0 0 10px; font-size:16px; color:#0b7a3b; }
+  .actions li { margin:6px 0; }
+  .foot { padding:18px 30px 26px; color:#8b93a1; font-size:12px; border-top:1px solid var(--line); }
+  .mock { display:inline-block; margin-left:8px; padding:2px 8px; border-radius:99px;
+    background:#fff4e5; color:#b25e00; font-size:12px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+<div class="card">
+<div class="hero"><div class="brand">独立开发者情报站</div><h1>Replit 甩掉 Anthropic、Cal AI 两年做出 3000 万美元：独立开发者今天的四笔账</h1><div class="date">2026-10-17 周六</div><div class="one-liner">今天真正值钱的信号不是新模型，而是两笔现金账和一个定价缝隙：Replit 因成本停止与 Anthropic 合作，Cal AI 靠一小批网红两年做到 3000 万美元并被收购，SignWith 用「按文档付费」正面切订阅制巨头。</div></div>
+<div class="body"><h2>产品与收入</h2><div class="item"><h3>Replit 不再和 Anthropic 合作，CEO 明说原因之一是成本</h3><p>TechCrunch 报道，Replit CEO Masad 表示停止与 Anthropic 合作是出于多个原因，包括成本。Replit 在 8 月已宣布与 OpenAI 的合作，但此前没有任何迹象显示它已经不再与 Anthropic 合作。</p><div class="meta"><b>对你的价值</b>：这是模型供应商依赖风险的活教材。你把产品绑死在一家 API 上，对方一次涨价、一次模型下线，你的毛利和产品行为同时变。动作：把模型调用收敛到自己的一层薄封装里（自家 gateway / 环境变量切 base_url），核心链路至少准备一个可切换的备选模型，并定期跑同一组评测对比成本和输出漂移。</div><div class="src">来源：TechCrunch, 2026-10-16 — https://techcrunch.com/2026/10/16/replit-is-no-longer-working-with-anthropic-ceo-says/</div></div><h2>工具与栈</h2><div class="item"><h3>GitHub 把 star 历史接口从 2500 次请求压到 24 次</h3><p>GitHub 博客披露新的仓库 star 历史 API：只提供趋势，不返回具体用户身份，也不需要无界数据库查询，请求量从 2500 降到 24，并说明了其中的工程取舍。</p><div class="meta"><b>对你的价值</b>：这是独立开发者做统计/分析接口的标准优化路径：砍掉「返回个体明细」的需求、把聚合结果预计算好，成本能掉两个数量级。你自建埋点、报表或用量统计时，先问一句「用户真的需要看单条明细吗」，往往砍掉它就能省掉整台数据库。</div><div class="src">来源：The GitHub Blog, 2026-10-14 — https://github.blog/engineering/architecture-optimization/from-2500-requests-to-24-rebuilding-star-history-without-the-stargazers/</div></div><h2>增长与渠道</h2><div class="item"><h3>Vercel：Jev 是它史上被采用最快的 AI 模型</h3><p>TechCrunch 报道，Vercel 的数据显示 Jev 是其被采用最快的 AI 模型，数据来自 Vercel 的 AI gateway——一个类似 OpenRouter 的统一 API 服务。</p><div class="meta"><b>对你的价值</b>：模型选型别只看跑分，看聚合网关的真实流量排行更接近市场现实。用法：把这类 gateway 的采用榜当作风向标，决定你的产品默认接哪个模型、以及为哪个模型做 prompt 优化；如果你自己也在做模型相关产品，考虑优先适配上升期的模型去吃它的流量红利。</div><div class="src">来源：TechCrunch, 2026-10-16 — https://techcrunch.com/2026/10/16/jev-is-vercels-fastest-adopted-ai-model-ever/</div></div><h2>踩坑与风险</h2><div class="item"><h3>Home Assistant 议题爆火：我从未授权过一个会扫描我 secrets 的集成</h3><p>GitHub 上 home-assistant/home-assistant.io 的 issue #49314 标题为「我从未授权过一个会扫描我 secrets 的集成」，在 Hacker News 上获得 154 分、102 条评论。</p><div class="meta"><b>对你的价值</b>：第三方集成、插件、npm 包、Docker 镜像都可能读到你进程里的全部环境变量——而你通常为了省事，把数据库密码、Stripe 密钥、模型 API key 全塞在同一个 .env 里。动作：把凭证按用途拆开（只读 key、按服务限额），不要把生产密钥和本地开发放在同一份配置里；装任何新集成前先看它申请了什么权限。</div><div class="src">来源：GitHub Issue via Hacker News, 2026-10-16 — https://github.com/home-assistant/home-assistant.io/issues/49314</div></div><div class="actions"><h2>今天就能做</h2><ul><li>今天做一次密钥体检：用工具扫遍你所有公开仓库的提交历史找泄漏的 .env / key，把 CI 和云服务角色的权限降到最小必要，然后轮换所有可能暴露过的密钥。</li><li>给你的产品加一层模型抽象：把模型调用收敛到自己的薄封装里，配置化 base_url 与模型名，并准备一个备选模型；用同一组真实任务跑一遍成本与输出对比，别等到供应商变卦才动手。</li><li>检查定价结构：如果你的订阅制产品里有「一年只用几次」的长尾用户，评估加一档按量付费（参考 SignWith 按文档收费）；如果已经在用按量付费，确认它不会把 LTV 天花板压低，必要时叠加高价订阅层。</li></ul></div></div>
+<div class="foot">由「独立开发者情报站」自动生成 · 内容仅供参考，不构成投资、法律或医疗建议。</div>
+</div>
+</div>
+</body>
+</html>
