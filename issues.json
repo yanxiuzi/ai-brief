@@ -1,5 +1,10 @@
 [
   {
+    "date": "2026-10-18",
+    "title": "AI 情报站｜马斯克称 Roadster 可自主完成特技、DeepSeek 成立产品部、豆包 SAEP 被 155 款 App 拒绝",
+    "one_liner": "模型层，DeepSeek 一边发新 Flash 版本，一边调整组织；产品层，豆包手机助手被 155 款应用拒绝，暴露 AI 手机的真实阻力；硬件层，NVIDIA 把本地 Agent 的价格定在 2399 美元。"
+  },
+  {
     "date": "2026-10-17",
     "title": "AI 情报站｜库克确认国行苹果 AI 接入千问、豆包被 155 款 App 拒绝、马斯克 Roadster 真的会飞",
     "one_liner": "苹果智能国行本月发测试版、千问成其模型伙伴；豆包屏幕自动化被 155 款 App 集体关门；Meta 用两台 Mac Studio 跑 816B 开源模型；英伟达同时推 120B 开源 VLM 与 RTX Spark 笔记本。"
