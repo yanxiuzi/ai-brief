@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>独立开发者情报站 · 2026-10-19：先别加功能，先把域名和模型这两个单点拆掉</title>
+<style>
+  :root { --ink:#1b1f24; --sub:#5b6472; --line:#e6e8ec; --brand:#0f62fe; --bg:#f5f6f8; }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--bg); color:var(--ink);
+    font:16px/1.75 -apple-system,"Segoe UI","Microsoft YaHei","PingFang SC",sans-serif; }
+  .wrap { max-width:780px; margin:0 auto; padding:28px 14px 64px; }
+  .card { background:#fff; border:1px solid var(--line); border-radius:16px; overflow:hidden; }
+  .hero { padding:30px 30px 22px; border-bottom:1px solid var(--line); background:linear-gradient(180deg,#fbfcff,#fff); }
+  .brand { color:var(--brand); font-weight:700; letter-spacing:.06em; font-size:13px; }
+  h1 { font-size:26px; line-height:1.35; margin:10px 0 6px; }
+  .date { color:var(--sub); font-size:13px; }
+  .one-liner { margin:16px 0 0; padding:12px 14px; background:#f2f6ff; border-left:3px solid var(--brand);
+    border-radius:0 8px 8px 0; color:#26303d; font-size:15px; }
+  .body { padding:8px 30px 26px; }
+  h2 { font-size:18px; margin:28px 0 12px; padding-left:10px; border-left:4px solid var(--brand); }
+  .item { border:1px solid var(--line); border-radius:12px; padding:16px 18px; margin:12px 0; }
+  .item h3 { font-size:16px; margin:0 0 8px; }
+  .item p { margin:0 0 10px; color:#2c343d; }
+  .meta { font-size:13px; color:var(--sub); }
+  .meta b { color:#0b7a3b; font-weight:600; }
+  .src { font-size:12px; color:#8b93a1; margin-top:6px; word-break:break-all; }
+  .actions { margin:26px 0 0; padding:18px 20px; background:#f0fbf5; border:1px solid #cdeadb; border-radius:12px; }
+  .actions h2 { border:0; padding:0; margin:0 0 10px; font-size:16px; color:#0b7a3b; }
+  .actions li { margin:6px 0; }
+  .foot { padding:18px 30px 26px; color:#8b93a1; font-size:12px; border-top:1px solid var(--line); }
+  .mock { display:inline-block; margin-left:8px; padding:2px 8px; border-radius:99px;
+    background:#fff4e5; color:#b25e00; font-size:12px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+<div class="card">
+<div class="hero"><div class="brand">独立开发者情报站</div><h1>独立开发者情报站 · 2026-10-19：先别加功能，先把域名和模型这两个单点拆掉</h1><div class="date">2026-10-19 周一</div><div class="one-liner">陪产假里一周做出来的婴儿记录 SaaS、靠达人矩阵做到 3000 万美元收入的 Cal AI、被注册商一夜停用全部域名的教训——今天的关键词是「结构比功能重要」。</div></div>
+<div class="body"><h2>产品与收入</h2><div class="item"><h3>新手爸爸用 Claude 一周做出婴儿喂养记录 SaaS，切入点是「别家定价太离谱」</h3><p>HN Show HN 项目 milo.baby：作者在陪产假期间先做了一个记录宝宝喂养的 GitHub 贡献图，一周内长成完整的 baby tracker。他说同类产品定价「obscene」，于是决定向其他家长开放，自己持续迭代。</p><div class="meta"><b>对你的价值</b>：可复用的路径是：从自己此刻的真实刚需出发，先做可视化小工具验证，再补功能；定价上用对手的「离谱价」做参照。风险也要看清——一周做出来的产品功能浅，留存靠后续迭代，不靠首发热度。</div><div class="src">来源：https://milo.baby（HN Show HN，2026-10-18）</div></div><h2>工具与栈</h2><div class="item"><h3>WhatsApp MCP 免费跑在 Cloudflare 上：不用 Business API、不用自建服务器</h3><p>Show HN 项目 whatsapp-mcp：作者想让手机上的 Claude 读自己的 WhatsApp 消息，但现成方案要么需要 WhatsApp Business，要么得自己架服务器跑 Baileys，于是他做了跑在 Cloudflare 上、用个人 WhatsApp 账号的版本，还接了 Google 账号来补全联系人姓名。</p><div class="meta"><b>对你的价值</b>：这是「Cloudflare + MCP」零成本接个人 agent 的可复制模板，同样结构能套到客服消息、订单通知上。但用个人账号走非官方接入，稳定性和账号风险需自己评估，建议先小号验证再考虑接生产号。</div><div class="src">来源：https://github.com/finereli/whatsapp-mcp</div></div><h2>增长与渠道</h2><div class="item"><h3>SaaS 目录自动提交工具 onlyfoundrs：主打「帮你找买家」</h3><p>HN 新帖 onlyfoundrs.com：把向各类 SaaS 目录提交这件事自动化，官方描述是「finds buyers for your product」。</p><div class="meta"><b>对你的价值</b>：目录提交是独立开发者性价比最高的外链加早期曝光动作之一，痛点从来不是不知道有哪些目录，而是手动填五十遍表单。用工具没问题，但同一套描述模板批量投递容易被目录判为低质，建议至少准备三版不同角度的描述。</div><div class="src">来源：https://onlyfoundrs.com</div></div><h2>踩坑与风险</h2><div class="item"><h3>Namecheap 被曝扣押并停用用户全部域名，HN 378 分</h3><p>Reddit r/sysadmin 帖子称 Namecheap 扣押并停用了其名下所有域名，该帖在 HN 首页获得 378 分、182 条评论。</p><div class="meta"><b>对你的价值</b>：注册商可以在你代码毫无故障的情况下，让产品、邮箱、支付回调同时下线。至少做三件事：主站域名与实验域名分放两家注册商；开启注册商锁；定期把 DNS 记录导出到本地。Whois 邮箱必须是你能长期访问的那个。</div><div class="src">来源：https://www.reddit.com/r/sysadmin/comments/1x8cycd/namecheap_just_seized_and_disabled_all_my_domains/</div></div><div class="actions"><h2>今天就能做</h2><ul><li>今天做一次域名审计：列出所有在跑业务的域名，把主站和实验站拆到两家注册商，全部开启注册商锁，并把 DNS 记录导出一份到本地。</li><li>按「每次成功检索」重算 AI 功能的单位成本：用 DeepSeek search/fetch 的 $0.75/1000 次成功请求做基准，估算一次用户提问会触发几次检索，看看现在定价还剩多少毛利。</li><li>在落地页加一个「谁在做这个产品」区块：真人署名、最近一次更新、正在解决的具体问题。这是 AI 套壳复制不走的东西，成本几乎为零。</li></ul></div></div>
+<div class="foot">由「独立开发者情报站」自动生成 · 内容仅供参考，不构成投资、法律或医疗建议。</div>
+</div>
+</div>
+</body>
+</html>
