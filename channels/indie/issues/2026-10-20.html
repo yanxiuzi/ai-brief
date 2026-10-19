@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>独立开发者情报站 · 2026-10-20：一周做出婴儿追踪 SaaS，和便宜 23 倍的错误检测模型</title>
+<style>
+  :root { --ink:#1b1f24; --sub:#5b6472; --line:#e6e8ec; --brand:#0f62fe; --bg:#f5f6f8; }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--bg); color:var(--ink);
+    font:16px/1.75 -apple-system,"Segoe UI","Microsoft YaHei","PingFang SC",sans-serif; }
+  .wrap { max-width:780px; margin:0 auto; padding:28px 14px 64px; }
+  .card { background:#fff; border:1px solid var(--line); border-radius:16px; overflow:hidden; }
+  .hero { padding:30px 30px 22px; border-bottom:1px solid var(--line); background:linear-gradient(180deg,#fbfcff,#fff); }
+  .brand { color:var(--brand); font-weight:700; letter-spacing:.06em; font-size:13px; }
+  h1 { font-size:26px; line-height:1.35; margin:10px 0 6px; }
+  .date { color:var(--sub); font-size:13px; }
+  .one-liner { margin:16px 0 0; padding:12px 14px; background:#f2f6ff; border-left:3px solid var(--brand);
+    border-radius:0 8px 8px 0; color:#26303d; font-size:15px; }
+  .body { padding:8px 30px 26px; }
+  h2 { font-size:18px; margin:28px 0 12px; padding-left:10px; border-left:4px solid var(--brand); }
+  .item { border:1px solid var(--line); border-radius:12px; padding:16px 18px; margin:12px 0; }
+  .item h3 { font-size:16px; margin:0 0 8px; }
+  .item p { margin:0 0 10px; color:#2c343d; }
+  .meta { font-size:13px; color:var(--sub); }
+  .meta b { color:#0b7a3b; font-weight:600; }
+  .src { font-size:12px; color:#8b93a1; margin-top:6px; word-break:break-all; }
+  .actions { margin:26px 0 0; padding:18px 20px; background:#f0fbf5; border:1px solid #cdeadb; border-radius:12px; }
+  .actions h2 { border:0; padding:0; margin:0 0 10px; font-size:16px; color:#0b7a3b; }
+  .actions li { margin:6px 0; }
+  .foot { padding:18px 30px 26px; color:#8b93a1; font-size:12px; border-top:1px solid var(--line); }
+  .mock { display:inline-block; margin-left:8px; padding:2px 8px; border-radius:99px;
+    background:#fff4e5; color:#b25e00; font-size:12px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+<div class="card">
+<div class="hero"><div class="brand">独立开发者情报站</div><h1>独立开发者情报站 · 2026-10-20：一周做出婴儿追踪 SaaS，和便宜 23 倍的错误检测模型</h1><div class="date">2026-10-20 周二</div><div class="one-liner">今天最值得花十分钟的三件事：一位新手爸爸用 Claude 一周做出婴儿追踪 SaaS，起点只是「同行定价离谱」；YC 团队把 agent 错误检测的成本压到通用模型的 1/23；开源 AI 编程工具 OpenCode 被入侵，用户 API key 被盗刷——请今天就去轮换 key。</div></div>
+<div class="body"><h2>产品与收入</h2><div class="item"><h3>新手爸爸用 Claude 一周做出婴儿喂养追踪 SaaS，动机是同行定价「离谱」</h3><p>HN 的 Show HN 上，一位刚休陪产假的开发者用 Claude 把宝宝的喂养记录做成 GitHub 贡献图，一周内扩成完整的婴儿追踪产品 milo.baby。他的原话是其他同类产品定价「高得离谱」，所以决定对更多家长开放，边做边加功能。</p><div class="meta"><b>对你的价值</b>：标准的独立开发切口：不是发明需求，而是把已被验证的需求用三分之一的价格重做一遍。做定价页之前，先把你所在品类三家竞品的价格抄下来；如果你的成本结构允许你定到它们的 1/3，这本身就是最好的首屏文案。</div><div class="src">来源：https://milo.baby</div></div><h2>工具与栈</h2><div class="item"><h3>MiniMax M3.1 Flash 发布，HN 首页 336 分、149 条评论</h3><p>MiniMax 发布 M3.1 Flash，在 Hacker News 拿到 336 分、149 条评论，是当天讨论度最高的技术条目之一。</p><div class="meta"><b>对你的价值</b>：新模型值得看的不是榜单，是单价和延迟——这两项直接决定你的单位经济。上线前用你自己生产环境的 20 条真实 prompt 做 A/B，比看任何 benchmark 都准。讨论量大也意味着踩坑的人在变多，翻一遍 HN 评论区能省你半天调试。</div><div class="src">来源：https://www.minimax.io/blog/minimax-m31f</div></div><h2>增长与渠道</h2><div class="item"><h3>Product Hunt 当日新品：Lookout(for Slack)、DoOne、Starkomand 都在「嵌进已有工作流」</h3><p>10 月 19 日的 Product Hunt 新品里，Lookout (for Slack) 主打紧急 Slack 消息即时处理（由 Jev 驱动），DoOne 是能对接 GitHub、GitLab 等的专注计时器，Starkomand 让你在无限画布上跑 AI coding agent。</p><div class="meta"><b>对你的价值</b>：三个产品有一个共同点：都不要求用户搬到新平台，而是插进用户已经在用的工具里。对独立开发者这意味着分发成本更低——落地页可以直接写「在你现有的 Slack / GitHub 里用」。反过来说，做「又一个要求用户每天打开的新 App」的窗口正在关闭。</div><div class="src">来源：https://www.producthunt.com/feed</div></div><h2>踩坑与风险</h2><div class="item"><h3>开源 AI 编程工具 OpenCode 被入侵，用户 API key 被盗并被拿来刷额度</h3><p>TechCrunch 报道，作为 Claude Code 和 Cursor 热门替代品的开源 AI 编程 agent OpenCode，其在线平台的一部分被黑客入侵，部分用户的 API key 被窃取，攻击者用这些 key 在用户的 AI 账户上刷出费用。报道还提到，它求助的 AI 工具一直拒绝查看恶意代码。</p><div class="meta"><b>对你的价值</b>：本周最该处理的一条。现在做三件事：一，检查你在第三方 AI 工具里存过的 key，全部轮换；二，给每个 key 设消费上限和超额告警；三，把「AI 工具拒看恶意代码」当成已知缺陷，安全分析不能全托给模型。做产品的同理：用户的 key 存在你这里，泄露后他们损失的是真金白银。</div><div class="src">来源：https://techcrunch.com/2026/10/19/hackers-hit-ai-coding-tool-opencode-running-up-charges-on-users-ai-accounts/</div></div><div class="actions"><h2>今天就能做</h2><ul><li>今天轮换一遍你在第三方 AI 工具和 agent 里存过的 API key，并给每个 key 设消费上限与超额告警——OpenCode 的 key 泄露事件说明被盗刷是现实风险，不是概率问题。</li><li>用你生产环境的 20 条真实 prompt 跑一遍 MiniMax M3.1 Flash 与当前主模型的对比，记下质量、延迟、单次请求成本三项，再决定是否迁移或做双模型降级。</li><li>打开你所在品类的三家竞品定价页，把价格抄进一张表；如果你的成本允许你定到它们的 1/3，把这句写进落地页首屏——milo.baby 的起点就是这个。</li></ul></div></div>
+<div class="foot">由「独立开发者情报站」自动生成 · 内容仅供参考，不构成投资、法律或医疗建议。</div>
+</div>
+</div>
+</body>
+</html>
