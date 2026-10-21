@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>独立开发者情报站 · 2026-10-22：Claude Duet 抢滩、LiteLLM 被投毒、PHP 双 RCE 同日爆发</title>
+<style>
+  :root { --ink:#1b1f24; --sub:#5b6472; --line:#e6e8ec; --brand:#0f62fe; --bg:#f5f6f8; }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--bg); color:var(--ink);
+    font:16px/1.75 -apple-system,"Segoe UI","Microsoft YaHei","PingFang SC",sans-serif; }
+  .wrap { max-width:780px; margin:0 auto; padding:28px 14px 64px; }
+  .card { background:#fff; border:1px solid var(--line); border-radius:16px; overflow:hidden; }
+  .hero { padding:30px 30px 22px; border-bottom:1px solid var(--line); background:linear-gradient(180deg,#fbfcff,#fff); }
+  .brand { color:var(--brand); font-weight:700; letter-spacing:.06em; font-size:13px; }
+  h1 { font-size:26px; line-height:1.35; margin:10px 0 6px; }
+  .date { color:var(--sub); font-size:13px; }
+  .one-liner { margin:16px 0 0; padding:12px 14px; background:#f2f6ff; border-left:3px solid var(--brand);
+    border-radius:0 8px 8px 0; color:#26303d; font-size:15px; }
+  .body { padding:8px 30px 26px; }
+  h2 { font-size:18px; margin:28px 0 12px; padding-left:10px; border-left:4px solid var(--brand); }
+  .item { border:1px solid var(--line); border-radius:12px; padding:16px 18px; margin:12px 0; }
+  .item h3 { font-size:16px; margin:0 0 8px; }
+  .item p { margin:0 0 10px; color:#2c343d; }
+  .meta { font-size:13px; color:var(--sub); }
+  .meta b { color:#0b7a3b; font-weight:600; }
+  .src { font-size:12px; color:#8b93a1; margin-top:6px; word-break:break-all; }
+  .actions { margin:26px 0 0; padding:18px 20px; background:#f0fbf5; border:1px solid #cdeadb; border-radius:12px; }
+  .actions h2 { border:0; padding:0; margin:0 0 10px; font-size:16px; color:#0b7a3b; }
+  .actions li { margin:6px 0; }
+  .foot { padding:18px 30px 26px; color:#8b93a1; font-size:12px; border-top:1px solid var(--line); }
+  .mock { display:inline-block; margin-left:8px; padding:2px 8px; border-radius:99px;
+    background:#fff4e5; color:#b25e00; font-size:12px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+<div class="card">
+<div class="hero"><div class="brand">独立开发者情报站</div><h1>独立开发者情报站 · 2026-10-22：Claude Duet 抢滩、LiteLLM 被投毒、PHP 双 RCE 同日爆发</h1><div class="date">2026-10-22 周四</div><div class="one-liner">今天先别谈增长：LiteLLM 1.107.0 在 PyPI 被投毒会偷走你所有上游 API Key，PHP 两个 RCE 漏洞的补丁被迫提前发布，WordPress 站点本周必须升级；产品侧值得看的是 Claude Duet 在 HN 拿到 280 分 233 条评论，以及一个新手爸爸用 Claude 一周做出婴儿追踪 SaaS 的真实路径。</div></div>
+<div class="body"><h2>产品与收入</h2><div class="item"><h3>Claude Duet 冲上 HN 首页：280 分、233 条评论</h3><p>Anthropic 的 Claude Duet 产品页在 Hacker News 拿到 280 分、233 条评论，同一天另一条指向 claude.com/resources 的 Duet 文章链接也上了榜（49 分）。讨论量明显高于同日其他 AI 条目。</p><div class="meta"><b>对你的价值</b>：大厂亲自下场做协作类交互形态时，往往会免费吞掉一类小工具的功能。如果你在做围绕 Claude 的工作流封装、提示词管理或多人协作层，这周就该去翻那 233 条评论：里面是新需求的原始语料，也是你判断差异化定位的依据。</div><div class="src">来源：Hacker News · https://claude.com/product/claude-duet</div></div><h2>工具与栈</h2><div class="item"><h3>DuckDB 2.0.0 LTS「Cinnamon Teal」发布</h3><p>DuckDB 发布 2.0.0 LTS，代号 Cinnamon Teal。</p><div class="meta"><b>对你的价值</b>：对一人公司来说，这类单机分析库最大的价值是不用为了看数据就上一个数仓：把 Stripe、业务库、日志导成 parquet，本地一条 SQL 出报表，跑在自己机器或一个小容器里。LTS 标签意味着你可以在生产环境长期固定这个版本，不必每两个月跟着升级。</div><div class="src">来源：Hacker News · https://duckdb.org/2026/10/21/announcing-duckdb-200</div></div><h2>增长与渠道</h2><div class="item"><h3>2026 版 SaaS 目录清单：35 个还值得提交的站</h3><p>一篇整理列出了 2026 年还值得花时间提交的 35 个 SaaS 目录站。</p><div class="meta"><b>对你的价值</b>：目录提交是典型的低转化、低成本动作，正确的预期是外链加少量长尾流量，别指望它带来第一批付费用户。真要用，就把提交时间排在你正式发布前一周、一次做完、统一用一个专门的 UTM 链接看哪几个站真的有点击，明年只回访那几个。</div><div class="src">来源：Hacker News · https://medium.com/@jj_iantix/where-to-submit-your-saas-in-2026-35-directories-that-are-actually-worth-your-time-009b22940add</div></div><h2>踩坑与风险</h2><div class="item"><h3>LiteLLM 1.107.0 在 PyPI 被投毒：安装后植入凭据窃取和后门</h3><p>安全厂商 SafeDep 报告，PyPI 上的 LiteLLM 1.107.0 被篡改，安装后会植入凭据窃取程序和後門。同一天 GitLab 发布 19.5.1 关键补丁，Railway 也就安全事件发了披露（HN 199 分）。</p><div class="meta"><b>对你的价值</b>：LiteLLM 是很多人给多个模型做统一网关的选择，一旦中招，泄露的是你所有上游 API Key，等于钱包和账号一起交出去。今天该做的：查依赖里有没有固定到 1.107.0，改回一个已知干净的版本，轮换该环境里的全部密钥，并给自己立一条规矩：新版本先看发布来源再装。</div><div class="src">来源：Hacker News / SafeDep · https://safedep.io/litellm-pypi-compromise-credential-stealer-backdoor/</div></div><div class="actions"><h2>今天就能做</h2><ul><li>今天查一遍依赖锁文件里有没有 LiteLLM 1.107.0（以及本周新装的任何包），有就回滚，并轮换该环境下所有上游 API Key。</li><li>升级所有 WordPress 和 PHP 站点的 PHP 版本，自建 GitLab 的打到 19.5.1；顺手检查自己的分享链接是不是随机且不可枚举。</li><li>把模型可替换变成一条可验证的清单：列出产品里所有直接调用某家 SDK 的地方，标出换模型要改哪些文件，本周先改掉代价最高的那一处。</li></ul></div></div>
+<div class="foot">由「独立开发者情报站」自动生成 · 内容仅供参考，不构成投资、法律或医疗建议。</div>
+</div>
+</div>
+</body>
+</html>
