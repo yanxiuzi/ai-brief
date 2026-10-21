@@ -1,5 +1,10 @@
 [
   {
+    "date": "2026-10-22",
+    "title": "AI 情报站｜黄仁勋 DSX Pod 把 7 个 Vera Rubin 机架装进集装箱、DeepSeek 开源 DeepInfer、MiniMax Flash ",
+    "one_liner": "今天最值得看的是算力和推理的成本账：黄仁勋把 Vera Rubin 机架做成可卡车运输的 DSX Pod，DeepSeek 用 DeepInfer 把推理吞吐、毛利和回本周期摆上台面，国内模型则在 Agent 和代码榜单上抢位。"
+  },
+  {
     "date": "2026-10-20",
     "title": "AI 情报站｜DeepSeek V4.1-Flash 降价提速并开放搜索 API、MiniMax M3.1 Flash 价格降 70%、黄仁勋柏林谈工业 AI",
     "one_liner": "DeepSeek 和 MiniMax 同日把“更便宜更快”做成卖点，黄仁勋则去德国谈工业 AI 落地；本期还收录智谱法律模型、腾讯混元 Terminal-RSI、英伟达 Nemotron 3.5 开源。"
