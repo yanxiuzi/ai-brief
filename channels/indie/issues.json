@@ -1,5 +1,10 @@
 [
   {
+    "date": "2026-10-23",
+    "title": "独立开发者情报站 · 2026-10-23｜把「一个团队」做成一个人的订阅；agent 测试与登录是新基础设施；PHP 漏洞已在野利用",
+    "one_liner": "今天三件事值得动手：PHP2Shell 两个 CVE 已确认在野利用，自己维护服务器的人今天就打补丁；NVIDIA 开源了 agent 安全运行时 OpenShell，1Password 开放 agent 代登录；产品侧，Product Hunt 上「AI 营销团队 / AI 客服 / AI 视频」挤成一片，而 Can"
+  },
+  {
     "date": "2026-10-22",
     "title": "独立开发者情报站 · 2026-10-22：Claude Duet 抢滩、LiteLLM 被投毒、PHP 双 RCE 同日爆发",
     "one_liner": "今天先别谈增长：LiteLLM 1.107.0 在 PyPI 被投毒会偷走你所有上游 API Key，PHP 两个 RCE 漏洞的补丁被迫提前发布，WordPress 站点本周必须升级；产品侧值得看的是 Claude Duet 在 HN 拿到 280 分 233 条评论，以及一个新手爸爸用 Claude 一周做出婴儿追"
