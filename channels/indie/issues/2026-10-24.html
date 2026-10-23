@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>独立开发者情报站 2026-10-24：AI 托管的产品、agent 的控制层，以及一个创始人攻击自己发现的账单漏洞</title>
+<style>
+  :root { --ink:#1b1f24; --sub:#5b6472; --line:#e6e8ec; --brand:#0f62fe; --bg:#f5f6f8; }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--bg); color:var(--ink);
+    font:16px/1.75 -apple-system,"Segoe UI","Microsoft YaHei","PingFang SC",sans-serif; }
+  .wrap { max-width:780px; margin:0 auto; padding:28px 14px 64px; }
+  .card { background:#fff; border:1px solid var(--line); border-radius:16px; overflow:hidden; }
+  .hero { padding:30px 30px 22px; border-bottom:1px solid var(--line); background:linear-gradient(180deg,#fbfcff,#fff); }
+  .brand { color:var(--brand); font-weight:700; letter-spacing:.06em; font-size:13px; }
+  h1 { font-size:26px; line-height:1.35; margin:10px 0 6px; }
+  .date { color:var(--sub); font-size:13px; }
+  .one-liner { margin:16px 0 0; padding:12px 14px; background:#f2f6ff; border-left:3px solid var(--brand);
+    border-radius:0 8px 8px 0; color:#26303d; font-size:15px; }
+  .body { padding:8px 30px 26px; }
+  h2 { font-size:18px; margin:28px 0 12px; padding-left:10px; border-left:4px solid var(--brand); }
+  .item { border:1px solid var(--line); border-radius:12px; padding:16px 18px; margin:12px 0; }
+  .item h3 { font-size:16px; margin:0 0 8px; }
+  .item p { margin:0 0 10px; color:#2c343d; }
+  .meta { font-size:13px; color:var(--sub); }
+  .meta b { color:#0b7a3b; font-weight:600; }
+  .src { font-size:12px; color:#8b93a1; margin-top:6px; word-break:break-all; }
+  .actions { margin:26px 0 0; padding:18px 20px; background:#f0fbf5; border:1px solid #cdeadb; border-radius:12px; }
+  .actions h2 { border:0; padding:0; margin:0 0 10px; font-size:16px; color:#0b7a3b; }
+  .actions li { margin:6px 0; }
+  .foot { padding:18px 30px 26px; color:#8b93a1; font-size:12px; border-top:1px solid var(--line); }
+  .mock { display:inline-block; margin-left:8px; padding:2px 8px; border-radius:99px;
+    background:#fff4e5; color:#b25e00; font-size:12px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+<div class="card">
+<div class="hero"><div class="brand">独立开发者情报站</div><h1>独立开发者情报站 2026-10-24：AI 托管的产品、agent 的控制层，以及一个创始人攻击自己发现的账单漏洞</h1><div class="date">2026-10-24 周六</div><div class="one-liner">今天的信号很集中：产品这一侧，有人把整个 SaaS 交给 AI agent 建和跑，也有人用 Claude 一周做出垂直小工具；工具这一侧，围绕 Claude Code / Codex 的&quot;刹车、遥控、可见性&quot;正在长成一个品类；风险这一侧，一位独立开发者靠攻击自己的产品找到了计费绕过漏洞，这个检查你今晚就能做。</div></div>
+<div class="body"><h2>产品与收入</h2><div class="item"><h3>MintPage：一个&quot;让 AI agent 建、也由 AI agent 跑&quot;的 SaaS，作者说自己从不看它</h3><p>Hacker News 的 Show HN 帖子标题为&quot;MintPage – a SaaS I let an AI agent build and run (I never look at it)&quot;，提交于 10 月 22 日，当前 1 分、0 条评论。</p><div class="meta"><b>对你的价值</b>：这个案例的价值不在产品本身，而在于它标注了一条极端做法：把构建和运营都交给 agent，创始人彻底退出。零互动说明 HN 并不自动为这种说法买单。对一人公司更可行的做法是：AI 可以写代码、发邮件、跑客服，但必须留在可观测、可回滚的环节里，&quot;不看&quot;不是一个可以卖订阅的状态。</div><div class="src">来源：https://mintpage.ai/</div></div><h2>工具与栈</h2><div class="item"><h3>围绕 Claude Code / Codex 的&quot;刹车与遥控&quot;正在成为一个品类</h3><p>Product Hunt 当天出现多个同类产品：Peras（&quot;在 Claude Code 和 Codex 烧掉你一周之前把它们暂停&quot;）、Inyon（&quot;从手机上回答你的编程 agent&quot;）、Bloblings（&quot;每个 Claude Code 会话一只宠物&quot;）、Termi Protocol（&quot;用 3D 看 AI agent 写代码并交接工作&quot;）、Context Engine（&quot;给 AI agent 和人类团队成员一个共享记忆&quot;）。Hacker News 上同期有 Show HN：Corgi，一个 agent 与终端的复用器，作者称它能显示 agent 在做什么、提供活动流，并用 F1 跳到下一个未读 agent。</p><div class="meta"><b>对你的价值</b>：这些产品的共同点不是&quot;更强的 agent&quot;，而是 agent 变多之后必然出现的配套痛点：它烧钱时怎么叫停、人离开电脑后怎么接管、多个会话怎么不搞混、交接时上下文怎么不丢。这类工具开发量小、需求明确、容易做成付费小产品，是现在最现实的切入点。</div><div class="src">来源：https://www.producthunt.com/products/peras</div></div><h2>增长与渠道</h2><div class="item"><h3>2026 年值得提交的 35 个 SaaS 目录清单</h3><p>HN 上出现一篇 Medium 文章《Where to Submit Your SaaS 2026: 35 Directories That Are Worth Your Time》，帖子 2 分、1 条评论。</p><div class="meta"><b>对你的价值</b>：目录提交是成本最低、可重复执行的冷启动动作，适合一人公司批量做。但别只做提交：同一批流量到达时，落地页的一句话说明和首次使用路径决定留存。建议把提交当成一次文案 A/B 测试，用不同目录测不同定位。</div><div class="src">来源：https://medium.com/@jj_iantix/where-to-submit-your-saas-in-2026-35-directories-that-are-actually-worth-your-time-009b22940add</div></div><h2>踩坑与风险</h2><div class="item"><h3>Aethyro 作者攻击自己的产品，找到一个计费绕过漏洞</h3><p>HN 新帖标题为&quot;Aethyro – AI chat SaaS, and a billing bypass I found by attacking my own product&quot;，提交于 10 月 23 日，当前 1 分、0 条评论。</p><div class="meta"><b>对你的价值</b>：一人公司最容易被绕过的地方就是额度与订阅校验：只在前端判断、webhook 可重放、并发请求能超额消耗。今晚就能做的检查是：用 curl 直接打后端接口、重复投递支付回调、开两个窗口并发消耗额度，看计费是否仍然正确。这类漏洞不会有人替你发现，只会被人悄悄用。</div><div class="src">来源：https://aethyro.com/</div></div><div class="actions"><h2>今天就能做</h2><ul><li>用攻击者视角跑一遍你自己的付费链路：绕过前端直接调后端接口、重放支付 webhook、并发消耗额度，确认计费仍然正确（参考 Aethyro 的教训），把发现的问题当天修掉。</li><li>把模型调用统一收进一层薄封装，并把 prompt、评测集放进自己的仓库，确保换模型时改配置而不是改产品（对应 Stacklok 对 520 名技术负责人的调查结论）。</li><li>在 agent 工作流里补上&quot;叫停&quot;和&quot;留痕&quot;两个动作：设花费与时长上限、让每个 agent 会话有可读的活动记录，再决定要不要引入 Peras、Inyon、Corgi 这类现成工具。</li></ul></div></div>
+<div class="foot">由「独立开发者情报站」自动生成 · 内容仅供参考，不构成投资、法律或医疗建议。</div>
+</div>
+</div>
+</body>
+</html>
