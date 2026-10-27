@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>独立开发者情报站 · 2026-10-28：模型降价八成、Discord 开放搜索、Anthropic 半年营收 163 亿</title>
+<style>
+  :root { --ink:#1b1f24; --sub:#5b6472; --line:#e6e8ec; --brand:#0f62fe; --bg:#f5f6f8; }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--bg); color:var(--ink);
+    font:16px/1.75 -apple-system,"Segoe UI","Microsoft YaHei","PingFang SC",sans-serif; }
+  .wrap { max-width:780px; margin:0 auto; padding:28px 14px 64px; }
+  .card { background:#fff; border:1px solid var(--line); border-radius:16px; overflow:hidden; }
+  .hero { padding:30px 30px 22px; border-bottom:1px solid var(--line); background:linear-gradient(180deg,#fbfcff,#fff); }
+  .brand { color:var(--brand); font-weight:700; letter-spacing:.06em; font-size:13px; }
+  h1 { font-size:26px; line-height:1.35; margin:10px 0 6px; }
+  .date { color:var(--sub); font-size:13px; }
+  .one-liner { margin:16px 0 0; padding:12px 14px; background:#f2f6ff; border-left:3px solid var(--brand);
+    border-radius:0 8px 8px 0; color:#26303d; font-size:15px; }
+  .body { padding:8px 30px 26px; }
+  h2 { font-size:18px; margin:28px 0 12px; padding-left:10px; border-left:4px solid var(--brand); }
+  .item { border:1px solid var(--line); border-radius:12px; padding:16px 18px; margin:12px 0; }
+  .item h3 { font-size:16px; margin:0 0 8px; }
+  .item p { margin:0 0 10px; color:#2c343d; }
+  .meta { font-size:13px; color:var(--sub); }
+  .meta b { color:#0b7a3b; font-weight:600; }
+  .src { font-size:12px; color:#8b93a1; margin-top:6px; word-break:break-all; }
+  .actions { margin:26px 0 0; padding:18px 20px; background:#f0fbf5; border:1px solid #cdeadb; border-radius:12px; }
+  .actions h2 { border:0; padding:0; margin:0 0 10px; font-size:16px; color:#0b7a3b; }
+  .actions li { margin:6px 0; }
+  .foot { padding:18px 30px 26px; color:#8b93a1; font-size:12px; border-top:1px solid var(--line); }
+  .mock { display:inline-block; margin-left:8px; padding:2px 8px; border-radius:99px;
+    background:#fff4e5; color:#b25e00; font-size:12px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+<div class="card">
+<div class="hero"><div class="brand">独立开发者情报站</div><h1>独立开发者情报站 · 2026-10-28：模型降价八成、Discord 开放搜索、Anthropic 半年营收 163 亿</h1><div class="date">2026-10-28 周三</div><div class="one-liner">上游 token 价格又降了一大截，你的毛利表该重算了；Discord 下月把公开服务器内容放进搜索结果，这是免费流量也是隐私坑；同一天有两个 AI SaaS 作者公开翻车：一个零活跃用户，一个被自己找出的计费漏洞打穿。</div></div>
+<div class="body"><h2>产品与收入</h2><div class="item"><h3>Anthropic 递交招股书：2026 上半年营收 163 亿美元，约八成来自按量计费</h3><p>S-1 披露的营收曲线是 2023 年 4100 万美元、2024 年 3.86 亿美元、2025 年 45.85 亿美元、2026 年上半年 163 亿美元，按半年折算单季已超过 80 亿美元。收入结构上约 80% 是 token 计费的 consumption-based 收入，其余来自其他部分。</p><div class="meta"><b>对你的价值</b>：这是给“按用量收费”投的一张明确票。如果你还在纠结订阅制还是按量计费，头部厂商的实际收入结构已经给了参照；同时要意识到你的成本项和收入项都锚在同一件事（token）上，价格一波动，毛利就同向波动。</div><div class="src">来源：OSCHINA《Anthropic 递交招股书》 https://www.oschina.net/news/503241/anthropic-s1-sec</div></div><h2>工具与栈</h2><div class="item"><h3>不做 Docker，用 Serverless GPU 搭一个便宜跑得快的 AI SaaS</h3><p>一篇实操文记录作者用 RunPod Flash 搭建 AI SaaS 的路径，核心卖点是绕开 Docker 打包环节的 Serverless GPU，把“快”和“便宜”同时当作目标。</p><div class="meta"><b>对你的价值</b>：一人公司最怕的是基础设施吃掉时间。GPU 推理这种突发型负载如果还要自己维护镜像和常驻实例，成本会变成闲置费加运维时间；这类方案值得在下一个 AI 功能上线前做一次对比测试。</div><div class="src">来源：Hacker News / codingcat.dev https://codingcat.dev/post/dockerless-serverless-gpus-fast-cheap-ai-saas-with-runpod-flash</div></div><h2>增长与渠道</h2><div class="item"><h3>12 月起，Discord 公开可发现服务器的消息会出现在搜索结果里</h3><p>Discord 官方博客宣布将让可发现服务器的内容更容易被发现，TechCrunch 报道具体时间点是 12 月，届时公开可发现服务器的消息将开始出现在搜索引擎结果中。该话题在 HN 拿到 199 分、114 条评论，社区里有明显的顾虑声音。</p><div class="meta"><b>对你的价值</b>：如果你运营着公开的 Discord 社区，这是白捡的搜索流量入口；但也是内容风险入口——三年前的吐槽、用户的报错截图、内部讨论都可能被搜到。现在就该过一遍历史消息和频道权限，别等 12 月。</div><div class="src">来源：TechCrunch https://techcrunch.com/2026/10/27/discord-is-making-its-public-communities-more-searchable-and-people-have-concerns/ ；Discord 博客 https://discord.com/blog/making-content-from-discoverable-servers-easier-to-discover</div></div><h2>踩坑与风险</h2><div class="item"><h3>“我用 AI 做了个 SaaS，两个月后活跃用户为零”</h3><p>一篇 Medium 文章的标题就是结论：借助 AI 把产品做出来两个月后，活跃用户数为零。</p><div class="meta"><b>对你的价值</b>：AI 把“做出来”的成本压到接近零，于是失败点整体后移到了分发和需求验证上。写代码前先做一件不花钱的事：找 10 个目标用户，让他们描述现在怎么解决这个问题，而不是问他们喜不喜欢你的想法。</div><div class="src">来源：Medium https://medium.com/@ivan_43200/i-built-a-saas-with-ai-two-months-later-i-have-zero-active-users-1e93436a5b39</div></div><div class="actions"><h2>今天就能做</h2><ul><li>今天花 30 分钟重算一次单次调用成本：把 GPT-5.6 Sol/Luna 的 $5/$30/$0.50 与 $1/$6/$0.10 代进你最贵的三个功能，看能不能加免费额度或降价促销。</li><li>用只读 Stripe key 跑一次失效卡审计（参考 DeclineKit 的做法，90 天窗口），评估漏损金额后再决定是否投入做重试和催缴邮件。</li><li>11 月内检查你运营的 Discord 公开服务器：频道可见性、历史消息、客服频道是否要设为私有——12 月搜索引擎收录之前做完。</li></ul></div></div>
+<div class="foot">由「独立开发者情报站」自动生成 · 内容仅供参考，不构成投资、法律或医疗建议。</div>
+</div>
+</div>
+</body>
+</html>
