@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI 情报站｜英伟达 129.3 亿美元收购 Hugging Face 遭 DOJ 问询、百度开源无限页 OCR、豆包把电脑操作录成技能</title>
+<style>
+  :root { --ink:#1b1f24; --sub:#5b6472; --line:#e6e8ec; --brand:#0f62fe; --bg:#f5f6f8; }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--bg); color:var(--ink);
+    font:16px/1.75 -apple-system,"Segoe UI","Microsoft YaHei","PingFang SC",sans-serif; }
+  .wrap { max-width:780px; margin:0 auto; padding:28px 14px 64px; }
+  .card { background:#fff; border:1px solid var(--line); border-radius:16px; overflow:hidden; }
+  .hero { padding:30px 30px 22px; border-bottom:1px solid var(--line); background:linear-gradient(180deg,#fbfcff,#fff); }
+  .brand { color:var(--brand); font-weight:700; letter-spacing:.06em; font-size:13px; }
+  h1 { font-size:26px; line-height:1.35; margin:10px 0 6px; }
+  .date { color:var(--sub); font-size:13px; }
+  .one-liner { margin:16px 0 0; padding:12px 14px; background:#f2f6ff; border-left:3px solid var(--brand);
+    border-radius:0 8px 8px 0; color:#26303d; font-size:15px; }
+  .body { padding:8px 30px 26px; }
+  h2 { font-size:18px; margin:28px 0 12px; padding-left:10px; border-left:4px solid var(--brand); }
+  .item { border:1px solid var(--line); border-radius:12px; padding:16px 18px; margin:12px 0; }
+  .item h3 { font-size:16px; margin:0 0 8px; }
+  .item p { margin:0 0 10px; color:#2c343d; }
+  .meta { font-size:13px; color:var(--sub); }
+  .meta b { color:#0b7a3b; font-weight:600; }
+  .src { font-size:12px; color:#8b93a1; margin-top:6px; word-break:break-all; }
+  .actions { margin:26px 0 0; padding:18px 20px; background:#f0fbf5; border:1px solid #cdeadb; border-radius:12px; }
+  .actions h2 { border:0; padding:0; margin:0 0 10px; font-size:16px; color:#0b7a3b; }
+  .actions li { margin:6px 0; }
+  .foot { padding:18px 30px 26px; color:#8b93a1; font-size:12px; border-top:1px solid var(--line); }
+  .mock { display:inline-block; margin-left:8px; padding:2px 8px; border-radius:99px;
+    background:#fff4e5; color:#b25e00; font-size:12px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+<div class="card">
+<div class="hero"><div class="brand">AI 情报站</div><h1>AI 情报站｜英伟达 129.3 亿美元收购 Hugging Face 遭 DOJ 问询、百度开源无限页 OCR、豆包把电脑操作录成技能</h1><div class="date">2026-10-29 周四</div><div class="one-liner">英伟达买 Hugging Face 被反垄断盯上，百度把 OCR 页数上限推到“无限”并开源，豆包让电脑操作可以录成可复用技能；同一天，OpenAI 因 ChatGPT 给出的减药建议吃上致死诉讼，奥特曼被列为被告。</div></div>
+<div class="body"><h2>头条要闻</h2><div class="item"><h3>英伟达 129.3 亿美元收购 Hugging Face，遭美国司法部问询</h3><p>路透社报道，两位知情人士称美国司法部已就英伟达以 129.3 亿美元（约 863.86 亿元人民币）收购开源平台 Hugging Face 将如何影响 AI 竞争展开问询。问询涉及英伟达的并购、对外投资、销售模式，以及该公司是否对客户施加了压力；针对这笔交易，司法部官员重点关注并购是否会让英伟达掌控 AI 领域的核心分发枢纽。与此同时，反垄断执法人员对这家芯片设计商的调查已持续数年。</p><div class="meta"><b>对你的价值</b>：交易若被卡住，Hugging Face 的中立性短期不会变，把权重托管、推理跑在它上面的团队不必急着迁移；但“卖铲子+控分发”的模式已被监管盯上，做开源模型分发、推理服务的团队要评估对单一平台的依赖，提前准备镜像备份和多云部署方案。</div><div class="src">来源：IT之家（引路透社）</div></div><h2>模型与产品</h2><div class="item"><h3>蚂蚁百灵开源 Ling-3.1-flash-1019，瞄准 Personal Agent 真实任务</h3><p>10 月 28 日，蚂蚁集团旗下百灵大模型正式开源 Ling-3.1-flash-1019，定位是让 Personal Agent 走向真实任务。此前 NVIDIA 开发者博客在 DGX Spark 上就 Ling-3.0-flash（Inclusion AI）做过 batch size 1 的 MoE 推理评测，讨论如何提升单请求下的 token 生成速度。</p><div class="meta"><b>对你的价值</b>：flash 级、开源、面向 agent 任务，适合私有化或本地跑个人助理、桌面操作类 agent。建议先在单卡或 DGX Spark 环境测 batch=1 的生成速度和工具调用成功率，再决定是否替换现有闭源 API——agent 场景的真实瓶颈往往在延迟和调用稳定性，而不是榜单分数。</div><div class="src">来源：量子位、NVIDIA 开发者博客</div></div><h2>工具与玩法</h2><div class="item"><h3>豆包工作升级：把电脑操作录成技能，Mac 锁屏后照样跑</h3><p>豆包工作的电脑操作能力升级，屏幕点击精度和速度均有提升。用户在对话中提出需求并授权后，豆包可查看屏幕、模拟鼠标键盘操作应用。新增“录制操作生成技能”：用户像平时一样操作电脑，并通过语音补充要求（例如“只整理这个文件夹，文件按日期命名”），豆包会记录鼠标点击、输入文字和窗口内容，整理成个人技能供下次调用；录制期间可随时取消。任务还可在 Mac 锁屏后继续执行，并能用手机下达任务、查看结果。官方提醒使用时应避免展示账号密码等敏感信息。</p><div class="meta"><b>对你的价值</b>：整理文件、导表、批量填单这类重复桌面流程，可以一次录制、长期复用，等于给不会写脚本的同事配了一个操作录制器。录制前先关掉带密码、客户信息、后台系统的窗口，技能文件按敏感资产管理，别随手共享。</div><div class="src">来源：雷峰网</div></div><h2>变现机会</h2><div class="item"><h3>IBM CEO 算的账：开源权重模型 90% 效果、10%-25% token 成本</h3><p>IBM CEO Arvind Krishna 在 Q3 财报电话会上表示，开源权重模型现在能做到前沿闭源模型 90% 的效果，只花 10% 到 25% 的 token 成本。他反问企业：是想要一个只要 10% 价格、能达到最好模型 90% 水平的东西，还是愿意付十倍的钱？并称绝大多数企业会选便宜的。</p><div class="meta"><b>对你的价值</b>：这是给客户报价和给自己选型的锚点。把任务拆成“必须最强模型”和“90% 就够”两类，后者换开源权重本地部署，毛利立刻变厚；做 AI 外包和交付的团队，用这个价差去谈报价空间，比空谈“AI 提效”有说服力得多。</div><div class="src">来源：OSCHINA（引 IBM 财报电话会）</div></div><div class="actions"><h2>今天就能做</h2><ul><li>今天给团队所有 AI 入口加一道高风险拦截：涉及用药、医疗诊断、法律意见的问题强制转人工并弹免责提示，别等出事再补。</li><li>挑一本 300 页以上的扫描件，用百度开源的文心 Unlimited OCR 2 跑一遍，对比现有分页管线在跨页表格和章节还原上的准确率，再决定是否替换。</li><li>选一个每周重复三次以上的桌面流程（整理文件、导表、填单），用豆包的“录制操作生成技能”录一次；录制前关掉含账号密码和客户信息的窗口，录完把技能文件按敏感资产归档。</li></ul></div></div>
+<div class="foot">由「AI 情报站」自动生成 · 内容仅供参考，不构成投资、法律或医疗建议。</div>
+</div>
+</div>
+</body>
+</html>
