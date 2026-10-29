@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>独立开发者情报站 · 2026-10-30</title>
+<style>
+  :root { --ink:#1b1f24; --sub:#5b6472; --line:#e6e8ec; --brand:#0f62fe; --bg:#f5f6f8; }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--bg); color:var(--ink);
+    font:16px/1.75 -apple-system,"Segoe UI","Microsoft YaHei","PingFang SC",sans-serif; }
+  .wrap { max-width:780px; margin:0 auto; padding:28px 14px 64px; }
+  .card { background:#fff; border:1px solid var(--line); border-radius:16px; overflow:hidden; }
+  .hero { padding:30px 30px 22px; border-bottom:1px solid var(--line); background:linear-gradient(180deg,#fbfcff,#fff); }
+  .brand { color:var(--brand); font-weight:700; letter-spacing:.06em; font-size:13px; }
+  h1 { font-size:26px; line-height:1.35; margin:10px 0 6px; }
+  .date { color:var(--sub); font-size:13px; }
+  .one-liner { margin:16px 0 0; padding:12px 14px; background:#f2f6ff; border-left:3px solid var(--brand);
+    border-radius:0 8px 8px 0; color:#26303d; font-size:15px; }
+  .body { padding:8px 30px 26px; }
+  h2 { font-size:18px; margin:28px 0 12px; padding-left:10px; border-left:4px solid var(--brand); }
+  .item { border:1px solid var(--line); border-radius:12px; padding:16px 18px; margin:12px 0; }
+  .item h3 { font-size:16px; margin:0 0 8px; }
+  .item p { margin:0 0 10px; color:#2c343d; }
+  .meta { font-size:13px; color:var(--sub); }
+  .meta b { color:#0b7a3b; font-weight:600; }
+  .src { font-size:12px; color:#8b93a1; margin-top:6px; word-break:break-all; }
+  .actions { margin:26px 0 0; padding:18px 20px; background:#f0fbf5; border:1px solid #cdeadb; border-radius:12px; }
+  .actions h2 { border:0; padding:0; margin:0 0 10px; font-size:16px; color:#0b7a3b; }
+  .actions li { margin:6px 0; }
+  .foot { padding:18px 30px 26px; color:#8b93a1; font-size:12px; border-top:1px solid var(--line); }
+  .mock { display:inline-block; margin-left:8px; padding:2px 8px; border-radius:99px;
+    background:#fff4e5; color:#b25e00; font-size:12px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+<div class="card">
+<div class="hero"><div class="brand">独立开发者情报站</div><h1>独立开发者情报站 · 2026-10-30</h1><div class="date">2026-10-30 周五</div><div class="one-liner">一个 60 万美元 ARR 的微型 SaaS 正在寻求转型；Reddit 因搜索流量被 AI 截走，转而要求用户登录；OpenAI 证明即使物理隔离，agent 也能通过 CPU 缓存互相传输数据。</div></div>
+<div class="body"><h2>产品与收入</h2><div class="item"><h3>一个 60 万美元 ARR 的微型 SaaS 正在招聘创始工程师做 pivot</h3><p>Hacker News 上，一个声称做到 60 万美元 ARR 的微型 SaaS 正在寻找 Founding Engineer，目的是做 pivot（转向）。</p><div class="meta"><b>对你的价值</b>：每年 60 万美元收入仍然要转型，说明 ARR 不等于产品市场契合：依赖单一功能或单一渠道获得收入的微型 SaaS，生命周期远比数字看起来短。如果你也在这个收入量级，现在该问自己的是“明年靠什么收入”，而不是“怎么把当前收入再放大 10%”。</div><div class="src">来源：https://bluemate.nl</div></div><h2>工具与栈</h2><div class="item"><h3>Cursor 把内部构建 agent 用的框架做成了 Agent SDK</h3><p>Cursor 于 10 月 20 日发布 Agent SDK，这就是他们构建 Bugbot、Security Reviewer、Rollouts 等托管 agent 时使用的那套框架，现在对外开放。团队称最有用的 agent 是贴合某个团队工作方式的 agent，而过去只能二选一：要么接受按照别人工作流设计好的产品，要么从零开始搭建。</p><div class="meta"><b>对你的价值</b>：一人公司最缺的是不重复造轮子的时间。与其自己写工具调用、上下文管理和重试逻辑，不如先看这套已经产出过商用 agent 的框架能否直接改造，把工期从几周压缩到几天。</div><div class="src">来源：https://www.oschina.net/news/503287/cursor-agent-sdk</div></div><h2>增长与渠道</h2><div class="item"><h3>Reddit 将强制登录，CEO 称 Google 的 AI 搜索“不带来流量”</h3><p>Reddit 在 Q3 2026 财报中宣布将开始要求用户登录才能浏览，放弃部分开放网络的根基。CEO Steve Huffman 在财报电话会上表示 Google 的 AI 搜索模式不给平台带来流量，并披露 10 月搜索推荐流量出现百万量级的下滑。</p><div class="meta"><b>对你的价值</b>：两个直接后果：一是“在 Reddit 发帖+被谷歌搜到”这条免费获客路径正在收窄，依赖它的人要在登录墙造成损失之前把用户导入自有渠道；二是“被 AI 摘要引用”不等于“被点击”，做内容型产品的人要按“零点击”重算内容投入回报。</div><div class="src">来源：https://www.theverge.com/tech/1022571/reddit-login-requirement-q3-2026-earnings</div></div><h2>踩坑与风险</h2><div class="item"><h3>Binance 被盗约 56 亿美元，暂停提现</h3><p>区块链分析平台 ArkM 标注了与 Binance 相关的实体页面，TechCrunch 报道称攻击者疑似在周四的网络安全攻击中从这家全球最大加密交易所窃取数十亿美元规模的加密资产，Binance 已暂停提现。</p><div class="meta"><b>对你的价值</b>：如果你的产品收加密货币、或者把运营资金放在交易所，这就是最直接的对手方风险教育：交易所不是银行，托管不是自持。至少今天该做的是把收款和资金存放分开，不要把“能收币”当成“能存币”。</div><div class="src">来源：https://techcrunch.com/2026/10/29/binance-pauses-withdrawals-as-hackers-suspected-of-stealing-billions-in-crypto/</div></div><div class="actions"><h2>今天就能做</h2><ul><li>用只读 Stripe Key 跑一遍 DeclineKit 或自己写脚本，算出最近 90 天扣款失败导致的收入漏损，再决定是否开启或调整 Stripe 的自动重试与催付邮件。</li><li>检查你的流量来源结构：如果 Reddit 或搜索占比超过 30%，本月就把“落地页 + 邮件列表”接上，别等 Reddit 的登录墙正式执行后才开始迁移。</li><li>花半天做安全与备份体检：检查 CI 与依赖是否仍信任已出问题的证书链（如 eMudhra），核对依赖对 GitLab CVE-2026-97229 类漏洞是否已修复，并确认核心数据有可还原的异地备份。</li></ul></div></div>
+<div class="foot">由「独立开发者情报站」自动生成 · 内容仅供参考，不构成投资、法律或医疗建议。</div>
+</div>
+</div>
+</body>
+</html>
