@@ -1,5 +1,10 @@
 [
   {
+    "date": "2026-10-30",
+    "title": "AI 情报站｜DeepSeek 开源 DeepInfer 日均 155 万亿 Token、英伟达回应黄仁勋间谍报道、Gemini 4 Carbon 登顶",
+    "one_liner": "DeepSeek 把推理引擎开源，让竞争焦点从模型权重转向推理基础设施；同一天，英伟达因黄仁勋相关报道被迫表态，Gemini 4 Carbon 用首发半价争取开发者。"
+  },
+  {
     "date": "2026-10-29",
     "title": "AI 情报站｜英伟达 129.3 亿美元收购 Hugging Face 遭 DOJ 问询、百度开源无限页 OCR、豆包把电脑操作录成技能",
     "one_liner": "英伟达买 Hugging Face 被反垄断盯上，百度把 OCR 页数上限推到“无限”并开源，豆包让电脑操作可以录成可复用技能；同一天，OpenAI 因 ChatGPT 给出的减药建议吃上致死诉讼，奥特曼被列为被告。"
