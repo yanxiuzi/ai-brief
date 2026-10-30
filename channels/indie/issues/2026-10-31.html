@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>独立开发者情报站 · 2026-10-31 每日简报</title>
+<style>
+  :root { --ink:#1b1f24; --sub:#5b6472; --line:#e6e8ec; --brand:#0f62fe; --bg:#f5f6f8; }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--bg); color:var(--ink);
+    font:16px/1.75 -apple-system,"Segoe UI","Microsoft YaHei","PingFang SC",sans-serif; }
+  .wrap { max-width:780px; margin:0 auto; padding:28px 14px 64px; }
+  .card { background:#fff; border:1px solid var(--line); border-radius:16px; overflow:hidden; }
+  .hero { padding:30px 30px 22px; border-bottom:1px solid var(--line); background:linear-gradient(180deg,#fbfcff,#fff); }
+  .brand { color:var(--brand); font-weight:700; letter-spacing:.06em; font-size:13px; }
+  h1 { font-size:26px; line-height:1.35; margin:10px 0 6px; }
+  .date { color:var(--sub); font-size:13px; }
+  .one-liner { margin:16px 0 0; padding:12px 14px; background:#f2f6ff; border-left:3px solid var(--brand);
+    border-radius:0 8px 8px 0; color:#26303d; font-size:15px; }
+  .body { padding:8px 30px 26px; }
+  h2 { font-size:18px; margin:28px 0 12px; padding-left:10px; border-left:4px solid var(--brand); }
+  .item { border:1px solid var(--line); border-radius:12px; padding:16px 18px; margin:12px 0; }
+  .item h3 { font-size:16px; margin:0 0 8px; }
+  .item p { margin:0 0 10px; color:#2c343d; }
+  .meta { font-size:13px; color:var(--sub); }
+  .meta b { color:#0b7a3b; font-weight:600; }
+  .src { font-size:12px; color:#8b93a1; margin-top:6px; word-break:break-all; }
+  .actions { margin:26px 0 0; padding:18px 20px; background:#f0fbf5; border:1px solid #cdeadb; border-radius:12px; }
+  .actions h2 { border:0; padding:0; margin:0 0 10px; font-size:16px; color:#0b7a3b; }
+  .actions li { margin:6px 0; }
+  .foot { padding:18px 30px 26px; color:#8b93a1; font-size:12px; border-top:1px solid var(--line); }
+  .mock { display:inline-block; margin-left:8px; padding:2px 8px; border-radius:99px;
+    background:#fff4e5; color:#b25e00; font-size:12px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+<div class="card">
+<div class="hero"><div class="brand">独立开发者情报站</div><h1>独立开发者情报站 · 2026-10-31 每日简报</h1><div class="date">2026-10-31 周六</div><div class="one-liner">一对兄弟把 bootstrapped SaaS 干了 20 年、处理 7.66 亿个文件；同一天 Linode 和 Bunny CDN 双双出安全事件——一人公司最该盯的就是这两件事：能活多久，和一次事故能赔掉多少。</div></div>
+<div class="body"><h2>产品与收入</h2><div class="item"><h3>两兄弟把 bootstrapped SaaS 做了 20 年，累计处理 7.66 亿个文件</h3><p>Zamzar 团队在博客复盘：和兄弟两人经营一个自筹资金的 SaaS 满 20 年，累计处理 7.66 亿个文件。没有融资叙事，只有长期运营。</p><div class="meta"><b>对你的价值</b>：这是一条“久”的样本，不是“快”的样本。对独立开发者最可抄的不是它的增长，而是它选了一个二十年不过时的刚需（文件格式转换）并按用量收钱。检查你手上的产品：如果用户只在第一次需要它，那你做的是流量生意；如果每次都要用，才有资格谈 20 年。</div><div class="src">来源：素材2 · https://blog.zamzar.com/2026/10/30/20-years-766-million-files-two-chameleons/</div></div><h2>工具与栈</h2><div class="item"><h3>Staxless：开源的微服务 SaaS 脚手架</h3><p>有人在 HN 上发布 Show HN：Staxless，一个开源的微服务 SaaS boilerplate。该帖当时只有 1 分、0 条评论。</p><div class="meta"><b>对你的价值</b>：认证、计费、多租户这套脚手架自己搭要几周，用现成的能省时间。但这个项目目前几乎没有社区验证（1 分 0 评论），直接押到主代码库上有维护风险。做法：先看最近三个月的 commit 频率、issue 响应速度、License 条款，再决定是 fork 抄结构还是直接依赖。</div><div class="src">来源：素材2 · https://github.com/Staxless/staxless</div></div><h2>增长与渠道</h2><div class="item"><h3>Product Hunt 昨日上榜的产品，全都在改“用户每天看见但没人管”的那一小块</h3><p>Nocto 把 MacBook 的刘海做成有用功能；Teable Mobile 把团队内部系统搬到手机上；MCP Server by XWiki 让 AI 读取 wiki 知识但保留控制权；还有 Faylee（让 coding agent 从一条链接直接修 bug）、StepGrab、Knocket AI 等一批小切口产品集中上线。</p><div class="meta"><b>对你的价值</b>：这就是独立开发者最现实的选题法：不去造新品类，而是找一个用户天天看到、却一直忍着的界面缝隙（刘海、手机端、wiki 权限）。今天就能做的一步：打开你日常用的三个工具，各写一条“我每天都在忍什么”，从中挑一个能在两周内做出可用版本的去发 PH。</div><div class="src">来源：素材3 · https://www.producthunt.com/feed</div></div><h2>踩坑与风险</h2><div class="item"><h3>Linode 安全事件，同日 Bunny CDN 也报安全事件</h3><p>Hacker News 首页同日出现 Linode 安全事件（官方状态页）与 Bunny CDN 安全事件，两条都在短时间内积累了大量讨论。</p><div class="meta"><b>对你的价值</b>：一人公司没有值班工程师，供应商出事时你就是唯一的客服。今天该做的三件事：确认你的备份不在同一家供应商上、把关键依赖的可迁移路径写下来（DNS、对象存储、CDN 都要能换）、订阅所有依赖方的状态页并接到同一个提醒渠道。备份和主站放同一家，等于没备份。</div><div class="src">来源：素材1 · https://status.linode.com/incidents/nt58zhx3pmgm （Bunny CDN 事件链接在素材中被截断）</div></div><div class="actions"><h2>今天就能做</h2><ul><li>做一次“供应商单点故障”体检：列出你依赖的云、CDN、数据库、支付，逐项确认备份不在同一家、迁移路径存在、状态页已订阅。</li><li>对主营产品跑一遍客户端密钥扫描（构建产物搜索 secret/token/password），并把任何客户端直连数据库的调用改成走自己的 API。</li><li>从 Product Hunt 昨日榜单和 Software Hate Index 各挑一个抱怨/缺口，用两周能交付的粒度写成一句话选题，今天立项一个，别同时开三个。</li></ul></div></div>
+<div class="foot">由「独立开发者情报站」自动生成 · 内容仅供参考，不构成投资、法律或医疗建议。</div>
+</div>
+</div>
+</body>
+</html>
