@@ -1,5 +1,10 @@
 [
   {
+    "date": "2026-10-31",
+    "title": "AI 情报站｜国行 Apple 智能接入千问、DeepSeek 二轮融资 1055 亿、奥特曼称 RAM 该进数据中心",
+    "one_liner": "苹果国行 AI 定了时间表并把 Siri 交给千问；DeepSeek 二轮 1055 亿元、国资占比从 2% 跳到 27%；英伟达基于 MiniMax H3 开源 4K 视频增强权重，奥特曼则公开说内存该待在机房而不是你的桌面。"
+  },
+  {
     "date": "2026-10-30",
     "title": "AI 情报站｜DeepSeek 开源 DeepInfer 日均 155 万亿 Token、英伟达回应黄仁勋间谍报道、Gemini 4 Carbon 登顶",
     "one_liner": "DeepSeek 把推理引擎开源，让竞争焦点从模型权重转向推理基础设施；同一天，英伟达因黄仁勋相关报道被迫表态，Gemini 4 Carbon 用首发半价争取开发者。"
