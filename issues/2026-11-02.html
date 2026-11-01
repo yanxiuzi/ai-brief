@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI 情报站｜DeepSeek 发布 Super-agent 架构、千问接入国行 Apple 智能、奥特曼谈 5% 内存利用率</title>
+<style>
+  :root { --ink:#1b1f24; --sub:#5b6472; --line:#e6e8ec; --brand:#0f62fe; --bg:#f5f6f8; }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--bg); color:var(--ink);
+    font:16px/1.75 -apple-system,"Segoe UI","Microsoft YaHei","PingFang SC",sans-serif; }
+  .wrap { max-width:780px; margin:0 auto; padding:28px 14px 64px; }
+  .card { background:#fff; border:1px solid var(--line); border-radius:16px; overflow:hidden; }
+  .hero { padding:30px 30px 22px; border-bottom:1px solid var(--line); background:linear-gradient(180deg,#fbfcff,#fff); }
+  .brand { color:var(--brand); font-weight:700; letter-spacing:.06em; font-size:13px; }
+  h1 { font-size:26px; line-height:1.35; margin:10px 0 6px; }
+  .date { color:var(--sub); font-size:13px; }
+  .one-liner { margin:16px 0 0; padding:12px 14px; background:#f2f6ff; border-left:3px solid var(--brand);
+    border-radius:0 8px 8px 0; color:#26303d; font-size:15px; }
+  .body { padding:8px 30px 26px; }
+  h2 { font-size:18px; margin:28px 0 12px; padding-left:10px; border-left:4px solid var(--brand); }
+  .item { border:1px solid var(--line); border-radius:12px; padding:16px 18px; margin:12px 0; }
+  .item h3 { font-size:16px; margin:0 0 8px; }
+  .item p { margin:0 0 10px; color:#2c343d; }
+  .meta { font-size:13px; color:var(--sub); }
+  .meta b { color:#0b7a3b; font-weight:600; }
+  .src { font-size:12px; color:#8b93a1; margin-top:6px; word-break:break-all; }
+  .actions { margin:26px 0 0; padding:18px 20px; background:#f0fbf5; border:1px solid #cdeadb; border-radius:12px; }
+  .actions h2 { border:0; padding:0; margin:0 0 10px; font-size:16px; color:#0b7a3b; }
+  .actions li { margin:6px 0; }
+  .foot { padding:18px 30px 26px; color:#8b93a1; font-size:12px; border-top:1px solid var(--line); }
+  .mock { display:inline-block; margin-left:8px; padding:2px 8px; border-radius:99px;
+    background:#fff4e5; color:#b25e00; font-size:12px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+<div class="card">
+<div class="hero"><div class="brand">AI 情报站</div><h1>AI 情报站｜DeepSeek 发布 Super-agent 架构、千问接入国行 Apple 智能、奥特曼谈 5% 内存利用率</h1><div class="date">2026-11-02 周一</div><div class="one-liner">DeepSeek 把 Agent 从「单次会话」里解绑，苹果国行 AI 敲定 11 月 4 日 Beta、12 月正式上线并接入阿里千问，奥特曼则直指全球 DRAM 分散在个人 PC 里、利用率仅 5%——今天的重点全在「谁的入口、谁的算力」。</div></div>
+<div class="body"><h2>头条要闻</h2><div class="item"><h3>DeepSeek 发布 Super-agent 架构：Agent 脱离单次会话，AI 自己找 Bug 并提交 PR</h3><p>10 月 31 日晚，DeepSeek Harness 团队在官方公众号发布技术文章《Super-agent 设计探索：迈向更自主的 Agent 系统》。团队认为，模型能力提升催生了个人助手（Personal Agent）的集中涌现，但主流 Agent 设计在多任务和团队协作规模上撑不住，多任务上限取决于人的注意力。突破方式是打破 Agent 与单次手动会话的绑定，让它成为跨会话保持上下文、同时推进多项复杂任务且互不干扰的连续实体，即 Super-agent。实现上采用双层架构、事件驱动、异步多信道交互、存算分离与外部 Watchdog，底层接管繁琐的会话管理。量子位称其已能自己找到 Bug 并提交 PR。</p><div class="meta"><b>对你的价值</b>：做 Agent 产品的可以直接参考它的分层思路：把「会话」从产品核心中移除，替换为常驻实体和事件驱动，是解决多任务互相打断的关键。另外需要提前评估成本：钛媒体的评测结论是「既强大又有边界感，就是费额度」，多任务并行会把 token 消耗成倍放大。</div><div class="src">来源：极客公园、量子位、爱范儿、钛媒体</div></div><h2>模型与产品</h2><div class="item"><h3>MiniMax H3 被 Pika 拿去开源：H3 Flex 六步去噪，画面和声音一起生成</h3><p>Pika 发布基于 MiniMax H3 的衍生模型 Pika H3 Flex，开放适配器权重与推理代码。该模型通过六步去噪联合生成画面和声音，支持文本、首尾帧和多模态参考输入，用于镜头设计、参考生成和视频编辑。本次发布包含两套 LoRA 适配器，分别用于文本及首尾帧条件生成、多模态参考生成，同时提供 MiniMax H3 基础组件和本地推理工具。模型原生支持 480P、768P 输出，可生成约 5 至 15 秒的视频及同步立体声音频。Pika 提供 ComfyUI 工作流和 Hugging Face Diffusers 接入方式；本地生成之外，还可通过 API 做 1080P、2K、4K 视频增强和音频分轨。</p><div class="meta"><b>对你的价值</b>：做短视频和广告物料的团队可以按「低分辨率生成草稿→筛选→API 高分增强」的流程降低成本，音视频一次生成省掉后期对轨环节。代价是需要接受 5–15 秒的时长上限，长片仍得拼接，分镜设计要按「段」来重新规划。</div><div class="src">来源：雷峰网</div></div><h2>工具与玩法</h2><div class="item"><h3>英伟达公布 DGX Spark 上 MoE 推理提速三招，实测模型是 Ling-3.0-flash</h3><p>英伟达开发者博客发布《3 Ways to Boost MoE Inference on NVIDIA DGX Spark》，指出提速的第一步是找出推理性能的真正瓶颈，文中以 Inclusion AI 的 Ling-3.0-flash 在 DGX Spark 上 batch-size-1 的评测为例展开。同一批博客还更新了 CUDA 13.4 在 Kubernetes 中做内存强制 GPU 共享、NVIDIA Dynamo 的 Kubernetes 运行时构建等实践内容。</p><div class="meta"><b>对你的价值</b>：在小盒子上跑 MoE 模型的人，batch-size-1（单人对话、Agent 单任务）才是真实负载，而不是跑分网站上的大 batch 吞吐。这篇的价值在于教你定位瓶颈，而不是给一张调参表；同时 CUDA 13.4 的 GPU 共享方案对「多个小任务共用一个 GPU」的场景很实用。</div><div class="src">来源：NVIDIA Technical Blog</div></div><h2>变现机会</h2><div class="item"><h3>Meta 的 Muse 已验证付费：超 1/4 用户用它买东西、客单价超 200 美元；蚂蚁灵光 2.0 改口做「能管事的助理」</h3><p>10 月 21 日 Meta 财报会上，扎克伯格披露个人智能体 Muse 的关键数据：超过 1000 万人设置了 Muse，购物是最常见用途，超过四分之一的用户用它买东西，平均客单价超过 200 美元；上线第一周交易量便超出预期，Meta 不得不与 Stripe 临时上调信用额度。10 月 27 日蚂蚁集团发布灵光 2.0，定位从「30 秒用自然语言生成小应用」彻底转向「能管事的个人 AI 助理」，口号是「记得住、盯得牢、办得了」，打通支付宝账单、钉钉、飞书、米家等服务。</p><div class="meta"><b>对你的价值</b>：个人助理的付费点已经被验证在「替你花钱」这一侧，而不是「陪你聊天」：谁掌握账单、地址和日程，谁就拿走转化。国内团队接下接入支付宝账单、钉钉这类高频数据源，比再做一个通用聊天入口更有机会；但这也意味着授权链路和隐私说明必须提前设计好，否则用户第一次收到抽屉里的扣款提醒就会卸载。</div><div class="src">来源：极客公园、36氪</div></div><div class="actions"><h2>今天就能做</h2><ul><li>11 月 4 日国行 Apple 智能开发者 Beta 开放后，第一时间在真机上做「走本地模型 vs 转交千问」的对照测试，记录哪些请求被拒、哪些被转交，再决定 App 要不要改交互入口和隐私授权文案。</li><li>用 Pika H3 Flex 的 ComfyUI 工作流跑一条 5–15 秒带声短片，按「480P 生成草稿 → API 2K/4K 增强」算清单条真实成本，和现有拍摄剪辑方案做一次量化对比再决定是否接入。</li><li>复刻 DeepSeek Super-agent 的四个要点（常驻实体、事件驱动、存算分离、外部 Watchdog），先在自己产品里把「多任务并行不污染上下文」这一条做出来，同时压测它对额度和 token 成本的放大倍数。</li></ul></div></div>
+<div class="foot">由「AI 情报站」自动生成 · 内容仅供参考，不构成投资、法律或医疗建议。</div>
+</div>
+</div>
+</body>
+</html>
