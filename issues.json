@@ -1,5 +1,10 @@
 [
   {
+    "date": "2026-11-04",
+    "title": "AI 情报站｜DeepSeek 开源 Super Agent 架构、字节 Seedance 海外收入占一半、马斯克称 Grok Bot 成本难以为继",
+    "one_liner": "DeepSeek 把 Agent 的瓶颈指向人的注意力，字节视频模型的钱已有一半来自海外，马斯克则承认 Grok Bot 的高额度补贴撑不住——三件事分别对应架构、市场、成本三条线。"
+  },
+  {
     "date": "2026-11-02",
     "title": "AI 情报站｜DeepSeek 发布 Super-agent 架构、千问接入国行 Apple 智能、奥特曼谈 5% 内存利用率",
     "one_liner": "DeepSeek 把 Agent 从「单次会话」里解绑，苹果国行 AI 敲定 11 月 4 日 Beta、12 月正式上线并接入阿里千问，奥特曼则直指全球 DRAM 分散在个人 PC 里、利用率仅 5%——今天的重点全在「谁的入口、谁的算力」。"
