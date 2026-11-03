@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>职场信号站 · 2026-11-04：AI 已经嵌进产品主干，你的技能还停在插件层吗？</title>
+<style>
+  :root { --ink:#1b1f24; --sub:#5b6472; --line:#e6e8ec; --brand:#0f62fe; --bg:#f5f6f8; }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--bg); color:var(--ink);
+    font:16px/1.75 -apple-system,"Segoe UI","Microsoft YaHei","PingFang SC",sans-serif; }
+  .wrap { max-width:780px; margin:0 auto; padding:28px 14px 64px; }
+  .card { background:#fff; border:1px solid var(--line); border-radius:16px; overflow:hidden; }
+  .hero { padding:30px 30px 22px; border-bottom:1px solid var(--line); background:linear-gradient(180deg,#fbfcff,#fff); }
+  .brand { color:var(--brand); font-weight:700; letter-spacing:.06em; font-size:13px; }
+  h1 { font-size:26px; line-height:1.35; margin:10px 0 6px; }
+  .date { color:var(--sub); font-size:13px; }
+  .one-liner { margin:16px 0 0; padding:12px 14px; background:#f2f6ff; border-left:3px solid var(--brand);
+    border-radius:0 8px 8px 0; color:#26303d; font-size:15px; }
+  .body { padding:8px 30px 26px; }
+  h2 { font-size:18px; margin:28px 0 12px; padding-left:10px; border-left:4px solid var(--brand); }
+  .item { border:1px solid var(--line); border-radius:12px; padding:16px 18px; margin:12px 0; }
+  .item h3 { font-size:16px; margin:0 0 8px; }
+  .item p { margin:0 0 10px; color:#2c343d; }
+  .meta { font-size:13px; color:var(--sub); }
+  .meta b { color:#0b7a3b; font-weight:600; }
+  .src { font-size:12px; color:#8b93a1; margin-top:6px; word-break:break-all; }
+  .actions { margin:26px 0 0; padding:18px 20px; background:#f0fbf5; border:1px solid #cdeadb; border-radius:12px; }
+  .actions h2 { border:0; padding:0; margin:0 0 10px; font-size:16px; color:#0b7a3b; }
+  .actions li { margin:6px 0; }
+  .foot { padding:18px 30px 26px; color:#8b93a1; font-size:12px; border-top:1px solid var(--line); }
+  .mock { display:inline-block; margin-left:8px; padding:2px 8px; border-radius:99px;
+    background:#fff4e5; color:#b25e00; font-size:12px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+<div class="card">
+<div class="hero"><div class="brand">职场信号站</div><h1>职场信号站 · 2026-11-04：AI 已经嵌进产品主干，你的技能还停在插件层吗？</h1><div class="date">2026-11-04 周三</div><div class="one-liner">Google 用搜索权限逼学校接受 AI，字节 Seedance 海外收入已占一半，agent 做一次编码任务的 token 消耗是普通提示的 10–50 倍——今天更值钱的不是“会用工具”，而是能给 agent 定身份、算清成本、对结果负责的人。</div></div>
+<div class="body"><h2>行业冷暖</h2><div class="item"><h3>Google：学校想关掉 AI，就得连搜索一起关</h3><p>TechCrunch 11 月 3 日报道，选择限制 AI 的学校将无法继续使用 Google Search，因为 AI 功能已经整合进搜索引擎本身；NYT 同题报道在 Hacker News 首页获得 72 分、48 条评论。</p><div class="meta"><b>对你的价值</b>：这说明 AI 已经是产品的主干，并非可选的插件。你去面教育、公共部门或政企相关岗位时，如果被问“能不能给一个不带 AI 的版本”，先分清哪些能力已经绑死在搜索、推荐这类主链路上；不要当场承诺做不到的“纯人工版本”，否则入职后就会陷在这个承诺里。</div><div class="src">来源：TechCrunch https://techcrunch.com/2026/11/03/google-will-let-schools-disable-its-ai-tools-but-not-without-sacrificing-search/ ；Hacker News 讨论 https://news.ycombinator.com/item?id=50353192</div></div><h2>技能与岗位</h2><div class="item"><h3>AI agent 需要自己的身份，OAuth2 得重学一遍</h3><p>Stack Overflow 博客 11 月 3 日（录制于 LeadDev 的 LDX3）请来 FusionAuth 的 Dan Moore 谈为 agentic 时代改造成熟的 OAuth2 协议：给自主 AI agent 分配独立的身份是安全上的必需，同时 AI 编码工具正在把开发者的注意力转向解决核心业务问题。</p><div class="meta"><b>对你的价值</b>：面试时能讲清“这个 agent 用什么身份、能调哪些权限、调用怎么审计”，是现在很缺的落地能力。做后端或平台的，把 OAuth2、scope、token 生命周期复习到能画图说明，比再学一个框架更能加分；做业务的，至少要能向安全团队说清 agent 的权限边界。</div><div class="src">来源：Stack Overflow Blog https://stackoverflow.blog/2026/11/03/oh-your-agents-need-oauth2-too/</div></div><h2>求职方法</h2><div class="item"><h3>面试前先查：这家公司在被“砍单”吗</h3><p>Hacker News 上出现 Show HN 项目 HackerChurn，专门整理 HN 社群想取消（cancel）哪些 SaaS 工具。</p><div class="meta"><b>对你的价值</b>：花十分钟看这类“砍工具”清单，能大致判断目标公司是在收缩预算还是扩张。更实用的是把它变成反问：面试时问“团队今年砍掉了哪些工具、为什么”，比问“团队氛围怎么样”更容易听出真实的经营状态和你的岗位是否在收缩线上。</div><div class="src">来源：Hacker News https://hissingkitty.com/hacker-churn</div></div><h2>趋势与政策</h2><div class="item"><h3>美国政府把 AI 改叫“Super Intelligence”</h3><p>MIT Technology Review 报道，9 月底特朗普签署的行政令只有一条指令：要求政府机构把此前称为 artificial intelligence 的东西改称“Super Intelligence”，报道同时跟踪了哪些机构在跟进这一说法。</p><div class="meta"><b>对你的价值</b>：政策用词会传导到招标文件、合规文档和岗位名称上。做政府、教育、国企项目的，要留意采购与申报材料里的术语变化，别在投标书里用错表述；关注这类措辞也能提前判断下一轮预算往哪个方向走。</div><div class="src">来源：MIT Technology Review https://www.technologyreview.com/2026/11/02/1147932/heres-who-is-falling-in-line-for-trumps-super-intelligence-loyalty-test/</div></div><div class="actions"><h2>今天就能做</h2><ul><li>今天花 20 分钟，把简历里所有“使用/熟悉 AI 工具”的表述逐条改成“用 X 完成 Y，验收标准是 Z，结果由我负责”，改完再投。</li><li>面试前做两件功课：查目标公司是否在削减工具预算（参考 HN 上的 HackerChurn 清单），以及它走的是自建算力还是集成路线（如 Apple 财报口径），据此写 3 个反问。</li><li>把三个概念补到能画图讲解：agent 的 OAuth2 身份与权限边界、单任务 token 成本（可达普通提示的 10–50 倍）、RLHF/attention/LoRA/LLM 评测分别解决什么问题。</li></ul></div></div>
+<div class="foot">由「职场信号站」自动生成 · 内容仅供参考，不构成投资、法律或医疗建议。</div>
+</div>
+</div>
+</body>
+</html>
