@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>独立开发者情报站 · 2026-11-07</title>
+<style>
+  :root { --ink:#1b1f24; --sub:#5b6472; --line:#e6e8ec; --brand:#0f62fe; --bg:#f5f6f8; }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--bg); color:var(--ink);
+    font:16px/1.75 -apple-system,"Segoe UI","Microsoft YaHei","PingFang SC",sans-serif; }
+  .wrap { max-width:780px; margin:0 auto; padding:28px 14px 64px; }
+  .card { background:#fff; border:1px solid var(--line); border-radius:16px; overflow:hidden; }
+  .hero { padding:30px 30px 22px; border-bottom:1px solid var(--line); background:linear-gradient(180deg,#fbfcff,#fff); }
+  .brand { color:var(--brand); font-weight:700; letter-spacing:.06em; font-size:13px; }
+  h1 { font-size:26px; line-height:1.35; margin:10px 0 6px; }
+  .date { color:var(--sub); font-size:13px; }
+  .one-liner { margin:16px 0 0; padding:12px 14px; background:#f2f6ff; border-left:3px solid var(--brand);
+    border-radius:0 8px 8px 0; color:#26303d; font-size:15px; }
+  .body { padding:8px 30px 26px; }
+  h2 { font-size:18px; margin:28px 0 12px; padding-left:10px; border-left:4px solid var(--brand); }
+  .item { border:1px solid var(--line); border-radius:12px; padding:16px 18px; margin:12px 0; }
+  .item h3 { font-size:16px; margin:0 0 8px; }
+  .item p { margin:0 0 10px; color:#2c343d; }
+  .meta { font-size:13px; color:var(--sub); }
+  .meta b { color:#0b7a3b; font-weight:600; }
+  .src { font-size:12px; color:#8b93a1; margin-top:6px; word-break:break-all; }
+  .actions { margin:26px 0 0; padding:18px 20px; background:#f0fbf5; border:1px solid #cdeadb; border-radius:12px; }
+  .actions h2 { border:0; padding:0; margin:0 0 10px; font-size:16px; color:#0b7a3b; }
+  .actions li { margin:6px 0; }
+  .foot { padding:18px 30px 26px; color:#8b93a1; font-size:12px; border-top:1px solid var(--line); }
+  .mock { display:inline-block; margin-left:8px; padding:2px 8px; border-radius:99px;
+    background:#fff4e5; color:#b25e00; font-size:12px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+<div class="card">
+<div class="hero"><div class="brand">独立开发者情报站</div><h1>独立开发者情报站 · 2026-11-07</h1><div class="date">2026-11-07 周六</div><div class="one-liner">Product Hunt 上同一天挤满了给 AI 编程 agent 当配件的工具和面向 AI agent 做营销的产品；与此同时，一个在 musl libc 里躺了 14 年、用超长密码就能登录 root 的漏洞被公开，提醒独立开发者：自托管服务的默认配置就是攻击面。</div></div>
+<div class="body"><h2>产品与收入</h2><div class="item"><h3>PostMyPace：把跑步数据一键变成 Instagram Story / Reel</h3><p>Product Hunt 上线的 PostMyPace，定位很窄：把一次跑步转成可以直接发布的 Instagram Story 或 Reel。它不自建社交网络，只负责把运动数据变成可发布的成品内容。</p><div class="meta"><b>对你的价值</b>：这是典型的「单一动作 + 单一导出目标」产品结构：用户 30 秒拿到可发布成品，你也省掉了社区、信息流、账号体系的成本。做一人产品时，优先找这种「用户已经有发布需求、只差最后一公里格式转换」的缺口，变现路径清晰（按月订阅或按导出次数）。</div><div class="src">来源：Product Hunt https://www.producthunt.com/products/postmypace</div></div><h2>工具与栈</h2><div class="item"><h3>Libghostty 1.0 发布，HN 首页 415 分</h3><p>Mitchell Hashimoto 发布 Libghostty 1.0，在 Hacker News 拿到 415 分、69 条评论，同时出现在 Lobsters 首页。</p><div class="meta"><b>对你的价值</b>：终端与编辑器基础设施是独立开发者少有的「可长期复用资产」。即使你不写终端，也值得读一次这个项目的发布说明，看清一个单人/小团队项目如何把底层库和上层产品分开：库可以被更多人依赖、产品可以收费，这是两条互不冲突的收入线。</div><div class="src">来源：Hacker News https://mitchellh.com/writing/libghostty-1-0 ； Lobsters https://lobste.rs/s/0ouxwf/libghostty_1_0</div></div><h2>增长与渠道</h2><div class="item"><h3>Product Hunt 单日被 AI 编程工具占满，发布窗口已经很拥挤</h3><p>11 月 6 日的 Product Hunt 上，crystl（面向 macOS、给 AI coding agent 用的多任务终端）、Alysis Code（开源 AI 编程 agent）、Rankfender v3.0、Tobira Site Agent、Winq 等产品密集上线。</p><div class="meta"><b>对你的价值</b>：这说明「AI + 开发者工具」这个位置的注意力竞争已经很激烈，一次普通发布很容易被同一天的同类产品淹没。可行的做法：要么换一个更窄的定位（例如只服务某一种职业工作流），要么把发布当连续动作——发布日只是起点，后面靠对比页、开源仓库、目录站二次分发持续获取流量。</div><div class="src">来源：Product Hunt https://www.producthunt.com/feed</div></div><h2>踩坑与风险</h2><div class="item"><h3>OpenSSH 严重绕过漏洞「sshole」：超 256 字符的任意密码可登录 root</h3><p>OSCHINA 报道，一个被命名为 ssshole 的漏洞在 musl libc 中存在了 14 年（2012 年引入、2026 年才被发现）：只要输入超过 256 个字符的任意密码，就能登录本该永远无法登录的账号。发现者为 Özgün Kültekin，并为此建了 sshhole.com 梳理来龙去脉；Lobsters 上也有相关讨论条目。</p><div class="meta"><b>对你的价值</b>：这类问题直接命中用 Alpine、musl 基础镜像跑容器和自托管服务的人。要做的事很具体：盘点所有基于 musl 的镜像与主机、检查登录与权限配置、确认是否有不必要的 root 直登；再小的副业项目，一旦把 SSH 暴露在公网，风险等级就和你的收入无关了。</div><div class="src">来源：OSCHINA https://www.oschina.net/news/503439/openssh-sshhole ； Lobsters https://lobste.rs/s/oq5pem/sshhole</div></div><div class="actions"><h2>今天就能做</h2><ul><li>盘点你所有自托管服务和容器镜像：查是否基于 musl、是否允许 root 直登、是否绑定到 0.0.0.0 且无鉴权；从外网扫一遍端口，把默认配置全部改成默认拒绝。</li><li>用一次真实仓库测试本地索引型 AI 编程工具的费效比：记录一周的 token 消耗与 review 时间，和现用方案对比，而不是只看 demo 效果。</li><li>如果本月打算发布产品，先写清一个别人一句话能记住的窄定位，并排好发布后的二次分发计划（对比页、开源仓库、目录站），别把全部希望押在 Product Hunt 当天。</li></ul></div></div>
+<div class="foot">由「独立开发者情报站」自动生成 · 内容仅供参考，不构成投资、法律或医疗建议。</div>
+</div>
+</div>
+</body>
+</html>
