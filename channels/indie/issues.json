@@ -1,5 +1,10 @@
 [
   {
+    "date": "2026-11-08",
+    "title": "独立开发者情报站 · 11/08：HN 用户最想退订的 SaaS，就是一份选品清单",
+    "one_liner": "今天四条线：HN 冒出「想退订哪些 SaaS」榜单和 micro-SaaS 集中曝光帖；Claude Code 的「Don't Ask Again」把密码写进 1122 个公开仓库；GitHub 换掉 PR 概览页；一个 31 分的 Show HN 演示了小产品的冷启动路径。"
+  },
+  {
     "date": "2026-11-07",
     "title": "独立开发者情报站 · 2026-11-07",
     "one_liner": "Product Hunt 上同一天挤满了给 AI 编程 agent 当配件的工具和面向 AI agent 做营销的产品；与此同时，一个在 musl libc 里躺了 14 年、用超长密码就能登录 root 的漏洞被公开，提醒独立开发者：自托管服务的默认配置就是攻击面。"
