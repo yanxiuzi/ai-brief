@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>独立开发者情报站 · 11/08：HN 用户最想退订的 SaaS，就是一份选品清单</title>
+<style>
+  :root { --ink:#1b1f24; --sub:#5b6472; --line:#e6e8ec; --brand:#0f62fe; --bg:#f5f6f8; }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--bg); color:var(--ink);
+    font:16px/1.75 -apple-system,"Segoe UI","Microsoft YaHei","PingFang SC",sans-serif; }
+  .wrap { max-width:780px; margin:0 auto; padding:28px 14px 64px; }
+  .card { background:#fff; border:1px solid var(--line); border-radius:16px; overflow:hidden; }
+  .hero { padding:30px 30px 22px; border-bottom:1px solid var(--line); background:linear-gradient(180deg,#fbfcff,#fff); }
+  .brand { color:var(--brand); font-weight:700; letter-spacing:.06em; font-size:13px; }
+  h1 { font-size:26px; line-height:1.35; margin:10px 0 6px; }
+  .date { color:var(--sub); font-size:13px; }
+  .one-liner { margin:16px 0 0; padding:12px 14px; background:#f2f6ff; border-left:3px solid var(--brand);
+    border-radius:0 8px 8px 0; color:#26303d; font-size:15px; }
+  .body { padding:8px 30px 26px; }
+  h2 { font-size:18px; margin:28px 0 12px; padding-left:10px; border-left:4px solid var(--brand); }
+  .item { border:1px solid var(--line); border-radius:12px; padding:16px 18px; margin:12px 0; }
+  .item h3 { font-size:16px; margin:0 0 8px; }
+  .item p { margin:0 0 10px; color:#2c343d; }
+  .meta { font-size:13px; color:var(--sub); }
+  .meta b { color:#0b7a3b; font-weight:600; }
+  .src { font-size:12px; color:#8b93a1; margin-top:6px; word-break:break-all; }
+  .actions { margin:26px 0 0; padding:18px 20px; background:#f0fbf5; border:1px solid #cdeadb; border-radius:12px; }
+  .actions h2 { border:0; padding:0; margin:0 0 10px; font-size:16px; color:#0b7a3b; }
+  .actions li { margin:6px 0; }
+  .foot { padding:18px 30px 26px; color:#8b93a1; font-size:12px; border-top:1px solid var(--line); }
+  .mock { display:inline-block; margin-left:8px; padding:2px 8px; border-radius:99px;
+    background:#fff4e5; color:#b25e00; font-size:12px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+<div class="card">
+<div class="hero"><div class="brand">独立开发者情报站</div><h1>独立开发者情报站 · 11/08：HN 用户最想退订的 SaaS，就是一份选品清单</h1><div class="date">2026-11-08 周日</div><div class="one-liner">今天四条线：HN 冒出「想退订哪些 SaaS」榜单和 micro-SaaS 集中曝光帖；Claude Code 的「Don&#x27;t Ask Again」把密码写进 1122 个公开仓库；GitHub 换掉 PR 概览页；一个 31 分的 Show HN 演示了小产品的冷启动路径。</div></div>
+<div class="body"><h2>产品与收入</h2><div class="item"><h3>HackerChurn：把「HN 用户想退订哪些 SaaS」做成了榜单</h3><p>Show HN 项目 HackerChurn 在 HN 拿到 71 分、26 条评论，主题是统计 HN 社区最想取消订阅的 SaaS 工具。它把「用户一边抱怨一边续费」的品类直接摊开在台面上。</p><div class="meta"><b>对你的价值</b>：这是一份反向选品表：被大量点名「想退订」的工具，说明需求真实、但现有方案贵或臃肿。挑一个品类做更便宜、更专注的小版本，比凭空想 idea 靠谱得多。</div><div class="src">来源：Hacker News Show HN（hissingkitty.com/hacker-churn）</div></div><h2>工具与栈</h2><div class="item"><h3>Cordonix 0.4.1：给 AI 编程 agent 用的本地执行与文件工作区（C11 / MCP）</h3><p>Cordonix（cdx）用 C11 实现，支持 Windows 和 Linux，通过 MCP 提供本地程序执行、文件读取、编码转换、内存编辑等能力。本次更新改进了安装后的版本更新体验，完善了全部 MCP 工具的参数说明，并让文件创建失败的提示更准确。</p><div class="meta"><b>对你的价值</b>：如果你在给 coding agent 配工具链，MCP 参数说明写得清不清楚，直接决定 agent 试错次数和 token 花费。参数描述模糊的 MCP 工具，是隐形的成本项。</div><div class="src">来源：OSCHINA（oschina.net/news/503467）</div></div><h2>增长与渠道</h2><div class="item"><h3>Show HN：把度假照片变成可分享小游戏，31 分 11 评论</h3><p>Where Were We 是作者做给妻子的周年礼物：上传旅行照片，用 EXIF 读出拍摄地点和时间，自动生成一个可以发给任何人玩的小游戏。这条 Show HN 拿到 31 分、11 条评论。</p><div class="meta"><b>对你的价值</b>：这是典型的「一个人的小需求 + 极窄功能」冷启动样本：功能单一到一句话能讲完，情感动机让描述自带故事。你要发 Show HN 时，标题和第一段就该这么写，别写技术栈。</div><div class="src">来源：Hacker News Show HN（wherewerewe.app）</div></div><h2>踩坑与风险</h2><div class="item"><h3>Claude Code 的「Don&#x27;t Ask Again」把密码泄露到 1,122 个公开 GitHub 文件</h3><p>Apiiro 的博客称，Claude Code 的「Don&#x27;t Ask Again」选项导致密码等信息出现在 1,122 个公开 GitHub 文件中。这条在 HN 首页拿到 230 分、149 条评论。</p><div class="meta"><b>对你的价值</b>：这是最高优先级自查项：一键「别再问我」等于让 agent 长期带着敏感权限跑命令。今天就翻一遍自己点过「Don&#x27;t Ask Again」的操作、检查公开仓库里是否混进过 .env 或密钥文件，并考虑改用密钥管理而非明文配置。</div><div class="src">来源：Apiiro / Hacker News（apiiro.com/blog/coding-agents-leaking-secrets-github-dont-ask-again）</div></div><div class="actions"><h2>今天就能做</h2><ul><li>把 Claude Code 的密钥泄露事件当今天的头等事：检查自己账号下所有公开仓库有没有提交过 .env、密钥、token 文件，回查点过「Don&#x27;t Ask Again」的会话，把敏感配置全部迁到环境变量或密钥管理服务。</li><li>确认生产服务器和镜像是否基于 Alpine/musl 跑 OpenSSH，立刻升级到修复版本；一人公司没有值班人，root 绕过漏洞今天不处理，明天可能就被扫。</li><li>把 HackerChurn 榜单当选品表用：挑 2-3 个「用户抱怨但离不开」的 SaaS 品类，评估做一个更便宜更专注的版本；同时在 HN 的 micro-SaaS 集中帖里发一条带真实数字的项目介绍，先把曝光占住。</li></ul></div></div>
+<div class="foot">由「独立开发者情报站」自动生成 · 内容仅供参考，不构成投资、法律或医疗建议。</div>
+</div>
+</div>
+</body>
+</html>
