@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI 情报站｜黄仁勋辞任英伟达 CEO、豆包工作一次接入 Kimi/GLM/DeepSeek 三家模型、Kimi K3 把图论纪录从 629 条边推到 630</title>
+<style>
+  :root { --ink:#1b1f24; --sub:#5b6472; --line:#e6e8ec; --brand:#0f62fe; --bg:#f5f6f8; }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--bg); color:var(--ink);
+    font:16px/1.75 -apple-system,"Segoe UI","Microsoft YaHei","PingFang SC",sans-serif; }
+  .wrap { max-width:780px; margin:0 auto; padding:28px 14px 64px; }
+  .card { background:#fff; border:1px solid var(--line); border-radius:16px; overflow:hidden; }
+  .hero { padding:30px 30px 22px; border-bottom:1px solid var(--line); background:linear-gradient(180deg,#fbfcff,#fff); }
+  .brand { color:var(--brand); font-weight:700; letter-spacing:.06em; font-size:13px; }
+  h1 { font-size:26px; line-height:1.35; margin:10px 0 6px; }
+  .date { color:var(--sub); font-size:13px; }
+  .one-liner { margin:16px 0 0; padding:12px 14px; background:#f2f6ff; border-left:3px solid var(--brand);
+    border-radius:0 8px 8px 0; color:#26303d; font-size:15px; }
+  .body { padding:8px 30px 26px; }
+  h2 { font-size:18px; margin:28px 0 12px; padding-left:10px; border-left:4px solid var(--brand); }
+  .item { border:1px solid var(--line); border-radius:12px; padding:16px 18px; margin:12px 0; }
+  .item h3 { font-size:16px; margin:0 0 8px; }
+  .item p { margin:0 0 10px; color:#2c343d; }
+  .meta { font-size:13px; color:var(--sub); }
+  .meta b { color:#0b7a3b; font-weight:600; }
+  .src { font-size:12px; color:#8b93a1; margin-top:6px; word-break:break-all; }
+  .actions { margin:26px 0 0; padding:18px 20px; background:#f0fbf5; border:1px solid #cdeadb; border-radius:12px; }
+  .actions h2 { border:0; padding:0; margin:0 0 10px; font-size:16px; color:#0b7a3b; }
+  .actions li { margin:6px 0; }
+  .foot { padding:18px 30px 26px; color:#8b93a1; font-size:12px; border-top:1px solid var(--line); }
+  .mock { display:inline-block; margin-left:8px; padding:2px 8px; border-radius:99px;
+    background:#fff4e5; color:#b25e00; font-size:12px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+<div class="card">
+<div class="hero"><div class="brand">AI 情报站</div><h1>AI 情报站｜黄仁勋辞任英伟达 CEO、豆包工作一次接入 Kimi/GLM/DeepSeek 三家模型、Kimi K3 把图论纪录从 629 条边推到 630</h1><div class="date">2026-11-13 周五</div><div class="one-liner">今天最重要的一条不是模型发版，而是英伟达 33 年的 CEO 在开盘前辞职，股价盘前跌 10%、当日收跌超 4%，特朗普公开点名让库克接任；国内则是字节把对手的模型搬进了自家工作台，月之暗面在数学研究级任务上把人类参考纪录往前推了一步。</div></div>
+<div class="body"><h2>头条要闻</h2><div class="item"><h3>黄仁勋辞任英伟达 CEO 即刻生效，CFO 科莱特·克雷斯临时代管，特朗普点名库克接任</h3><p>美国时间 11 月 12 日美股开盘前，英伟达宣布黄仁勋辞去总裁、CEO 及董事会成员职务，即刻生效。首席财务官科莱特·克雷斯（Colette Kress）出任临时 CEO 并继续兼管财务，董事哈维·琼斯（Harvey C. Jones，曾任新思科技 CEO 兼执行董事长）出任首任董事会主席，董事会已启动正式 CEO 遴选，内外部人选都考虑。黄仁勋 1993 年与两位合伙人创办英伟达，任 CEO 共 33 年。消息公布后股价盘前下跌 10%，当日美股收盘英伟达跌超 4%，爱范儿称其仍为英伟达最大个人股东。特朗普随后公开表示，苹果前 CEO Tim Cook 应该接任英伟达 CEO。另据彭博社，众议院外交事务委员会主席 Brian Mast 称黄仁勋已同意在感恩节（11 月 26 日）前赴国会作证，日期仍在协商；众议院民主党人已就英伟达对华销售启动调查；路透社报道其还存在第三段婚外情。</p><div class="meta"><b>对你的价值</b>：如果你的训练或推理预算压在英伟达卡上，这是未来半年最需要盯的变量：临时 CEO 是干了多年财务的 CFO，短期更可能保利润表而非激进降价扩生态。已有信号包括美国拟扩大 AI 芯片出口管制、限制中企经海外数据中心拿算力。订单、交付与合规条款该重新评估，别把明年的算力计划押在一个正在换帅的供应商的默认承诺上。</div><div class="src">来源：极客公园、36氪、爱范儿、The Verge、CNBC、TechCrunch、Wired、MIT Technology Review</div></div><h2>模型与产品</h2><div class="item"><h3>MiniMax 开源 SOTA 生图模型：原生 4K，一张两毛</h3><p>量子位报道，MiniMax 开源一款 SOTA 级生图模型，支持原生 4K 输出，单张成本约两毛钱。</p><div class="meta"><b>对你的价值</b>：生图单价压到两毛、且原生 4K 开源，意味着电商详情页、小红书配图、素材站这类批量出图生意的成本结构会被重算。做内容代运营或图片类 SaaS 的，先本地跑一遍看画质能不能顶住你的交付标准，能顶住就换掉按张计费的闭源 API，毛利空间立刻不一样。</div><div class="src">来源：量子位 https://www.qbitai.com/2026/11/509440.html</div></div><h2>工具与玩法</h2><div class="item"><h3>苹果内部新 Mac 应用 Harbor 曝光：把你的 Mac 变成私有 AI 推理服务器</h3><p>爆料人 Aaron Perris 于 11 月 10 日发现苹果内部一个新 Mac 应用，名为 Harbor，功能描述第一句即「把你的 Mac 变成私有 AI 推理服务器」。其思路是用用户自购的 Mac 硬件运行开源权重模型，数据不出本机。</p><div class="meta"><b>对你的价值</b>：如果这事落地，等于苹果官方给「本地跑开源模型」背书，对隐私敏感型客户（医疗、律所、财税）是刚需卖点。现在就可以做的准备：盘一下手上客户里有多少明确拒绝把数据传出内网，这批人愿意为「数据不出机器」付费，而你只需要一台 Mac 加开源权重。</div><div class="src">来源：OSCHINA</div></div><h2>变现机会</h2><div class="item"><h3>联想发布「万全混合词元工厂」：张家口 1.5 万 P 异构算力，年产量瞄准 2000 万亿词元</h3><p>11 月 10 日，联想发布「万全混合词元工厂」品牌，并宣布与张家口市政府合作建设首个混合词元母本工厂。初期规划建设 1.5 万 P 异构算力集群、约 100MW 智算中心，词元年产量超 2000 万亿，峰值词元产出达每秒 2 亿；到 2030 年相关核心指标预计在现有基础上提升 10 倍以上。联想希望改变过去以「卖 AI 设备」为主的模式，把算力资源转化为「AI 产出」。</p><div class="meta"><b>对你的价值</b>：这是国内算力生意从「按卡时出租」转向「按词元计价」的一个明确信号。对中小企业，意味着可能出现按词元结算的推理采购选项，不用自己养 GPU 集群；对做集成和代理的，则是一个新的转售品类。谈判时要盯住两点：单位词元的实际有效吞吐（不是峰值），以及闲置时段的价格。</div><div class="src">来源：36氪 https://36kr.com/p/4066221891196036?f=rss</div></div><div class="actions"><h2>今天就能做</h2><ul><li>把「任务类型—模型—额度倍率」对照表做出来并贴到团队群里：豆包工作已明码标注 Kimi K3.1 Pro、GLM 5.3、DeepSeek V4.1 Flash 的消耗倍率，先按真实任务跑一周，把贵的任务挪到限时折扣时段。</li><li>本周清点一次算力供应商风险敞口：英伟达正在换帅且美国拟扩大 AI 芯片出口管制、限制中企经海外数据中心获取算力，把你的合同交付条款、备选供应商（国产卡或其他云）和迁移成本写成一张表，别等到断供才讨论。</li><li>选一个成本敏感的高频场景做低价模型替代测试：拿 Gemini 4 Hydrogen 或本地开源模型（如 Edge0-145B 这类方案）跑你现有的批处理任务，记录质量下降幅度与账单下降幅度，用数据决定哪些任务可以从旗舰模型上撤下来。</li></ul></div></div>
+<div class="foot">由「AI 情报站」自动生成 · 内容仅供参考，不构成投资、法律或医疗建议。</div>
+</div>
+</div>
+</body>
+</html>
