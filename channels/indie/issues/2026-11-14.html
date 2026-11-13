@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>独立开发者情报站 · 2026-11-13/14</title>
+<style>
+  :root { --ink:#1b1f24; --sub:#5b6472; --line:#e6e8ec; --brand:#0f62fe; --bg:#f5f6f8; }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--bg); color:var(--ink);
+    font:16px/1.75 -apple-system,"Segoe UI","Microsoft YaHei","PingFang SC",sans-serif; }
+  .wrap { max-width:780px; margin:0 auto; padding:28px 14px 64px; }
+  .card { background:#fff; border:1px solid var(--line); border-radius:16px; overflow:hidden; }
+  .hero { padding:30px 30px 22px; border-bottom:1px solid var(--line); background:linear-gradient(180deg,#fbfcff,#fff); }
+  .brand { color:var(--brand); font-weight:700; letter-spacing:.06em; font-size:13px; }
+  h1 { font-size:26px; line-height:1.35; margin:10px 0 6px; }
+  .date { color:var(--sub); font-size:13px; }
+  .one-liner { margin:16px 0 0; padding:12px 14px; background:#f2f6ff; border-left:3px solid var(--brand);
+    border-radius:0 8px 8px 0; color:#26303d; font-size:15px; }
+  .body { padding:8px 30px 26px; }
+  h2 { font-size:18px; margin:28px 0 12px; padding-left:10px; border-left:4px solid var(--brand); }
+  .item { border:1px solid var(--line); border-radius:12px; padding:16px 18px; margin:12px 0; }
+  .item h3 { font-size:16px; margin:0 0 8px; }
+  .item p { margin:0 0 10px; color:#2c343d; }
+  .meta { font-size:13px; color:var(--sub); }
+  .meta b { color:#0b7a3b; font-weight:600; }
+  .src { font-size:12px; color:#8b93a1; margin-top:6px; word-break:break-all; }
+  .actions { margin:26px 0 0; padding:18px 20px; background:#f0fbf5; border:1px solid #cdeadb; border-radius:12px; }
+  .actions h2 { border:0; padding:0; margin:0 0 10px; font-size:16px; color:#0b7a3b; }
+  .actions li { margin:6px 0; }
+  .foot { padding:18px 30px 26px; color:#8b93a1; font-size:12px; border-top:1px solid var(--line); }
+  .mock { display:inline-block; margin-left:8px; padding:2px 8px; border-radius:99px;
+    background:#fff4e5; color:#b25e00; font-size:12px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+<div class="card">
+<div class="hero"><div class="brand">独立开发者情报站</div><h1>独立开发者情报站 · 2026-11-13/14</h1><div class="date">2026-11-14 周六</div><div class="one-liner">LangChain 靠 agent 管理工具做到 30 亿美元估值、7,000 客户；ChatGPT Wallet 开始让 agent 替用户付钱；Git 修复 6 个安全漏洞，Uber 司机驾照数据经 AI 云服务泄露——本周的赚钱机会和必须打的补丁都在这里。</div></div>
+<div class="body"><h2>产品与收入</h2><div class="item"><h3>LangChain 估值 30 亿美元，LangSmith 号称 7,000 客户</h3><p>AI agent 公司 LangChain 估值达到 30 亿美元，其模型与平台无关的 agent 管理工具 LangSmith 声称已有 7,000 个客户。资本愿意为“管 agent、看 agent、调 agent”这层付费，而不是为又一个 agent 应用付费。</p><div class="meta"><b>对你的价值</b>：如果你正在做 AI 产品，这条说明“卖工具给做 agent 的人”这条路比做 agent 本身更容易变现。检查你产品里有没有可拆出来单独收费的可观测、评测、权限或成本控制模块，它可能比主产品更好卖。</div><div class="src">来源：TechCrunch，2026-11-13 https://techcrunch.com/2026/11/13/ai-agent-startup-langchain-hits-3b-valuation/</div></div><h2>工具与栈</h2><div class="item"><h3>GitHub 官方指南：把 agent 技能写成可 review 的文件</h3><p>GitHub 在博客里给出 agent skills 的实践指南：把可复用的工程工作写成文件，团队可以 review、可以复用；但工具、项目上下文和权限仍然绑定在运行它的宿主上，不能跨宿主直接搬。</p><div class="meta"><b>对你的价值</b>：这给一人公司一个具体的知识沉淀方式——把你反复让 AI 做的事（建站检查、发版清单、客户邮件模板）写成仓库里的技能文件，下次换模型或换工具时迁移成本最低。别把关键工作流只存在某家产品的私有配置里。</div><div class="src">来源：The GitHub Blog，2026-11-12 https://github.blog/ai-and-ml/github-copilot/build-once-run-on-any-agent-a-practical-guide-to-agent-skills/</div></div><h2>增长与渠道</h2><div class="item"><h3>Agentic search 不返回页面，而是直接拼答案</h3><p>Stack Overflow 访谈了 EXA 联合创始人 Jeff Wang，谈到支撑海量 agentic 搜索所需要的规模、从零构建自定义 embedding 和高性能向量数据库的技术复杂度，以及必须对网络上大量冗余内容去重，才能给出高可信度的答案。</p><div class="meta"><b>对你的价值</b>：当用户的搜索被“组装成一个答案”而不是“点开十个链接”，靠 SEO 拿点击的老路会持续衰减。独立开发者的对策是缩短路径：让产品本身成为被 agent 读取的数据源（结构化页面、公开 API、清晰的文档），而不是只优化标题党。</div><div class="src">来源：Stack Overflow Blog，2026-11-13 https://stackoverflow.blog/2026/11/13/agentic-doesn-t-find-pages-it-assembles-answers/</div></div><h2>踩坑与风险</h2><div class="item"><h3>Git 修复 6 个安全漏洞，涉及递归克隆与合并</h3><p>Git 官方发布更新，修复 6 个安全漏洞，影响范围包括递归克隆（recursive clones）、引用处理、合并、二进制补丁和导入。</p><div class="meta"><b>对你的价值</b>：这不是“以后再说”的升级。如果你或你的 CI 会执行 git clone --recursive，或者会处理外部提交的补丁和仓库，今天就该升级 Git 版本并检查流水线里这些命令的来源。一人公司没有安全团队，唯一能做的就是及时打补丁。</div><div class="src">来源：The GitHub Blog，2026-11-10 https://github.blog/open-source/git/git-security-vulnerabilities-announced-7/</div></div><div class="actions"><h2>今天就能做</h2><ul><li>升级本地和 CI 环境里的 Git 版本，并排查所有 git clone --recursive 以及处理外部补丁、外部仓库的流水线步骤。</li><li>给你的 AI coding 流程加一层外部验证：独立测试套件或独立 linter，关键路径自己手动跑一遍，不要让同一个模型既写代码又打勾验收。</li><li>挑一个你产品里最有“时效性”的信息，做成推到 Telegram 或用户已有聊天工具里的提醒，本周内上线一个可付费的最小版本，用它验证用户是否真的愿意为“主动通知”掏钱。</li></ul></div></div>
+<div class="foot">由「独立开发者情报站」自动生成 · 内容仅供参考，不构成投资、法律或医疗建议。</div>
+</div>
+</div>
+</body>
+</html>
