@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>独立开发者情报站 · 2026-11-13：一人 SaaS 的监控、AI 写代码后的运营账，以及审核与依赖风险</title>
+<style>
+  :root { --ink:#1b1f24; --sub:#5b6472; --line:#e6e8ec; --brand:#0f62fe; --bg:#f5f6f8; }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--bg); color:var(--ink);
+    font:16px/1.75 -apple-system,"Segoe UI","Microsoft YaHei","PingFang SC",sans-serif; }
+  .wrap { max-width:780px; margin:0 auto; padding:28px 14px 64px; }
+  .card { background:#fff; border:1px solid var(--line); border-radius:16px; overflow:hidden; }
+  .hero { padding:30px 30px 22px; border-bottom:1px solid var(--line); background:linear-gradient(180deg,#fbfcff,#fff); }
+  .brand { color:var(--brand); font-weight:700; letter-spacing:.06em; font-size:13px; }
+  h1 { font-size:26px; line-height:1.35; margin:10px 0 6px; }
+  .date { color:var(--sub); font-size:13px; }
+  .one-liner { margin:16px 0 0; padding:12px 14px; background:#f2f6ff; border-left:3px solid var(--brand);
+    border-radius:0 8px 8px 0; color:#26303d; font-size:15px; }
+  .body { padding:8px 30px 26px; }
+  h2 { font-size:18px; margin:28px 0 12px; padding-left:10px; border-left:4px solid var(--brand); }
+  .item { border:1px solid var(--line); border-radius:12px; padding:16px 18px; margin:12px 0; }
+  .item h3 { font-size:16px; margin:0 0 8px; }
+  .item p { margin:0 0 10px; color:#2c343d; }
+  .meta { font-size:13px; color:var(--sub); }
+  .meta b { color:#0b7a3b; font-weight:600; }
+  .src { font-size:12px; color:#8b93a1; margin-top:6px; word-break:break-all; }
+  .actions { margin:26px 0 0; padding:18px 20px; background:#f0fbf5; border:1px solid #cdeadb; border-radius:12px; }
+  .actions h2 { border:0; padding:0; margin:0 0 10px; font-size:16px; color:#0b7a3b; }
+  .actions li { margin:6px 0; }
+  .foot { padding:18px 30px 26px; color:#8b93a1; font-size:12px; border-top:1px solid var(--line); }
+  .mock { display:inline-block; margin-left:8px; padding:2px 8px; border-radius:99px;
+    background:#fff4e5; color:#b25e00; font-size:12px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+<div class="card">
+<div class="hero"><div class="brand">独立开发者情报站</div><h1>独立开发者情报站 · 2026-11-13：一人 SaaS 的监控、AI 写代码后的运营账，以及审核与依赖风险</h1><div class="date">2026-11-13 周五</div><div class="one-liner">今天值得看的三件事：有人把监控做成了「一人 SaaS」专用品；当 AI agent 写完所有代码，SaaS 的运营成本并没有消失；苹果审核和 GitHub 事故，是一人公司最贵的那种停机。</div></div>
+<div class="body"><h2>产品与收入</h2><div class="item"><h3>Lumin：专给「一人 SaaS」用的日志、指标和可用性检查</h3><p>Hacker News 的 Show HN 出现 Lumin（getlumin.dev），定位是一人 SaaS 的日志、指标和 uptime 检查。11 月 12 日提交，当时 1 分、0 评论。</p><div class="meta"><b>对你的价值</b>：一人公司最缺的是「出事时有人告诉你」。这个产品的价值不在功能多，而在人群切得足够窄——只服务一个人维护、没人值班的场景。如果你想做运维/可观测类产品，别做大而全，把首页文案直接写成这个场景；如果你只是用户，先算清楚自建（uptime 检查加日志）和付费哪个更省你唯一的工时。</div><div class="src">来源：Hacker News（Show HN），2026-11-12，https://getlumin.dev/</div></div><h2>工具与栈</h2><div class="item"><h3>Edge0-145B：宣称把前沿 AI 能力放到你自己的电脑上</h3><p>Edge0 发布 145B 模型，宣称可在用户自己的电脑上提供前沿 AI 能力。HN 11 月 12 日提交，35 分、11 评论。</p><div class="meta"><b>对你的价值</b>：本地跑大模型对一人公司意味着两件事：不用按 token 付费，客户数据不出你的机器。但讨论热度不高说明它还没被大规模验证。拿你自己的真实任务做 A/B，比质量和延迟，再决定把哪条链路切到本地——别整站迁移。</div><div class="src">来源：Hacker News / edge0.ai，2026-11-12，https://edge0.ai/blog/introducing-edge0-145b-frontier-ai-capabilities-on-your-own-computer</div></div><h2>增长与渠道</h2><div class="item"><h3>Product Hunt 今天的主线：不造模型，只补 AI 工作流里的一个缺口</h3><p>11 月 12 日 PH 新品里，⌘+L（像 Figma 一样编辑网站）、Crossfade（让 coding agent 在打开的 Figma 文件里做设计）、three.dev（在用户之前发现你的 AI agent 怎么失败）、Sendr V4（自称 Lovable for GTM）、Nameshot（自动给截图命名）都属于围绕 AI 工作流的胶水型产品。</p><div class="meta"><b>对你的价值</b>：这些产品的共同点：一句话能说清自己补的是哪个缺口，而且不碰模型。你发新品前按这个标准改文案——说不清补哪个缺口，渠道再大也带不动。反过来说，这类胶水也最容易被平台下一次更新吃掉，别把全部收入押在单个缺口上。</div><div class="src">来源：Product Hunt feed，2026-11-12，https://www.producthunt.com/feed</div></div><h2>踩坑与风险</h2><div class="item"><h3>AI 正在让苹果审核流程变成音频/合成器开发者的噩梦</h3><p>synthanatomy 的文章称，AI 正在让苹果的 App 审核流程对合成器开发者变得极其难缠。HN 11 月 12 日提交，93 分、80 评论。</p><div class="meta"><b>对你的价值</b>：审核被拒是独立开发者最贵的停机：没有收入、没有用户反馈，还占掉你唯一的那份工时。如果你的 App 涉及 AI 生成内容或音频处理，提前准备可解释的功能说明、演示视频和明确的「不做什么」，别等被拒了再补材料、再排一次队。</div><div class="src">来源：synthanatomy.com / Hacker News，2026-11-12，https://synthanatomy.com/2026/11/ai-is-turning-apples-app-review-process-into-a-nightmare-for-developers.html</div></div><div class="actions"><h2>今天就能做</h2><ul><li>今天就升级本地和 CI 里的 Git 版本，并检查是否有「递归克隆/子模块导入」的入口暴露给外部输入。</li><li>写一页「GitHub 挂了怎么办」的应急流程：镜像仓库地址、本地构建命令、手动发版步骤，放在你出事时能第一时间打开的地方。</li><li>把 AI agent 写完代码后的运营清单列出来（部署、计费、客服、合规、故障响应），逐项标上每周耗时；如果运营总时长远超写代码，暂缓第二个产品。</li></ul></div></div>
+<div class="foot">由「独立开发者情报站」自动生成 · 内容仅供参考，不构成投资、法律或医疗建议。</div>
+</div>
+</div>
+</body>
+</html>
