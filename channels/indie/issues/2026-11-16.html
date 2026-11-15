@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>独立开发者情报站 · 2026-11-16 周一</title>
+<style>
+  :root { --ink:#1b1f24; --sub:#5b6472; --line:#e6e8ec; --brand:#0f62fe; --bg:#f5f6f8; }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--bg); color:var(--ink);
+    font:16px/1.75 -apple-system,"Segoe UI","Microsoft YaHei","PingFang SC",sans-serif; }
+  .wrap { max-width:780px; margin:0 auto; padding:28px 14px 64px; }
+  .card { background:#fff; border:1px solid var(--line); border-radius:16px; overflow:hidden; }
+  .hero { padding:30px 30px 22px; border-bottom:1px solid var(--line); background:linear-gradient(180deg,#fbfcff,#fff); }
+  .brand { color:var(--brand); font-weight:700; letter-spacing:.06em; font-size:13px; }
+  h1 { font-size:26px; line-height:1.35; margin:10px 0 6px; }
+  .date { color:var(--sub); font-size:13px; }
+  .one-liner { margin:16px 0 0; padding:12px 14px; background:#f2f6ff; border-left:3px solid var(--brand);
+    border-radius:0 8px 8px 0; color:#26303d; font-size:15px; }
+  .body { padding:8px 30px 26px; }
+  h2 { font-size:18px; margin:28px 0 12px; padding-left:10px; border-left:4px solid var(--brand); }
+  .item { border:1px solid var(--line); border-radius:12px; padding:16px 18px; margin:12px 0; }
+  .item h3 { font-size:16px; margin:0 0 8px; }
+  .item p { margin:0 0 10px; color:#2c343d; }
+  .meta { font-size:13px; color:var(--sub); }
+  .meta b { color:#0b7a3b; font-weight:600; }
+  .src { font-size:12px; color:#8b93a1; margin-top:6px; word-break:break-all; }
+  .actions { margin:26px 0 0; padding:18px 20px; background:#f0fbf5; border:1px solid #cdeadb; border-radius:12px; }
+  .actions h2 { border:0; padding:0; margin:0 0 10px; font-size:16px; color:#0b7a3b; }
+  .actions li { margin:6px 0; }
+  .foot { padding:18px 30px 26px; color:#8b93a1; font-size:12px; border-top:1px solid var(--line); }
+  .mock { display:inline-block; margin-left:8px; padding:2px 8px; border-radius:99px;
+    background:#fff4e5; color:#b25e00; font-size:12px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+<div class="card">
+<div class="hero"><div class="brand">独立开发者情报站</div><h1>独立开发者情报站 · 2026-11-16 周一</h1><div class="date">2026-11-16 周一</div><div class="one-liner">今天最该做的两件事：把 Git 补丁打上（6 个漏洞，含递归克隆），以及检查你还在用的旧 Bitly 短链——它们正在被人接管。产品侧看，Product Hunt 已被「AI agent 团队」类产品淹没，而真正在赚钱的仍是给垂直小老板做预约软件。</div></div>
+<div class="body"><h2>产品与收入</h2><div class="item"><h3>Rakazo：开源、数据真归你的 Grok Bot 替代品</h3><p>Product Hunt 上线，一句话定位是「开源、你真正拥有的 Grok Bot 替代品」。卖点不是功能多，而是数据所有权和可自托管。</p><div class="meta"><b>对你的价值</b>：一人公司做 AI 助手类产品，跟大厂拼功能必输，拼「数据在你手里」还有机会。把「可自托管/开源」写进落地页第一句，能直接接住那批被大厂 SaaS 隐私条款吓跑的客户。</div><div class="src">来源：https://www.producthunt.com/products/rakazo</div></div><h2>工具与栈</h2><div class="item"><h3>GitHub 官方指南：把 agent 技能写成文件，换工具不用重写</h3><p>GitHub 博客给出 agent skills 的落地方法：把可重复的工程工作固化成仓库里的技能文件，团队可 review、可复用；但工具、项目上下文和权限仍绑定在具体运行 agent 的宿主上。</p><div class="meta"><b>对你的价值</b>：这正好是一人公司避免被某个 AI 工具绑死的做法：提示词和工作流沉淀成纯文本进仓库，换模型、换 IDE 只是换宿主。今天就把你最常用的三条流程写成 skills 文件，比囤十个工具值钱。</div><div class="src">来源：https://github.blog/ai-and-ml/github-copilot/build-once-run-on-any-agent-a-practical-guide-to-agent-skills/</div></div><h2>增长与渠道</h2><div class="item"><h3>Product Hunt 一天内挤满「让 AI 帮你跑一支 agent 团队」</h3><p>同一天上线的产品里，Pixel Office 是「在像素风办公室里指挥一支 AI agent 团队」，Canvas by AgentGrid.io 是「和 AI 协作的可视化设计画布」，Frevana Multiplayer 是「AI 带着你的团队一起长业务」。方向高度重合。</p><div class="meta"><b>对你的价值</b>：这是明确的红海信号。如果你正在做的是 agent 编排面板、agent 协作画布这类产品，发布当天的注意力会被同类淹没。要么换一个具体到「谁的什么工作」的切口，要么把 agent 藏起来，只卖结果。</div><div class="src">来源：https://www.producthunt.com/products/pixel-office-3</div></div><h2>踩坑与风险</h2><div class="item"><h3>旧的 Bitly 短链正在被劫持</h3><p>Hacker News 首页热帖（80 分、41 条评论）标题直指「Old Bitly Links Are Being Hijacked」，文章链接指向一起与 Burger King 推文短链相关的劫持事件。</p><div class="meta"><b>对你的价值</b>：这件事直接砸在推广资产上：你几年前发在推文、邮件模板、README、包装二维码里的短链，一旦被接管，用户点进去看到的是别人的页面。今天就盘一遍还在用的旧短链，尤其是印在物料和自动邮件里的，换成自有域名并加跳转监控。</div><div class="src">来源：https://ransomnews.com/burger-king-tweet-bitly-link-hijack-2026/</div></div><div class="actions"><h2>今天就能做</h2><ul><li>今天把 Git 升到修复版本，然后 grep 一遍 CI 和脚本里有没有 git clone --recursive 或 import 外部仓库的地方，有就先收紧权限。</li><li>列出所有还在用的旧 Bitly 短链（邮件模板、README、二维码、历史推文），能换的全部换到自有域名，并对旧链接加跳转监控或直接下线。</li><li>把你最常用的三条工作流写成仓库里的 skills 文件，同时规定：agent 产出的代码必须由不共享上下文的测试/CI 判定通过才算完成。</li></ul></div></div>
+<div class="foot">由「独立开发者情报站」自动生成 · 内容仅供参考，不构成投资、法律或医疗建议。</div>
+</div>
+</div>
+</body>
+</html>
