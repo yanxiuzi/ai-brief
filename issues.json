@@ -1,5 +1,15 @@
 [
   {
+    "date": "2026-11-16",
+    "title": "AI 情报站｜黄仁勋辞任英伟达 CEO 市值蒸发超 3 万亿、DeepSeek 开放全家桶 API、豆包工作接入 Kimi / GLM / DeepSeek 三",
+    "one_liner": "英伟达 33 年首次换帅引发员工请愿与马斯克签名，AI 算力供给与出口管制进入不确定期；国内这边 DeepSeek 把 App 能力拆成可组合 API、豆包工作一次接入 Kimi K3.1 Pro/GLM 5.3/DeepSeek V4.1 Flash，百度词元所首日拿到 100+ 供应商和 1000+ 客户——选型与"
+  },
+  {
+    "date": "2026-11-15",
+    "title": "AI 情报站｜黄仁勋辞任英伟达CEO、DeepSeek开放全家桶API、百度词元所首日新增超1000家客户",
+    "one_liner": "英伟达33年来首次换帅，马斯克公开表态要老黄回来，请愿签名一天涨6.3万；国内这边DeepSeek开放全家桶API，豆包工作一次接入Kimi、GLM、DeepSeek，百度词元所开张首日就涌入超千家客户。"
+  },
+  {
     "date": "2026-11-14",
     "title": "AI 情报站｜黄仁勋辞任英伟达CEO、李彦宏称智能组织是新厂房、豆包工作接入Kimi/GLM/DeepSeek",
     "one_liner": "英伟达33年首次换帅，算力供给与对华政策同时进入不确定期；国内这边豆包工作把Kimi K3.1 Pro、GLM 5.3、DeepSeek V4.1 Flash装进同一个工作台，模型选型第一次变成算账问题。"
