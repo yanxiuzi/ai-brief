@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>独立开发者情报站 · 2026-11-17：$600K ARR 的一人 SaaS 在找接棒人，会议纪要这扇门被 Zoom 自己关上了</title>
+<style>
+  :root { --ink:#1b1f24; --sub:#5b6472; --line:#e6e8ec; --brand:#0f62fe; --bg:#f5f6f8; }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--bg); color:var(--ink);
+    font:16px/1.75 -apple-system,"Segoe UI","Microsoft YaHei","PingFang SC",sans-serif; }
+  .wrap { max-width:780px; margin:0 auto; padding:28px 14px 64px; }
+  .card { background:#fff; border:1px solid var(--line); border-radius:16px; overflow:hidden; }
+  .hero { padding:30px 30px 22px; border-bottom:1px solid var(--line); background:linear-gradient(180deg,#fbfcff,#fff); }
+  .brand { color:var(--brand); font-weight:700; letter-spacing:.06em; font-size:13px; }
+  h1 { font-size:26px; line-height:1.35; margin:10px 0 6px; }
+  .date { color:var(--sub); font-size:13px; }
+  .one-liner { margin:16px 0 0; padding:12px 14px; background:#f2f6ff; border-left:3px solid var(--brand);
+    border-radius:0 8px 8px 0; color:#26303d; font-size:15px; }
+  .body { padding:8px 30px 26px; }
+  h2 { font-size:18px; margin:28px 0 12px; padding-left:10px; border-left:4px solid var(--brand); }
+  .item { border:1px solid var(--line); border-radius:12px; padding:16px 18px; margin:12px 0; }
+  .item h3 { font-size:16px; margin:0 0 8px; }
+  .item p { margin:0 0 10px; color:#2c343d; }
+  .meta { font-size:13px; color:var(--sub); }
+  .meta b { color:#0b7a3b; font-weight:600; }
+  .src { font-size:12px; color:#8b93a1; margin-top:6px; word-break:break-all; }
+  .actions { margin:26px 0 0; padding:18px 20px; background:#f0fbf5; border:1px solid #cdeadb; border-radius:12px; }
+  .actions h2 { border:0; padding:0; margin:0 0 10px; font-size:16px; color:#0b7a3b; }
+  .actions li { margin:6px 0; }
+  .foot { padding:18px 30px 26px; color:#8b93a1; font-size:12px; border-top:1px solid var(--line); }
+  .mock { display:inline-block; margin-left:8px; padding:2px 8px; border-radius:99px;
+    background:#fff4e5; color:#b25e00; font-size:12px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+<div class="card">
+<div class="hero"><div class="brand">独立开发者情报站</div><h1>独立开发者情报站 · 2026-11-17：$600K ARR 的一人 SaaS 在找接棒人，会议纪要这扇门被 Zoom 自己关上了</h1><div class="date">2026-11-17 周二</div><div class="one-liner">今天最值得看的是三件事：一家 bootstrap 的 B2B SaaS 用 10% 股权换一个全能工程师；Zoom 把「开会→出 PPT」变成原生功能；Asahi Linux 因为有人用 AI 改写代码而弃用 MIT。</div></div>
+<div class="body"><h2>产品与收入</h2><div class="item"><h3>一个独立创始人支撑 $600K ARR 的 B2B SaaS，用 10% 股权换一个远程 CTO</h3><p>HN 上一条招聘帖：一家 bootstrap 的 B2B SaaS，年收入 $600K、利润 $250K、1,600 个客户，做的是帮在欧洲大型电商平台上卖货的商家做生意的工具。创始人要找一名远程、独立负责的 CTO；这名 CTO 将是公司唯一的工程师，获得 10% 股权。</p><div class="meta"><b>对你的价值</b>：两个可以直接参考的基准：1,600 个客户撑起 $600K ARR，年均客单约 $375（月均约 $31）；利润率约 42%，靠的是没有销售团队和极低的人力成本。你在给小 B 工具定价时，这个区间比任何「SaaS 定价指南」都真实。另外要留意它接入新负责人的方式：不招团队，只招一个对全部工程负责的工程师，并用股权支付；现金紧张但增长稳定的一人公司常这么做，这也意味着交出 10% 换来的必须是能长期坚持的人，而不只是能写代码的人。</div><div class="src">来源：https://news.ycombinator.com/item?id=50518749</div></div><h2>工具与栈</h2><div class="item"><h3>OpenCode 上线 Browse：让 coding agent 自己去看网页</h3><p>OpenCode 发布 Browse 产品（opencode.ai/product/browse），在 HN 上拿到 62 points、31 条评论。</p><div class="meta"><b>对你的价值</b>：agent 缺的通常不是写代码能力，而是正确的上下文：第三方文档、控制台里的配置页、某个 API 的示例。给它一个浏览器，补的就是这块。试的时候盯两件事：抓到的内容是否可复现（同一个 URL 两次结果不同就没法 debug），以及抓取失败的边界会不会被 agent 当成「页面上没有这条信息」而继续往下写。二选一都要在 prompt 里明确禁止。</div><div class="src">来源：https://opencode.ai/product/browse</div></div><h2>增长与渠道</h2><div class="item"><h3>HN 上的吐槽：十个新 AI SaaS 站，九个像一条编辑器命令</h3><p>一条 HN 讨论问：是不是九成新的 AI SaaS 网站，看起来都只该是编辑器里的一条命令？这条帖只有 5 points、2 条评论，但同期 HN 上还出现了「写了 100 个 SaaS 点子，每个都带买家、定价和 MVP 计划」这类内容型帖子，两个信号说明的是同一件事。</p><div class="meta"><b>对你的价值</b>：这条吐槽真正的用处是反向定位。如果你的产品能被一句 prompt 替代，那发布到 Product Hunt 也只是排着队被淹没，因为你和另外九个人在争同一个位置。要么绑进用户已经在用的工作流（编辑器、会议、邮件），要么去解决需要持续状态和权限的问题：数据积累、多人协作、合规留痕。这类东西一句 prompt 做不出来。</div><div class="src">来源：https://news.ycombinator.com/item?id=50455964</div></div><h2>踩坑与风险</h2><div class="item"><h3>Optimizely 遭入侵，被用来向 Zoom、GitLab 等站点投递恶意代码</h3><p>报道称 Optimizely 被入侵，并被用来在 Zoom、GitLab 等大型品牌的网站上投放恶意软件。同一话题在 HN 上出现两条，分别 18 points 和 72 points。</p><div class="meta"><b>对你的价值</b>：你网站里那几行第三方脚本——A/B 测试、分析、客服挂件、热图——跑在别人家的服务器上。供应商一旦被攻破，你的域名、你的用户、你的支付页就一起中招，而受害者名单上写的是你的品牌。这周花十分钟做一件事：列出页面上所有外链 JS，能 self-host 或能删的先删，必须保留的加 integrity 与 CSP；支付和登录页面原则上不该出现任何第三方脚本。</div><div class="src">来源：https://blog.report-uri.com/worlds-largest-brands-infected-with-malware-via-optimizely/</div></div><div class="actions"><h2>今天就能做</h2><ul><li>对着 $600K ARR、1,600 客户这个样本，算出你自己的 ARPU 与利润率，再决定是提价、收窄客群，还是保持现状——如果年客单低于 $300 且客户数没过千，优先考虑提价，而不是去扩大客户数量。</li><li>今天就把你网站&lt;head&gt;里所有第三方脚本列成一张表，标注「能删」「能 self-host」「必须留」，给必须留的加 integrity 与 CSP；同时把 Git 升级到最新修复版本，并检查 CI runner 是否携带了生产环境密钥。</li><li>在 CI 里加一条许可证扫描，重点抓 GPL/AGPL 依赖；另外把「agent 写完的代码由谁验收」写成一句明文规则贴在仓库 README 里：自动化测试必须通过，并且关键路径必须人工走一遍。</li></ul></div></div>
+<div class="foot">由「独立开发者情报站」自动生成 · 内容仅供参考，不构成投资、法律或医疗建议。</div>
+</div>
+</div>
+</body>
+</html>
