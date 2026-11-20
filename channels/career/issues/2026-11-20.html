@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>职场信号站 · 2026-11-20 周五简报</title>
+<style>
+  :root { --ink:#1b1f24; --sub:#5b6472; --line:#e6e8ec; --brand:#0f62fe; --bg:#f5f6f8; }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--bg); color:var(--ink);
+    font:16px/1.75 -apple-system,"Segoe UI","Microsoft YaHei","PingFang SC",sans-serif; }
+  .wrap { max-width:780px; margin:0 auto; padding:28px 14px 64px; }
+  .card { background:#fff; border:1px solid var(--line); border-radius:16px; overflow:hidden; }
+  .hero { padding:30px 30px 22px; border-bottom:1px solid var(--line); background:linear-gradient(180deg,#fbfcff,#fff); }
+  .brand { color:var(--brand); font-weight:700; letter-spacing:.06em; font-size:13px; }
+  h1 { font-size:26px; line-height:1.35; margin:10px 0 6px; }
+  .date { color:var(--sub); font-size:13px; }
+  .one-liner { margin:16px 0 0; padding:12px 14px; background:#f2f6ff; border-left:3px solid var(--brand);
+    border-radius:0 8px 8px 0; color:#26303d; font-size:15px; }
+  .body { padding:8px 30px 26px; }
+  h2 { font-size:18px; margin:28px 0 12px; padding-left:10px; border-left:4px solid var(--brand); }
+  .item { border:1px solid var(--line); border-radius:12px; padding:16px 18px; margin:12px 0; }
+  .item h3 { font-size:16px; margin:0 0 8px; }
+  .item p { margin:0 0 10px; color:#2c343d; }
+  .meta { font-size:13px; color:var(--sub); }
+  .meta b { color:#0b7a3b; font-weight:600; }
+  .src { font-size:12px; color:#8b93a1; margin-top:6px; word-break:break-all; }
+  .actions { margin:26px 0 0; padding:18px 20px; background:#f0fbf5; border:1px solid #cdeadb; border-radius:12px; }
+  .actions h2 { border:0; padding:0; margin:0 0 10px; font-size:16px; color:#0b7a3b; }
+  .actions li { margin:6px 0; }
+  .foot { padding:18px 30px 26px; color:#8b93a1; font-size:12px; border-top:1px solid var(--line); }
+  .mock { display:inline-block; margin-left:8px; padding:2px 8px; border-radius:99px;
+    background:#fff4e5; color:#b25e00; font-size:12px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+<div class="card">
+<div class="hero"><div class="brand">职场信号站</div><h1>职场信号站 · 2026-11-20 周五简报</h1><div class="date">2026-11-20 周五</div><div class="one-liner">AI 头部公司上市把钱烧成了估值，英伟达却在同一天换了掌舵人；一边是 Postgres 19 和补丁潮带来的技能更新窗口，一边是“简历人人完美”后的招聘新规则——今天这期，读完能知道该补什么、该修什么、该删掉简历里的哪句话。</div></div>
+<div class="body"><h2>行业冷暖</h2><div class="item"><h3>Anthropic 上市首日收涨 17%，市值约 1.8 万亿美元，7 位创始人各套现 2.8 亿美元</h3><p>Anthropic 登陆纳斯达克，发行价 83 美元/股，开盘 111.5 美元，收于 97.17 美元，较发行价涨 17%。按完全稀释股本计市值约 1.8 万亿美元；IPO 募资 813 亿美元，叠加同期私募配售 260 亿美元，合计融资 1073 亿美元，超过 SpaceX 今年 6 月的 IPO 规模。按 83 美元发行价计算，7 位创始人每人套现 2.8 亿美元。</p><div class="meta"><b>对你的价值</b>：这是 AI 头部公司第一次用公开市场给估值定价，会直接影响明年的招聘预算、期权定价和薪资谈判空间。对求职者的用法：谈薪时把“现金比例”看比“期权数量”更重，同时确认公司融资节奏，别把身家押在单一未上市标的的纸面估值上。</div><div class="src">来源：36氪《8点1氪》· https://36kr.com/p/4077339293242504；TechCrunch · https://techcrunch.com/2026/11/19/anthropics-7-founders-cashed-out-nearly-2b-in-record-breaking-ipo/</div></div><h2>技能与岗位</h2><div class="item"><h3>PostgreSQL 19 正式发布，内置 repack 做表膨胀清理，Neon 与 Databricks Lakebase 已上线</h3><p>PostgreSQL 19 发布，Snowflake 工程博客专门解读其中内置的 repack 功能，主打更快、内置的表膨胀清理。Neon 和 Databricks Lakebase 已同步提供 Postgres 19。</p><div class="meta"><b>对你的价值</b>：大版本升级是 DBA 和后端最容易拿到“我在主导技术演进”这类实绩的机会，也是面试里能讲透的细节。做数据平台的人这周值得花两小时读发布说明，把 repack 与你现在的 VACUUM/表重建方案做对比，写成半页结论发给团队，比转发新闻有用。</div><div class="src">来源：Hacker News · https://www.postgresql.org/docs/release/19.0/；https://www.snowflake.com/en/blog/engineering/postgres-19-repack-table-bloat/；https://www.databricks.com/blog/postgresql-19-available-lakebase</div></div><h2>求职方法</h2><div class="item"><h3>Stack Overflow 招聘负责人：现在每个人的简历都完美了，问题变成“怎么找到对的人”</h3><p>Stack Overflow 技术招聘 Tom Harvey 的问答主题是“How do you hire a human?”，前提很直接：所有人的简历现在看起来都完美，那怎么找到真正合适的队友。</p><div class="meta"><b>对你的价值</b>：这句话对求职者的实际含义是：简历筛选正在失效，能决定结果的是可被第三方验证的东西——可点开的代码、上线过的东西、能追问细节的项目。与其再改一版措辞，不如把简历里的“熟悉/精通”换成两三个能当场打开给人看的产出。</div><div class="src">来源：Stack Overflow Blog · https://stackoverflow.blog/2026/11/12/how-do-you-hire-a-human-q-and-a-with-tom-harvey-stack-overflow-technical-recruiter/</div></div><h2>趋势与政策</h2><div class="item"><h3>微信短剧新规：单集最低时长由 45 秒上调至 1 分钟，12 月起 AI 制作证明视频必填</h3><p>微信短剧内容中心公告两项调整：短剧单集最低时长由原 45 秒上调至 1 分钟，目的是避免剧情仓促、情节割裂；同时自 12 月起，AI 制作证明视频成为必填项。</p><div class="meta"><b>对你的价值</b>：做短剧、AI 视频、内容代运营的人要立刻改交付标准：按 45 秒切条的批量产线要重排，并且必须准备可提交的 AI 制作证明素材。接外包的尤其注意——12 月后交付不合规，返工成本落在你身上。</div><div class="src">来源：IT之家 · https://www.ithome.com/1/029/883.htm</div></div><div class="actions"><h2>今天就能做</h2><ul><li>今天先查一遍你负责的服务用到的 OpenSSL、PHP、Git 版本，按 CVSS 排序排升级窗口：OpenSSL 的 CVE-2026-121481（9.8）优先，PHP 8.5.13 一并评估，把结论写成三行发给团队负责人。</li><li>挑一个你日常使用的开源项目，把最近一次 AI 扫出来的问题做成带修复的 PR 提交，而不是转发报告——GitHub 的试点数据说明，维护者真正会处理的是带修复的那一类。</li><li>删掉简历里“熟悉/精通/了解”式的形容词，换成 2 到 3 个能当场打开验证的产出（PR 链接、上线功能、你写的评估标准），因为筛选端已经默认“每个人的简历都完美了”。</li></ul></div></div>
+<div class="foot">由「职场信号站」自动生成 · 内容仅供参考，不构成投资、法律或医疗建议。</div>
+</div>
+</div>
+</body>
+</html>
