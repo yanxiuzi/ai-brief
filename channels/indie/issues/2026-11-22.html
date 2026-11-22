@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>独立开发者情报站 · 2026-11-22：订阅资产被打包卖掉，代码产量涨了三成交付却没动</title>
+<style>
+  :root { --ink:#1b1f24; --sub:#5b6472; --line:#e6e8ec; --brand:#0f62fe; --bg:#f5f6f8; }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--bg); color:var(--ink);
+    font:16px/1.75 -apple-system,"Segoe UI","Microsoft YaHei","PingFang SC",sans-serif; }
+  .wrap { max-width:780px; margin:0 auto; padding:28px 14px 64px; }
+  .card { background:#fff; border:1px solid var(--line); border-radius:16px; overflow:hidden; }
+  .hero { padding:30px 30px 22px; border-bottom:1px solid var(--line); background:linear-gradient(180deg,#fbfcff,#fff); }
+  .brand { color:var(--brand); font-weight:700; letter-spacing:.06em; font-size:13px; }
+  h1 { font-size:26px; line-height:1.35; margin:10px 0 6px; }
+  .date { color:var(--sub); font-size:13px; }
+  .one-liner { margin:16px 0 0; padding:12px 14px; background:#f2f6ff; border-left:3px solid var(--brand);
+    border-radius:0 8px 8px 0; color:#26303d; font-size:15px; }
+  .body { padding:8px 30px 26px; }
+  h2 { font-size:18px; margin:28px 0 12px; padding-left:10px; border-left:4px solid var(--brand); }
+  .item { border:1px solid var(--line); border-radius:12px; padding:16px 18px; margin:12px 0; }
+  .item h3 { font-size:16px; margin:0 0 8px; }
+  .item p { margin:0 0 10px; color:#2c343d; }
+  .meta { font-size:13px; color:var(--sub); }
+  .meta b { color:#0b7a3b; font-weight:600; }
+  .src { font-size:12px; color:#8b93a1; margin-top:6px; word-break:break-all; }
+  .actions { margin:26px 0 0; padding:18px 20px; background:#f0fbf5; border:1px solid #cdeadb; border-radius:12px; }
+  .actions h2 { border:0; padding:0; margin:0 0 10px; font-size:16px; color:#0b7a3b; }
+  .actions li { margin:6px 0; }
+  .foot { padding:18px 30px 26px; color:#8b93a1; font-size:12px; border-top:1px solid var(--line); }
+  .mock { display:inline-block; margin-left:8px; padding:2px 8px; border-radius:99px;
+    background:#fff4e5; color:#b25e00; font-size:12px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+<div class="card">
+<div class="hero"><div class="brand">独立开发者情报站</div><h1>独立开发者情报站 · 2026-11-22：订阅资产被打包卖掉，代码产量涨了三成交付却没动</h1><div class="date">2026-11-22 周日</div><div class="one-liner">今天三条值得看：Mailchimp 以 36.8 亿美元易手（Intuit 当年约 120 亿美元买入）、哈佛论文实测 AI 编程让代码量涨约 30% 但交付没起来、推理供应链接连曝出数据处理事故。</div></div>
+<div class="body"><h2>产品与收入</h2><div class="item"><h3>Mailchimp 以 36.8 亿美元被收购，Intuit 当年买入价约 120 亿美元</h3><p>TechCrunch 报道，Bending Spoons 以 36.8 亿美元收购 Mailchimp；Intuit 在 2021 年的买入价约为 120 亿美元。</p><div class="meta"><b>对你的价值</b>：这是给一人公司看的退出定价样本：成熟、稳定订阅、增长放缓的营销与邮件工具，会被打包收购方以大幅折价接手。别把“订阅收入会一直涨”当默认假设；如果你做的是同类“稳定但不高增长”的工具，潜在买家就是这类打包方，估值看现金流，不看故事。</div><div class="src">来源：TechCrunch · https://techcrunch.com/2026/11/20/bending-spoons-buys-mailchimp-for-3-68-billion/</div></div><h2>工具与栈</h2><div class="item"><h3>Muru：mod_WSGI 作者做的 AI 辅助 Rust 服务器，用来跑 Python 应用</h3><p>Simon Willison 的博客介绍了 Muru，它出自 mod_WSGI 作者之手，是一个由 AI 辅助生成的 Rust 服务器，用来跑 Python 应用。这条在 HN 上拿到 15 分、0 条评论。</p><div class="meta"><b>对你的价值</b>：一人公司的常见困境是：用 Python 写得快，部署和并发却慢。如果 Muru 真能把 WSGI 那套经验带过来，它就是一个低成本的提速选项；但 HN 上几乎没人讨论，说明它还没经过实战检验，别把关键业务直接压在它上面。</div><div class="src">来源：Simon Willison / Hacker News · https://simonwillison.net/2026/Nov/21/muru/</div></div><h2>增长与渠道</h2><div class="item"><h3>Google AI Overviews 让指向外部网站的点击量下降四成（随机实验）</h3><p>一项随机实验对部分美国桌面用户隐藏了 AI Overviews，再与仍能看到它的那组做对比，结果显示从 Google 搜索结果指向外部网站的点击量下降了四成。研究者强调这是实验得出的数字，而不是相关性推测。</p><div class="meta"><b>对你的价值</b>：如果你靠 SEO 内容站获客，这个数字意味着同样的排名只能换来更少的点击。今天该做的事：把内容页的转化目标从“访问”改成“留下邮箱”，并把已有流量尽快导入你自己能掌控的渠道。</div><div class="src">来源：OSCHINA · https://www.oschina.net/news/503698</div></div><h2>踩坑与风险</h2><div class="item"><h3>哈佛论文：AI 让代码量涨约 30%，但活并没有干完</h3><p>两位哈佛博士候选人的工作论文覆盖 718 家公司、725,938 名员工：用上 AI 编程 Agent 之后，人均每月新增代码行数从 5017 涨到 6511（约 30%），提交数增长 20%，PR 增长 23%；但论文用 Jira 数据核对交付情况后发现，活并没有真正干完，瓶颈落在 Code Review。</p><div class="meta"><b>对你的价值</b>：别再用“生成了多少代码”来衡量 AI 的产出，也别按代码量给一人公司估工期。真正卡住你的是审查和验收，把预算花在自动化测试、可 review 的小 PR、明确的验收标准上，比换更强的模型更划算。</div><div class="src">来源：OSCHINA · https://www.oschina.net/news/503706/harvard-researchers-find-ai-coding-agents-shifted</div></div><div class="actions"><h2>今天就能做</h2><ul><li>把 Ruby 升到 4.0.10 / 3.4.13 / 3.3.14，并核对 CI 里 Git 的版本，今天做完。</li><li>列出产品里所有调用第三方推理 API 的路径和送出去的字段，把敏感字段在送进模型前脱敏，并在隐私政策里补上数据流向。</li><li>把 SEO 内容页的转化目标改成留下邮箱，并把首页第一行改写成“结果句式”：你自己的 X、让你的潜客 Y、不用 Z 也能 W。</li></ul></div></div>
+<div class="foot">由「独立开发者情报站」自动生成 · 内容仅供参考，不构成投资、法律或医疗建议。</div>
+</div>
+</div>
+</body>
+</html>
