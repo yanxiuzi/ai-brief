@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI 情报站｜黄仁勋再谈中国市场与出口管制、DeepSeek 与智谱GLM 的开源节奏、豆包生态的变现窗口</title>
+<style>
+  :root { --ink:#1b1f24; --sub:#5b6472; --line:#e6e8ec; --brand:#0f62fe; --bg:#f5f6f8; }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--bg); color:var(--ink);
+    font:16px/1.75 -apple-system,"Segoe UI","Microsoft YaHei","PingFang SC",sans-serif; }
+  .wrap { max-width:780px; margin:0 auto; padding:28px 14px 64px; }
+  .card { background:#fff; border:1px solid var(--line); border-radius:16px; overflow:hidden; }
+  .hero { padding:30px 30px 22px; border-bottom:1px solid var(--line); background:linear-gradient(180deg,#fbfcff,#fff); }
+  .brand { color:var(--brand); font-weight:700; letter-spacing:.06em; font-size:13px; }
+  h1 { font-size:26px; line-height:1.35; margin:10px 0 6px; }
+  .date { color:var(--sub); font-size:13px; }
+  .one-liner { margin:16px 0 0; padding:12px 14px; background:#f2f6ff; border-left:3px solid var(--brand);
+    border-radius:0 8px 8px 0; color:#26303d; font-size:15px; }
+  .body { padding:8px 30px 26px; }
+  h2 { font-size:18px; margin:28px 0 12px; padding-left:10px; border-left:4px solid var(--brand); }
+  .item { border:1px solid var(--line); border-radius:12px; padding:16px 18px; margin:12px 0; }
+  .item h3 { font-size:16px; margin:0 0 8px; }
+  .item p { margin:0 0 10px; color:#2c343d; }
+  .meta { font-size:13px; color:var(--sub); }
+  .meta b { color:#0b7a3b; font-weight:600; }
+  .src { font-size:12px; color:#8b93a1; margin-top:6px; word-break:break-all; }
+  .actions { margin:26px 0 0; padding:18px 20px; background:#f0fbf5; border:1px solid #cdeadb; border-radius:12px; }
+  .actions h2 { border:0; padding:0; margin:0 0 10px; font-size:16px; color:#0b7a3b; }
+  .actions li { margin:6px 0; }
+  .foot { padding:18px 30px 26px; color:#8b93a1; font-size:12px; border-top:1px solid var(--line); }
+  .mock { display:inline-block; margin-left:8px; padding:2px 8px; border-radius:99px;
+    background:#fff4e5; color:#b25e00; font-size:12px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+<div class="card">
+<div class="hero"><div class="brand">AI 情报站</div><h1>AI 情报站｜黄仁勋再谈中国市场与出口管制、DeepSeek 与智谱GLM 的开源节奏、豆包生态的变现窗口</h1><div class="date">2026-11-22 周日</div><div class="one-liner">今天最值得关注的三条线索：NVIDIA 在华算力供给仍是最大变量，国产开源权重（DeepSeek、GLM、Qwen）正在把私有化部署变成一门可交付的生意，而大厂模型价格战正在持续压缩通用层的利润空间。</div></div>
+<div class="body"><h2>头条要闻</h2><div class="item"><h3>黄仁勋：中国市场对 NVIDIA 不可替代，出口管制最终会伤到美国厂商自己</h3><p>黄仁勋在多个公开场合重复过同一套判断：中国是全球最大的 AI 算力市场之一，人为限制芯片出口会同时削弱美国厂商的营收和生态影响力，还会加速中国本土算力链的自建。NVIDIA 在华可售产品的规格与配额始终是变量，直接牵动国内云厂商的 GPU 租赁价和训练排期。</p><div class="meta"><b>对你的价值</b>：做训练和推理预算的人要盯两件事：可采购卡型的合规变化，以及 GPU 租赁与云算力的报价周期。合规窗口一收紧，租金和排期通常最先作出反应，提前锁长期合约、或准备国产卡迁移方案，能省下真金白银。</div><div class="src">来源：模型知识，建议核实</div></div><h2>模型与产品</h2><div class="item"><h3>DeepSeek：开源权重加极致性价比，仍是国内推理模型的价格锚</h3><p>DeepSeek 以开源权重和低价 API 著称，R 系列推理模型把「思维链加可验证答案」这套范式推到台前，V 系列承担通用能力。每次发版基本都会带来一轮 API 降价或能力对齐。</p><div class="meta"><b>对你的价值</b>：每次 DeepSeek 发版都是重新核算成本的时间点。建议保留一个「模型可替换」的抽象层，不要把业务逻辑硬编码在某家 SDK 上，这样降价或能力跳变时能一天内切过去。</div><div class="src">来源：模型知识，建议核实</div></div><h2>工具与玩法</h2><div class="item"><h3>把编码 Agent 当结对程序员：先让它写测试，再让它改代码</h3><p>Claude Code、Cursor、Codex 类工具的能力边界已经从代码补全变成能长时间自主改文件、跑命令。真正拉开差距的不再是模型，而是你给它的仓库结构、测试覆盖和约束文件。</p><div class="meta"><b>对你的价值</b>：想让 Agent 真正提效，先补测试和 CI：没有测试的仓库，Agent 改完你也不敢合。花半天写好项目约定文件（编码规范、禁改目录、常用命令），后面每个任务都能少解释几轮，省时也省 token。</div><div class="src">来源：模型知识，建议核实</div></div><h2>变现机会</h2><div class="item"><h3>企业私有化部署与行业微调：单价高、周期长，但最难被价格战打穿</h3><p>政企客户要的是数据不出内网、模型贴合业务，开源权重（GLM、Qwen、DeepSeek）让这件事的门槛大幅下降。交付内容包括环境搭建、数据清洗、微调与提示词工程，以及后续运维。</p><div class="meta"><b>对你的价值</b>：这是目前国内 AI 服务商现金流最稳的一块。切入点是选一个你熟悉的垂直行业，先做一个小场景的免费验证，把「省了多少人力、少了多少差错」量化出来，再谈整体合同。</div><div class="src">来源：模型知识，建议核实</div></div><div class="actions"><h2>今天就能做</h2><ul><li>今天就把你正在用的模型 API 做一层薄封装（统一入参、统一输出、可切换供应商），下次哪家降价或发版，你能当天完成切换而不是重写业务。</li><li>准备一份私有评测集：从业务群里翻出几十条真实问题，固定下来，每次新模型发布或降价后跑一遍，把「选型」从感觉变成数据。</li><li>如果你做 To B 交付，本周挑一个客户的高频重复流程（合同比对、客服应答、文档初审任选其一），做一个免费小验证，并把节省的人力或时间折成金额写进方案。</li></ul></div></div>
+<div class="foot">由「AI 情报站」自动生成 · 内容仅供参考，不构成投资、法律或医疗建议。</div>
+</div>
+</div>
+</body>
+</html>
