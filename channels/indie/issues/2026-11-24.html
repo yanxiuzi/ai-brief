@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>独立开发者情报站 · 2026-11-24</title>
+<style>
+  :root { --ink:#1b1f24; --sub:#5b6472; --line:#e6e8ec; --brand:#0f62fe; --bg:#f5f6f8; }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--bg); color:var(--ink);
+    font:16px/1.75 -apple-system,"Segoe UI","Microsoft YaHei","PingFang SC",sans-serif; }
+  .wrap { max-width:780px; margin:0 auto; padding:28px 14px 64px; }
+  .card { background:#fff; border:1px solid var(--line); border-radius:16px; overflow:hidden; }
+  .hero { padding:30px 30px 22px; border-bottom:1px solid var(--line); background:linear-gradient(180deg,#fbfcff,#fff); }
+  .brand { color:var(--brand); font-weight:700; letter-spacing:.06em; font-size:13px; }
+  h1 { font-size:26px; line-height:1.35; margin:10px 0 6px; }
+  .date { color:var(--sub); font-size:13px; }
+  .one-liner { margin:16px 0 0; padding:12px 14px; background:#f2f6ff; border-left:3px solid var(--brand);
+    border-radius:0 8px 8px 0; color:#26303d; font-size:15px; }
+  .body { padding:8px 30px 26px; }
+  h2 { font-size:18px; margin:28px 0 12px; padding-left:10px; border-left:4px solid var(--brand); }
+  .item { border:1px solid var(--line); border-radius:12px; padding:16px 18px; margin:12px 0; }
+  .item h3 { font-size:16px; margin:0 0 8px; }
+  .item p { margin:0 0 10px; color:#2c343d; }
+  .meta { font-size:13px; color:var(--sub); }
+  .meta b { color:#0b7a3b; font-weight:600; }
+  .src { font-size:12px; color:#8b93a1; margin-top:6px; word-break:break-all; }
+  .actions { margin:26px 0 0; padding:18px 20px; background:#f0fbf5; border:1px solid #cdeadb; border-radius:12px; }
+  .actions h2 { border:0; padding:0; margin:0 0 10px; font-size:16px; color:#0b7a3b; }
+  .actions li { margin:6px 0; }
+  .foot { padding:18px 30px 26px; color:#8b93a1; font-size:12px; border-top:1px solid var(--line); }
+  .mock { display:inline-block; margin-left:8px; padding:2px 8px; border-radius:99px;
+    background:#fff4e5; color:#b25e00; font-size:12px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+<div class="card">
+<div class="hero"><div class="brand">独立开发者情报站</div><h1>独立开发者情报站 · 2026-11-24</h1><div class="date">2026-11-24 周二</div><div class="one-liner">新的分发入口正在转移到邮件和 AI 客户端：Kagi 推出付费邮箱，Mailchimp 被低价转手，MCP server 争抢 AI 的调用入口；另一方面，SaaS 模板和本地模型把启动成本降低到只需一条命令。</div></div>
+<div class="body"><h2>产品与收入</h2><div class="item"><h3>Kagi 公测 Kagi Mail：付费、无广告、开放标准的邮箱</h3><p>Kagi 此前已经推出付费搜索和对标 Chrome 的 Orion 浏览器，11 月 23 日又宣布 Kagi Mail 进入公测，卖点是「无监控、无广告、开放标准、无锁定」。这是它第三个直接与 Google 竞争的产品。</p><div class="meta"><b>对你的价值</b>：如果你想做「用户付费，换取不被变现」的产品，Kagi 是目前最完整的样本：搜索、浏览器、邮箱卖给同一批付费用户，彼此互相带量。反过来也要想清楚：用户付的这笔钱，买的就是「不把我当广告库存」。</div><div class="src">来源：The Verge，2026-11-23，https://www.theverge.com/tech/1041000/kagi-mail-email-google-gmail-alternative</div></div><h2>工具与栈</h2><div class="item"><h3>localcode：一条命令在 Mac 上跑本地模型的编程 Agent</h3><p>安装只需三步：uv pip install localcode、cd 进项目、运行 localcode。它的定位是「Agentic coding. Local models. On your Mac.」，模型全部跑在本地，能在项目里读文件、改文件、跑测试、执行命令；权限有范围限制。</p><div class="meta"><b>对你的价值</b>：想验证「本地模型够不够用」不必先搭环境，三行命令就能开测。适合跑涉密代码，或不想把仓库传到云端的活；先在小仓库上试，确认它怎么处理测试失败和回滚，再放到主项目上。</div><div class="src">来源：OSCHINA，2026-11-23，https://www.oschina.net/news/503746</div></div><h2>增长与渠道</h2><div class="item"><h3>MCP server 正在成为新的分发入口</h3><p>Hissing Kitty 上线了免费 MCP server，让你在续订任何 SaaS 之前先问自己的 AI；FigmaMCP 则让 Claude Code 或 Codex 直接编辑你打开的 Figma 文件。两者做的都是同一件事：把功能放进 AI 客户端的调用路径里。</p><div class="meta"><b>对你的价值</b>：过去争的是搜索排名，现在争的是「AI 会不会调用你」。把核心能力包成一个 MCP server 的成本很低，可以先免费放出去试水；但你必须假设用户不会为此专门打开你的网站，所以每次调用都要在结果里留下能被记住的痕迹，例如署名、来源或下一步动作。</div><div class="src">来源：Hacker News / Product Hunt，2026-11-23，https://hissingkitty.com/developers</div></div><h2>踩坑与风险</h2><div class="item"><h3>维护者不需要更多 AI bug 报告，他们需要修复</h3><p>GitHub 与 Microsoft 的 Codename MDASH 试点把数千条原始 AI 发现整理成 99 条经核查的私有报告，并附上修复建议，覆盖六个被广泛使用的开源项目，维护者已经修复过半。GitHub 给出的结论很直接：维护者不需要更多 AI bug 报告，他们需要修复。</p><div class="meta"><b>对你的价值</b>：用 AI 批量扫依赖、批量提 issue 或 PR，短期看起来像是在贡献，长期是在消耗自己的信誉，因为维护者一眼就能认出没有复现步骤的报告。要用 AI 提问题，你就自己先复现、带上补丁，学那 99 条的做法，而不是那数千条的。</div><div class="src">来源：The GitHub Blog，2026-11-17，https://github.blog/open-source/maintainers/maintainers-dont-need-more-ai-bug-reports-they-need-fixes/</div></div><div class="actions"><h2>今天就能做</h2><ul><li>今天花 30 分钟做两件运维动作：把本地和 CI 里的 Git 升级到修掉那六个漏洞的版本；再让 CI 校验一遍所有 workflow YAML，别指望报错，GitHub Actions 会接受非法 YAML。</li><li>把 newsletter 和自动邮件的发送商账单、迁移成本列成一张表：联系人单价、月发送量、导出订阅者需要几步。Mailchimp 已经以 36.8 亿美元转手，趁还没涨价先知道自己的退路，并顺手试用 Kagi Mail 公测做对比。</li><li>挑一个核心功能，试着包成 MCP server 或一个可被程序调用的接口，参考 Hissing Kitty、FigmaMCP 的形态；同时用 localcode 在本地跑一遍你现在的 agent 流程，记下 token 和耗时，作为以后砍成本的基线。</li></ul></div></div>
+<div class="foot">由「独立开发者情报站」自动生成 · 内容仅供参考，不构成投资、法律或医疗建议。</div>
+</div>
+</div>
+</body>
+</html>
