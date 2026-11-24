@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI 情报站｜黄仁勋复职首秀道歉、拒设接班人，智谱 GLM-5.4 首发 Loop Transformer，DeepSeek 开始限额</title>
+<style>
+  :root { --ink:#1b1f24; --sub:#5b6472; --line:#e6e8ec; --brand:#0f62fe; --bg:#f5f6f8; }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--bg); color:var(--ink);
+    font:16px/1.75 -apple-system,"Segoe UI","Microsoft YaHei","PingFang SC",sans-serif; }
+  .wrap { max-width:780px; margin:0 auto; padding:28px 14px 64px; }
+  .card { background:#fff; border:1px solid var(--line); border-radius:16px; overflow:hidden; }
+  .hero { padding:30px 30px 22px; border-bottom:1px solid var(--line); background:linear-gradient(180deg,#fbfcff,#fff); }
+  .brand { color:var(--brand); font-weight:700; letter-spacing:.06em; font-size:13px; }
+  h1 { font-size:26px; line-height:1.35; margin:10px 0 6px; }
+  .date { color:var(--sub); font-size:13px; }
+  .one-liner { margin:16px 0 0; padding:12px 14px; background:#f2f6ff; border-left:3px solid var(--brand);
+    border-radius:0 8px 8px 0; color:#26303d; font-size:15px; }
+  .body { padding:8px 30px 26px; }
+  h2 { font-size:18px; margin:28px 0 12px; padding-left:10px; border-left:4px solid var(--brand); }
+  .item { border:1px solid var(--line); border-radius:12px; padding:16px 18px; margin:12px 0; }
+  .item h3 { font-size:16px; margin:0 0 8px; }
+  .item p { margin:0 0 10px; color:#2c343d; }
+  .meta { font-size:13px; color:var(--sub); }
+  .meta b { color:#0b7a3b; font-weight:600; }
+  .src { font-size:12px; color:#8b93a1; margin-top:6px; word-break:break-all; }
+  .actions { margin:26px 0 0; padding:18px 20px; background:#f0fbf5; border:1px solid #cdeadb; border-radius:12px; }
+  .actions h2 { border:0; padding:0; margin:0 0 10px; font-size:16px; color:#0b7a3b; }
+  .actions li { margin:6px 0; }
+  .foot { padding:18px 30px 26px; color:#8b93a1; font-size:12px; border-top:1px solid var(--line); }
+  .mock { display:inline-block; margin-left:8px; padding:2px 8px; border-radius:99px;
+    background:#fff4e5; color:#b25e00; font-size:12px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+<div class="card">
+<div class="hero"><div class="brand">AI 情报站</div><h1>AI 情报站｜黄仁勋复职首秀道歉、拒设接班人，智谱 GLM-5.4 首发 Loop Transformer，DeepSeek 开始限额</h1><div class="date">2026-11-25 周三</div><div class="one-liner">英伟达用两周时间证明自己离不开黄仁勋，但他回来当天股价跌超 5%，国会质询和内部调查还在前面；国内这边智谱换了架构、DeepSeek 收了免费口子，企业 AI 的钱继续花在模型之外。</div></div>
+<div class="body"><h2>头条要闻</h2><div class="item"><h3>黄仁勋复职后首次全员大会道歉：每天 1.5 小时心理治疗，坚称英伟达不需要接班人计划</h3><p>当地时间 11 月 24 日，黄仁勋在复职后首次全员大会上向员工道歉，承认违反公司行为准则、犯下“非常严重的个人错误”，并称已开始每天一个半小时的心理治疗。他否认美国总统在其复职中起主导作用，称董事会作出了独立决定，同时感谢白宫；表示英伟达不需要接班人计划，承诺调整往日的强硬管理风格，并感谢 CFO 克雷斯代管公司。此前他于 11 月 12 日辞去 CEO、总裁及董事职务，之后 7 个交易日英伟达股价连跌约 28%、市值蒸发约 1.16 万亿美元；11 月 23 日董事会一致投票恢复其职务，市值一夜增加约 9520 亿美元。复职次日股价回落，跌超 5%。</p><div class="meta"><b>对你的价值</b>：英伟达仍是 AI 算力定价的核心变量。复职解决了“谁签字”的问题，但没解决治理问题：公司仍面临内部调查及加州和联邦层面的审查，黄仁勋还将在 GTC 发布新产品的同一天赴华盛顿接受国会质询。对依赖英伟达供货和 CUDA 生态的团队来说，接下来要盯的不是股价，而是 GTC 的产品节奏，以及华盛顿的监管口径会不会影响供货和出口许可。</div><div class="src">来源：极客公园、IT之家、CNBC、TechCrunch、36氪</div></div><h2>模型与产品</h2><div class="item"><h3>OpenAI：GPT-6 展示内生的蛋白质设计能力，五个靶点验出结合证据</h3><p>OpenAI 称 GPT-6 系列模型能用推理和代码设计蛋白质的结构与序列，实验室测试在五个靶点上发现了结合证据。</p><div class="meta"><b>对你的价值</b>：这是通用模型直接插手湿实验前端环节的信号。做生物医药方向的产品，可以把 GPT-6 放进候选蛋白/分子的初筛做前置过滤，降低试错批次；但要清楚：五个靶点的结合证据属于实验室层面的初步结果，离成药还远，不能拿它替代湿实验验证。</div><div class="src">来源：OpenAI 官方博客</div></div><h2>工具与玩法</h2><div class="item"><h3>两位业余天文学家靠 Codex 与 Astra，在公开望远镜数据里找到潜在系外行星</h3><p>OpenAI 发布案例：两位业余天文学家借助 Codex 与模型 Astra，在 NASA Kepler 和 TESS 太空望远镜的公开数据中找到多个潜在系外行星信号，并已提交给专业天文学家做独立验证。这些发现尚未被正式确认为行星。</p><div class="meta"><b>对你的价值</b>：值得学的其实是一套工作流，天文学本身倒是次要：公开数据集 + 编码 Agent + 模型做模式识别，小团队也能产出可以交给专业圈子验证的结果。同样的模板可以搬到财报异常检测、日志排查、遥感影像筛查等场景：先找有公开标注的领域，再让 Agent 写分析代码，能明显降低试错成本。</div><div class="src">来源：OpenAI 官方博客、IT之家</div></div><h2>变现机会</h2><div class="item"><h3>沃尔玛把黑五搬进 Meta 的 AI Agent Muse，Muse 同时接入 Instagram 私信</h3><p>沃尔玛与 Meta 合作，顾客可以通过 Meta 的 AI Agent Muse 购买黑五优惠；Meta 同时把 Muse 直接接入 Instagram 私信，用户不必在两个 App 之间切换。Meta 高管对 CNBC 表示，Muse 内部不投放广告，但该工具已经在带动公司的广告业务。</p><div class="meta"><b>对你的价值</b>：大促流量入口正从搜索和信息流转到“在对话里直接下单”。做电商和投放的，明年要开始测 Agent 渠道的转化和归因；做工具的，该想怎么让自己的商品或服务被这类助手调用，而不是等平台上门来谈。</div><div class="src">来源：TechCrunch、CNBC</div></div><div class="actions"><h2>今天就能做</h2><ul><li>今天就用自己仓库跑一轮 GLM-5.4 与现用编码模型的对比，重点看多文件改动和长链路任务的通过率与 token 成本，再决定是否切换。</li><li>把产品里所有依赖 DeepSeek 免费额度的调用路径列出来，补上降级模型、限流告警和成本上限，避免限额当天整体不可用。</li><li>若要做 Agent 支付或代下单功能，先写清额度上限、二次确认和纠纷追责流程再接入 MCP 方案；同时评估马斯克所说“出租算力比自研更赚钱”的经济性，算清楚自建还是租用。</li></ul></div></div>
+<div class="foot">由「AI 情报站」自动生成 · 内容仅供参考，不构成投资、法律或医疗建议。</div>
+</div>
+</div>
+</body>
+</html>
