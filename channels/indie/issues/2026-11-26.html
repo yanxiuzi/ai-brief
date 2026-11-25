@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>独立开发者情报站 · 2026-11-26｜2240 亿参数模型压到 48GB 显存，AI 编码周边已经挤满</title>
+<style>
+  :root { --ink:#1b1f24; --sub:#5b6472; --line:#e6e8ec; --brand:#0f62fe; --bg:#f5f6f8; }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--bg); color:var(--ink);
+    font:16px/1.75 -apple-system,"Segoe UI","Microsoft YaHei","PingFang SC",sans-serif; }
+  .wrap { max-width:780px; margin:0 auto; padding:28px 14px 64px; }
+  .card { background:#fff; border:1px solid var(--line); border-radius:16px; overflow:hidden; }
+  .hero { padding:30px 30px 22px; border-bottom:1px solid var(--line); background:linear-gradient(180deg,#fbfcff,#fff); }
+  .brand { color:var(--brand); font-weight:700; letter-spacing:.06em; font-size:13px; }
+  h1 { font-size:26px; line-height:1.35; margin:10px 0 6px; }
+  .date { color:var(--sub); font-size:13px; }
+  .one-liner { margin:16px 0 0; padding:12px 14px; background:#f2f6ff; border-left:3px solid var(--brand);
+    border-radius:0 8px 8px 0; color:#26303d; font-size:15px; }
+  .body { padding:8px 30px 26px; }
+  h2 { font-size:18px; margin:28px 0 12px; padding-left:10px; border-left:4px solid var(--brand); }
+  .item { border:1px solid var(--line); border-radius:12px; padding:16px 18px; margin:12px 0; }
+  .item h3 { font-size:16px; margin:0 0 8px; }
+  .item p { margin:0 0 10px; color:#2c343d; }
+  .meta { font-size:13px; color:var(--sub); }
+  .meta b { color:#0b7a3b; font-weight:600; }
+  .src { font-size:12px; color:#8b93a1; margin-top:6px; word-break:break-all; }
+  .actions { margin:26px 0 0; padding:18px 20px; background:#f0fbf5; border:1px solid #cdeadb; border-radius:12px; }
+  .actions h2 { border:0; padding:0; margin:0 0 10px; font-size:16px; color:#0b7a3b; }
+  .actions li { margin:6px 0; }
+  .foot { padding:18px 30px 26px; color:#8b93a1; font-size:12px; border-top:1px solid var(--line); }
+  .mock { display:inline-block; margin-left:8px; padding:2px 8px; border-radius:99px;
+    background:#fff4e5; color:#b25e00; font-size:12px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+<div class="card">
+<div class="hero"><div class="brand">独立开发者情报站</div><h1>独立开发者情报站 · 2026-11-26｜2240 亿参数模型压到 48GB 显存，AI 编码周边已经挤满</h1><div class="date">2026-11-26 周四</div><div class="one-liner">腾讯把 2240 亿参数的 Hy4 flash 量化到能跑在 48GB 显存、最高 89 token/s，本地推理的成本基准变了；同一天 Product Hunt 上测试、CI、编辑器三个位置都被 AI 编码工具占住；1Password 的事故提醒你，一个员工账号就足以被攻破。</div></div>
+<div class="body"><h2>产品与收入</h2><div class="item"><h3>腾讯混元 Hy4 flash 开源 GGUF 量化：410GB 原始权重压到三成，48GB 显存跑到 89 token/s</h3><p>11 月 25 日，腾讯混元开源了 2240 亿参数 Hy4 flash 的 GGUF 量化权重和配套推理代码，用的是自家压缩加速工具箱 AngelSlim。原始权重 410.27 GiB，最小版本约为原始的三成，官方实测在 48GB 显存设备上生成速度最高每秒 89 个 token；社区讨论的落点是能跑在 64GB 的 Mac mini 上。</p><div class="meta"><b>对你的价值</b>：对一人公司来说，推理成本的基准变了：原本只能按 token 付费的能力，现在可以一次性买硬件摊掉。如果你在做批量处理、可容忍延迟的功能（摘要、分类、离线批处理），先算一遍本地跑 vs 调 API 的月度成本再定架构。但别把「能跑」当「好用」，量化后的质量要在你自己的数据上实测。</div><div class="src">来源：OSCHINA https://www.oschina.net/news/503813</div></div><h2>工具与栈</h2><div class="item"><h3>phimint：Rust 写的终端 AI 编码 agent，单文件装完就跑，1 核 1G 服务器够用</h3><p>OSCHINA 11 月 25 日报道，旋武社区（开放原子开源基金会旗下的 Rust 中国社区）「Rust 开源项目推荐」栏目在 11 月 24 日刊文推荐了 phimint。它是一个用 Rust 写的终端 AI 编程 agent：单文件装完即用，不需要 Node.js，也不用配 Python 环境，1 核 1G 的轻量服务器能跑完整编程会话。</p><div class="meta"><b>对你的价值</b>：如果你的产品里要嵌一个编码 agent，或者你想在便宜 VPS 上跑自动化任务，这类无运行时依赖的二进制能省掉整条环境链的运维成本。评估时重点看两件事：支持哪些模型和接口（决定你的 API 账单），以及单文件分发下怎么升级。</div><div class="src">来源：OSCHINA https://www.oschina.net/news/503801</div></div><h2>增长与渠道</h2><div class="item"><h3>3way.Social MCP 上榜：让 AI 替你找外链合作方，你只负责批不批</h3><p>Product Hunt 11 月 25 日的 3way.Social MCP，定位是「让你的 AI 去找 link partners，你审批交易」。把外链、互推这类重复的商务拓展动作交给 agent 初步筛选，人只在最后一步做决策。</p><div class="meta"><b>对你的价值</b>：外链和互推是独立开发者最耗时又最难外包的渠道之一。这个思路可以直接借用：用 MCP 或脚本把「找到、按标准打分、生成第一封邮件」自动化，把「发不发、换不换」留给自己。但别把自动群发当增长，模板化外联在小圈子里的反效果来得比收益快。</div><div class="src">来源：Product Hunt Feed https://www.producthunt.com/products/3way-social</div></div><h2>踩坑与风险</h2><div class="item"><h3>1Password 后端被入侵：员工企业账号被攻破，客户姓名和邮箱被窃，密码库未泄露</h3><p>1Password 披露，攻击者获取了一名员工的企业账号访问权限，进入内部系统，拿走了一些客户信息。TechCrunch 与 The Verge 均报道：客户密码与保险库内其他信息未泄露，泄露的是姓名和邮箱，可能被用于钓鱼，受影响用户数量未公布。</p><div class="meta"><b>对你的价值</b>：这条的重点是攻击路径，1Password 本身并不是关键：一个员工账号就够了。一人公司通常没有 IT 部门，把涉及收入和客户数据的账号全部开 2FA（硬件密钥优先于短信），并给自己定一条规矩：任何要求你点链接登录 1Password 或云厂商的邮件，一律从手动输入的官网地址进。姓名加邮箱泄露之后，伪装成账单或安全通知的钓鱼会变得很精准。</div><div class="src">来源：TechCrunch https://techcrunch.com/2026/11/25/1password-said-hackers-broke-into-its-internal-systems-but-customer-passwords-are-safe/ ；The Verge https://www.theverge.com/tech/1042409/1password-data-breach-leak</div></div><div class="actions"><h2>今天就能做</h2><ul><li>挑出你最贵的那个 AI 功能，用一批真实请求分别跑 API 和本地量化模型（比如 Hy4 flash 的三成权重版本），算清月成本与质量差值，再决定要不要换架构。</li><li>今天就把黑五促销的截止日期写进落地页首屏，并给年付一个明确的原价对比；30 号之后不管卖得好坏，把转化率记下来，明年直接用。</li><li>检查一遍账号：所有涉及收入和客户数据的服务开 2FA（硬件密钥优先）、关掉短信恢复；顺手给最近的提交补一句「是否使用 AI 工具、怎么审查的」。</li></ul></div></div>
+<div class="foot">由「独立开发者情报站」自动生成 · 内容仅供参考，不构成投资、法律或医疗建议。</div>
+</div>
+</div>
+</body>
+</html>
